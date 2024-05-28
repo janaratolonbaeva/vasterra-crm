@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vasterra CRM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/media.css" />
+  </head>
+  <body>
+    <header id="header" class="header py-4 md:py-8 w-full sticky top-0 left-0">
+      <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center">
+        <a href="/">
+          <img
+            class="w-[129px] h-[24px] md:w-[165px] md:h-[35px]"
+            src="./assets/images/logo.svg"
+            width="165"
+            height="35"
+            alt="Vasterra Logo"
+          />
+        </a>
+        <ul
+          id="menu"
+          class="menu flex-col md:flex-row flex gap-10 md:gap-6 lg:gap-10 pt-20 md:pt-0 items-center md:justify-center"
+        >
+          <li class="w-full text-lg md:text-md">
+            <a href="#" class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+              >Why?</a
+            >
+          </li>
+          <li class="w-full text-lg md:text-md">
+            <a href="#" class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+              >Modules</a
+            >
+          </li>
+          <li class="w-full text-lg md:text-md">
+            <a href="#" class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+              >Our advantages</a
+            >
+          </li>
+          <li class="w-full text-lg md:text-md">
+            <a href="#" class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+              >Workflow</a
+            >
+          </li>
+        </ul>
+        <div class="flex gap-4 items-center">
+          <a href="#form-sendler"
+            class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] p-2 lg:py-3 lg:px-6"
+          >
+            <span class="hidden lg:inline">Write a message</span>
+            <svg
+              class="lg:hidden"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.4624 2.77145C14.4624 2.77145 14.4624 2.7777 14.4624 2.78083L10.8249 14.7771C10.7699 14.9719 10.6566 15.1453 10.5002 15.2739C10.3438 15.4024 10.1518 15.4801 9.94995 15.4965C9.9212 15.499 9.89245 15.5002 9.8637 15.5002C9.67457 15.5008 9.48922 15.4473 9.32953 15.3459C9.16983 15.2446 9.04246 15.0997 8.96245 14.9283L6.68745 10.2596C6.66468 10.2128 6.65709 10.1601 6.66571 10.1088C6.67434 10.0574 6.69876 10.0101 6.73557 9.97333L10.3556 6.35333C10.4454 6.2588 10.4947 6.13292 10.493 6.00254C10.4914 5.87216 10.4388 5.74759 10.3466 5.65539C10.2544 5.56319 10.1299 5.51065 9.99948 5.50898C9.8691 5.50731 9.74323 5.55664 9.6487 5.64645L6.02682 9.26645C5.99005 9.30327 5.94271 9.32769 5.8914 9.33632C5.84009 9.34494 5.78736 9.33734 5.74057 9.31458L1.06745 7.0402C0.884711 6.95253 0.732927 6.81141 0.632209 6.63552C0.531492 6.45964 0.486597 6.2573 0.503473 6.05533C0.52035 5.85335 0.598201 5.66127 0.726711 5.50454C0.85522 5.34781 1.02832 5.23383 1.22307 5.1777L13.2193 1.5402H13.2287C13.3995 1.49222 13.58 1.49053 13.7517 1.53533C13.9233 1.58012 14.08 1.66978 14.2056 1.79511C14.3311 1.92043 14.4211 2.07691 14.4663 2.24848C14.5114 2.42006 14.5101 2.60055 14.4624 2.77145Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <button class="btn-burger flex md:hidden gap-1.5 flex-col items-end w-10 h-10 justify-center">
+            <span class="bg-dark_blue h-[3px] w-6 rounded block"></span>
+            <span class="bg-dark_blue h-[3px] w-8 rounded block"></span>
+            <span class="bg-dark_blue h-[3px] w-4 rounded block"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="hero" class="py-10 lg:py-14">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="mb-14" data-aos="fade-up"
+        data-aos-duration="1000">
+          <h1 class="title text-center font-normal">
+            <span class="font-bold">We automate CRM</span> systems for brokerage agencies that lease and sell offices,
+            warehouses, and residential real estate
+          </h1>
+        </div>
+        <div class="rounded-lg overflow-hidden mb-12 md:mb-20" data-aos="fade-up"
+        data-aos-duration="1500">
+          <img class="max-w-full" src="./assets/images/promo-image.png" alt="The main image of Vasterra CRM" />
+        </div>
+        <div class="flex flex-wrap md:flex-nowrap gap-8 xl:gap-14 mb-8 md:mb-14" data-aos="fade-up"
+        data-aos-duration="2000">
+          <div>
+            <p class="text-md lg:text-md text-center">
+              <span class="font-semibold">We can develop modules</span> for Salesforce and create a customized system
+              from scratch to meet your specific needs.
+            </p>
+          </div>
+          <div>
+            <p class="text-md lg:text-md text-center">
+              <span class="font-semibold">We can implement</span> AI functionality for brokers, analysts, and company
+              executives.
+            </p>
+          </div>
+          <div>
+            <p class="text-md lg:text-md text-center">
+              <span class="font-semibold">We can increase</span> the customer's LTVand revenue whilst reducing the
+              timefor manual work and other routine tasks.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center" data-aos="fade-up"
+        data-aos-duration="2000">
+          <button
+            class="justify-center items-center rounded-lg bg-primary text-white font-semibold hover:bg-[#0b3bb6] focus:bg-[#17337d] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 w-full max-w-[392px]"
+          >
+            Learn more
+          </button>
+        </div>
+      </div>
+    </main>
+    <section class="py-10 lg:py-14">
+      <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="title text-center text-primary font-normal mb-6 md:mb12" data-aos="fade-up"
+        data-aos-duration="2000">
+          Why customize a CRM system if everything works smoothly already?
+        </h2>
+        <div class="text-center text-md md:text-lg max-w-[810px] mx-auto mb-4 md:mb-8" data-aos="fade-up"
+        data-aos-duration="2000">
+          <p class="mb-4">
+            Off-the-shelf <span class="font-semibold">CRM is a universal solution</span> that suits almost any business
+            but does not completely cover the needs of any of them.
+            <span class="font-semibold">This also applies to brokers.</span> As a result, many tasks have to be done
+            manually which requires more time and effort, which ultimately affects the company's overall performance.
+          </p>
+          <p>Customizing CRM or developing a system from scratchhelps businesses with the following:</p>
+        </div>
+        <div class="flex flex-wrap justify-center md:justify-start">
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="62"
+                height="56"
+                src="./assets/images/graphic-icon.svg"
+                alt="Graphic icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              Strengthening client relationships and increasing profits from each of them
+            </p>
+          </div>
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="75"
+                height="56"
+                src="./assets/images/pocket-icon.svg"
+                alt="Pocket icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              Saving hundreds of thousands of dollars on subscription fees for off-the-shelf solutions
+            </p>
+          </div>
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="68"
+                height="59"
+                src="./assets/images/calendar-icon.svg"
+                alt="Calendar icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              More effectively managing a larger number of clients
+            </p>
+          </div>
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="66"
+                height="56"
+                src="./assets/images/dollar-icon.svg"
+                alt="Graphic icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              Boosting revenue in the brokerage sector
+            </p>
+          </div>
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="60"
+                height="56"
+                src="./assets/images/sharing-icon.svg"
+                alt="Pocket icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              Sharing information among departments to enhance collaboration
+            </p>
+          </div>
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="66"
+                height="56"
+                src="./assets/images/completed-icon.svg"
+                alt="Calendar icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              Saving brokers' time on tasks they shouldn't do
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl" data-aos="fade-up"
+    data-aos-duration="1000">
+      <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="title text-white text-center mb-6 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">
+          How a custom<br />CRM system helps<br />an agency's key staff
+        </h2>
+        <p class="text-center mb-6 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">Additional modules automate the work of all departments:</p>
+        <div class="hidden lg:flex gap-6" data-aos="fade-up"
+        data-aos-duration="2000">
+          <div class="basis-1/3 rounded-lg border border-white p-10">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
+            <p class="md:text-md">
+              Spend time on developing customer relationships rather than on routine tasks, thereby closing more deals.
+            </p>
+          </div>
+          <div class="basis-1/3 rounded-lg border border-white p-10">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
+            <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
+          </div>
+          <div class="basis-1/3 rounded-lg border border-white p-10">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
+            <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
+          </div>
+        </div>
+        <div id="swiper-helps" class="swiper lg:hidden" data-aos="fade-up"
+        data-aos-duration="2000">
+          <div class="swiper-wrapper mb-6 items-stretch">
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
+                <p class="md:text-md">
+                  Spend time on developing customer relationships rather than on routine tasks, thereby closing more
+                  deals.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
+                <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
+                <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 justify-center">
+            <div
+              class="swiper-helps-button-prev w-12 h-12 p-3 rounded-lg group bg-transparent border border-gray flex justify-center items-center hover:bg-white focus:bg-white"
+            >
+              <svg
+                class="fill-white group-hover:fill-primary group-focus:fill-primary"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.29313 7.29324L1.29328 11.2926C1.2003 11.3855 1.12655 11.4957 1.07622 11.6171C1.0259 11.7385 1 11.8686 1 12C1 12.1314 1.0259 12.2615 1.07622 12.3829C1.12655 12.5043 1.2003 12.6145 1.29328 12.7074L5.29313 16.7068C5.43298 16.8467 5.61123 16.9421 5.80531 16.9807C5.99939 17.0194 6.20057 16.9996 6.38339 16.9238C6.5662 16.8481 6.72243 16.7198 6.8323 16.5553C6.94217 16.3907 7.00073 16.1972 7.00057 15.9994L7.00057 12.9998L22 12.9998C22.2652 12.9998 22.5196 12.8945 22.7071 12.707C22.8946 12.5195 23 12.2652 23 12C23 11.7348 22.8946 11.4805 22.7071 11.293C22.5196 11.1055 22.2652 11.0002 22 11.0002L7.00057 11.0002L7.00057 8.00063C7.00073 7.80277 6.94217 7.6093 6.8323 7.44474C6.72243 7.28017 6.5662 7.15189 6.38338 7.07615C6.20057 7.00041 5.99939 6.98061 5.80531 7.01926C5.61123 7.0579 5.43298 7.15325 5.29313 7.29324Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="swiper-helps-button-next w-12 h-12 p-3 rounded-lg group bg-transparent border border-gray flex justify-center items-center hover:bg-white focus:bg-white"
+            >
+              <svg
+                class="fill-white group-hover:fill-primary group-focus:fill-primary"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.7069 7.29324L22.7067 11.2926C22.7997 11.3855 22.8735 11.4957 22.9238 11.6171C22.9741 11.7385 23 11.8686 23 12C23 12.1314 22.9741 12.2615 22.9238 12.3829C22.8735 12.5043 22.7997 12.6145 22.7067 12.7074L18.7069 16.7068C18.567 16.8467 18.3888 16.9421 18.1947 16.9807C18.0006 17.0194 17.7994 16.9996 17.6166 16.9238C17.4338 16.8481 17.2776 16.7198 17.1677 16.5553C17.0578 16.3907 16.9993 16.1972 16.9994 15.9994L16.9994 12.9998L1.99996 12.9998C1.73476 12.9998 1.48041 12.8945 1.29288 12.707C1.10535 12.5195 1 12.2652 1 12C1 11.7348 1.10535 11.4805 1.29288 11.293C1.48041 11.1055 1.73476 11.0002 1.99996 11.0002L16.9994 11.0002L16.9994 8.00063C16.9993 7.80277 17.0578 7.6093 17.1677 7.44474C17.2776 7.28017 17.4338 7.15189 17.6166 7.07615C17.7994 7.00041 18.0006 6.98061 18.1947 7.01926C18.3888 7.0579 18.567 7.15325 18.7069 7.29324Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 lg:py-32" data-aos="fade-up"
+    data-aos-duration="1000">
+      <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="title text-primary text-center mb-6 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">
+          Which modules <br class="hidden sm:inline" />could be useful for you
+        </h2>
+        <div
+          class="tabs flex flex-nowrap overflow-x-scroll md:flex-wrap gap-2 md:gap-4 md:justify-center max-w-[1100px] mx-auto mb-4 pb-4 md:mb-16" data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-white font-normal ttext-sm md:ext-md bg-primary inline-block whitespace-nowrap"
+            data-tab-target="#mobile-version" 
+          >
+            Mobile version
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#updating-premises"
+          >
+            Updating of premises
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#sectorial-analytics"
+          >
+            Sectorial analytics
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#listing"
+          >
+            Listing management
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#property-search"
+          >
+            Property search
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#analytics-marketing"
+          >
+            Analytics for the marketing department
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#dashboards-market"
+          >
+            Dashboards with key market indicators
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#management-dashboards"
+          >
+            Management dashboards
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#competitive-analysis"
+          >
+            Competitive analysis
+          </button>
+        </div>
+        <div id="mobile-version" class="tab-content gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap lg:items-center">
+          <div class="basis-full lg:basis-1/2">
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5" data-aos="fade-up"
+              data-aos-duration="2000">What it can do</h4>
+              <p data-aos="fade-up"
+              data-aos-duration="2000">
+                It can create floor plans for each property, making it easier to maintain the offices and keep them
+                up-to-date. A special dashboard shows which properties require the relevant updates.
+              </p>
+            </div>
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5" data-aos="fade-up"
+              data-aos-duration="2000">When it can be useful</h4>
+              <p data-aos="fade-up"
+              data-aos-duration="2000">
+                When you need to view historical data about a property, understand the speed of its updates, and assess
+                demand for specific areas. By examining who occupies the business center and when their contracts
+                expire, you can re-engage clients in a timely manner.
+              </p>
+            </div>
+          </div>
+          <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch" data-aos="fade-up"
+          data-aos-duration="2000">
+            <img
+              class="lg:h-[inherit] w-full max-w-full lg:object-cover"
+              src="./assets/images/tab-image-1.png"
+              width="592"
+              height="360"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="updating-premises" class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center">
+          <div class="basis-full lg:basis-1/2">
+            <div class="mb-5 md:mb-10">
+              TAB "Updating of premises"
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
+              <p>
+                It can create floor plans for each property, making it easier to maintain the offices and keep them
+                up-to-date. A special dashboard shows which properties require the relevant updates.
+              </p>
+            </div>
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
+              <p>
+                When you need to view historical data about a property, understand the speed of its updates, and assess
+                demand for specific areas. By examining who occupies the business center and when their contracts
+                expire, you can re-engage clients in a timely manner.
+              </p>
+            </div>
+          </div>
+          <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
+            <img
+              class="lg:h-[inherit] w-full max-w-full lg:object-cover"
+              src="./assets/images/tab-image-1.png"
+              width="592"
+              height="360"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          id="sectorial-analytics"
+          class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center"
+        >
+          TAB "Sectorial analytics"
+        </div>
+        <div id="listing" class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center">
+          TAB "Listing management"
+        </div>
+        <div id="property-search" class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center">
+          TAB "Property search"
+        </div>
+        <div
+          id="analytics-marketing"
+          class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center"
+        >
+          TAB "Analytics for the marketing department"
+        </div>
+        <div id="dashboards-market" class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center">
+          TAB "Dashboards with key market indicators"
+        </div>
+        <div
+          id="management-dashboards"
+          class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center"
+        >
+          TAB "Management dashboards"
+        </div>
+        <div
+          id="competitive-analysis"
+          class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center"
+        >
+          TAB "Competitive analysis"
+        </div>
+      </div>
+    </section>
+    <section class="pb-20 lg:pb-32" data-aos="fade-up"
+    data-aos-duration="1000">
+      <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="title text-primary text-center mb-6 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">
+          If you don't find <br class="hidden sm:inline" />the required module, <br class="hidden sm:inline" />we will
+          create it <br class="hidden sm:inline" />specifically for you
+        </h2>
+        <p class="text-center text-md md:text-lg mb-6 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">
+          Here's the functionality we've already developed for our clients:
+        </p>
+        <div
+          class="tabs flex flex-nowrap overflow-x-scroll md:flex-wrap gap-2 md:gap-4 md:justify-center mb-4 pb-4 md:mb-16" data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-white font-normal ttext-sm md:ext-md bg-primary inline-block whitespace-nowrap"
+            data-tab-target="#property-database"
+          >
+            Property database
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#analytics"
+          >
+            Analytics
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#management"
+          >
+            Management
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#teamwork"
+          >
+            Teamwork
+          </button>
+          <button
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            data-tab-target="#client-management"
+          >
+            Client management
+          </button>
+        </div>
+        <div
+          id="property-database"
+          class="tab-content gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center" data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div class="basis-full lg:basis-1/2">
+            <ul class="list-disc ml-3">
+              <li class="md:text-lg pb-4">
+                Lead database with sorting by contract date, square footage, and business center class;
+              </li>
+              <li class="md:text-lg pb-4">Communication history with all clients;</li>
+              <li class="md:text-lg pb-4">Customer matrix with the ability to conduct segmented mailings and calls;</li>
+              <li class="md:text-lg pb-4">AI-powered generator of personalized offers and presentations;</li>
+              <li class="md:text-lg pb-4">Automatic client identification by company name;</li>
+              <li class="md:text-lg pb-4">Control over the lead database gathered by brokers at specialized events;</li>
+              <li class="md:text-lg">Saving selections, tied to specific managers.</li>
+            </ul>
+          </div>
+          <div class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch">
+            <img
+              class="lg:h-[inherit] w-full lg:object-cover max-w-full"
+              src="./assets/images/tab-image-2.png"
+              width="600"
+              height="460"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="analytics" class="tab-content hidden">
+          Analytics
+        </div>
+        <div id="management" class="tab-content hidden">
+          Management
+        </div>
+        <div id="teamwork" class="tab-content hidden">
+          Teamwork
+        </div>
+        <div id="client-management" class="tab-content hidden">
+          Client management
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl" data-aos="fade-up"
+    data-aos-duration="1000">
+      <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="title text-center mb-10 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">
+          How we help <br class="hidden sm:inline" />companies boost key <br class="hidden sm:inline" />business metrics
+        </h2>
+        <p class="text-center mb-8 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">
+          Vasterra collaborates with several major players in the market, including Colliers.
+          <br />We customized their CRM system and optimized key processes. <br />This has helped achieve many
+          impressive results:
+        </p>
+        <div class="flex justify-center mb-8 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">
+          <a
+            href="#"
+            class="w-full max-w-[392px] py-3 px-6 text-center bg-white text-primary text-base md:text-md rounded-lg font-semibold focus:bg-[#17337d] focus:text-white disabled:bg-gray disabled:text-dark_gray"
+            >Dive into the case</a
+          >
+        </div>
+        <div class="hidden lg:flex gap-6" >
+          <div class="basis-1/3 rounded-lg border border-white p-10" data-aos="fade-up"
+          data-aos-duration="2000">
+            <h3 class="text-md md:text-xxl mb-8 font-medium" >Brokers</h3>
+            <p class="md:text-md">
+              Spend time on developing customer relationships rather than on routine tasks, thereby closing more deals.
+            </p>
+          </div>
+          <div class="basis-1/3 rounded-lg border border-white p-10" data-aos="fade-up"
+          data-aos-duration="2000">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
+            <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
+          </div>
+          <div class="basis-1/3 rounded-lg border border-white p-10" data-aos="fade-up"
+          data-aos-duration="2000">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
+            <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
+          </div>
+        </div>
+        <div id="swiper-metrics" class="swiper lg:hidden" data-aos="fade-up"
+        data-aos-duration="2000">
+          <div class="lg:hidden swiper-wrapper mb-6 items-stretch">
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full" >
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
+                <p class="md:text-md">
+                  Spend time on developing customer relationships rather than on routine tasks, thereby closing more
+                  deals.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
+                <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
+                <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 justify-center">
+            <div
+              class="swiper-metrics-button-prev w-12 h-12 p-3 rounded-lg group bg-transparent border border-gray flex justify-center items-center hover:bg-white focus:bg-white"
+            >
+              <svg
+                class="fill-white group-hover:fill-primary group-focus:fill-primary"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.29313 7.29324L1.29328 11.2926C1.2003 11.3855 1.12655 11.4957 1.07622 11.6171C1.0259 11.7385 1 11.8686 1 12C1 12.1314 1.0259 12.2615 1.07622 12.3829C1.12655 12.5043 1.2003 12.6145 1.29328 12.7074L5.29313 16.7068C5.43298 16.8467 5.61123 16.9421 5.80531 16.9807C5.99939 17.0194 6.20057 16.9996 6.38339 16.9238C6.5662 16.8481 6.72243 16.7198 6.8323 16.5553C6.94217 16.3907 7.00073 16.1972 7.00057 15.9994L7.00057 12.9998L22 12.9998C22.2652 12.9998 22.5196 12.8945 22.7071 12.707C22.8946 12.5195 23 12.2652 23 12C23 11.7348 22.8946 11.4805 22.7071 11.293C22.5196 11.1055 22.2652 11.0002 22 11.0002L7.00057 11.0002L7.00057 8.00063C7.00073 7.80277 6.94217 7.6093 6.8323 7.44474C6.72243 7.28017 6.5662 7.15189 6.38338 7.07615C6.20057 7.00041 5.99939 6.98061 5.80531 7.01926C5.61123 7.0579 5.43298 7.15325 5.29313 7.29324Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="swiper-metrics-button-next w-12 h-12 p-3 rounded-lg group bg-transparent border border-gray flex justify-center items-center hover:bg-white focus:bg-white"
+            >
+              <svg
+                class="fill-white group-hover:fill-primary group-focus:fill-primary"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.7069 7.29324L22.7067 11.2926C22.7997 11.3855 22.8735 11.4957 22.9238 11.6171C22.9741 11.7385 23 11.8686 23 12C23 12.1314 22.9741 12.2615 22.9238 12.3829C22.8735 12.5043 22.7997 12.6145 22.7067 12.7074L18.7069 16.7068C18.567 16.8467 18.3888 16.9421 18.1947 16.9807C18.0006 17.0194 17.7994 16.9996 17.6166 16.9238C17.4338 16.8481 17.2776 16.7198 17.1677 16.5553C17.0578 16.3907 16.9993 16.1972 16.9994 15.9994L16.9994 12.9998L1.99996 12.9998C1.73476 12.9998 1.48041 12.8945 1.29288 12.707C1.10535 12.5195 1 12.2652 1 12C1 11.7348 1.10535 11.4805 1.29288 11.293C1.48041 11.1055 1.73476 11.0002 1.99996 11.0002L16.9994 11.0002L16.9994 8.00063C16.9993 7.80277 17.0578 7.6093 17.1677 7.44474C17.2776 7.28017 17.4338 7.15189 17.6166 7.07615C17.7994 7.00041 18.0006 6.98061 18.1947 7.01926C18.3888 7.0579 18.567 7.15325 18.7069 7.29324Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 lg:py-32" data-aos="fade-up"
+    data-aos-duration="1000">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="flex items-center flex-col gap-10 text-center">
+          <svg
+            class="w-[46px] h-[46px] md:w-[58px] md:h-[54px]"
+            width="58"
+            height="54"
+            viewBox="0 0 58 54"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            data-aos="fade-up"
+        data-aos-duration="2000"
+          >
+            <path
+              d="M11.8249 28.4704C12.0715 24.3235 13.7207 19.7935 15.7793 15.6954C17.9063 11.4611 20.4536 7.72092 22.2834 5.3919C22.6896 4.87486 22.6107 4.13084 22.0824 3.71228L19.209 1.43598C18.7061 1.03756 17.9718 1.08711 17.5312 1.54631C7.02946 12.4931 2.50919 24.335 1.55029 28.8002C0.584002 32.4967 0.00738231 38.5377 1.47205 43.6354C2.20618 46.1906 3.46147 48.5373 5.46875 50.2242C7.48473 51.9185 10.2246 52.9178 13.8592 52.8278C22.3351 52.6179 26.6691 46.1966 26.4055 40.0363C26.2736 36.9529 24.9936 33.9069 22.4888 31.7085C20.0582 29.5751 16.508 28.2692 11.8249 28.4704Z"
+              fill="#2253D0"
+              stroke="#2253D0"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M42.8249 28.4704C43.0715 24.3235 44.7207 19.7935 46.7793 15.6954C48.9063 11.4611 51.4536 7.72092 53.2834 5.3919C53.6896 4.87486 53.6107 4.13084 53.0824 3.71228L50.209 1.43598C49.7061 1.03756 48.9718 1.08711 48.5312 1.54631C38.0294 12.4931 33.5092 24.335 32.5502 28.8002C31.584 32.4967 31.0074 38.5377 32.4721 43.6354C33.2062 46.1906 34.4615 48.5373 36.4688 50.2242C38.4847 51.9185 41.2246 52.9178 44.8592 52.8278C53.3351 52.6179 57.6691 46.1966 57.4055 40.0363C57.2736 36.9529 55.9936 33.9069 53.4888 31.7085C51.0582 29.5751 47.508 28.2692 42.8249 28.4704Z"
+              fill="#2253D0"
+              stroke="#2253D0"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p class="[font-size:_clamp(18px,3vw,32px)]" data-aos="fade-up"
+          data-aos-duration="2000">
+            The Vasterra team will respect your ideas and needs and never push you to change your core beliefs.
+            Demonstrating an exceptional understanding of the client`s goals, Vasterra has performed well throughout the
+            engagement. They`ve facilitated a smooth process, going above and beyond to deliver top-tier results.
+            Customers can expect a collaborative and reliable partner.
+          </p>
+          <div class="flex flex-col gap-6 items-center" data-aos="fade-up"
+          data-aos-duration="2000">
+            <div class="rounded-full w-[72px] h-72px">
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/images/crm-manager-avatar.png"
+                width="72"
+                height="72"
+                alt="CRM Vasterra"
+              />
+            </div>
+            <div data-aos="fade-up"
+            data-aos-duration="2000">
+              <h6 class="text-base md:text-lg mb-1 font-semibold">Olga Repryntseva</h6>
+              <span class="text-base md:text-lg block">CRM Manager, Colliers International</span>
+            </div>
+            <a
+              href="https://clutch.co/profile/vasterra-0#review-1883692"
+              class="gap-1 text-[15px] font-medium rounded-lg border-warning border-[2px] py-[15px] px-7 flex items-center"
+              target="_blank"
+              data-aos="fade-up"
+        data-aos-duration="2000"
+            >
+              <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.49 12.8138C11.5413 13.6525 10.3142 14.1078 9.048 14.0908C6.131 14.0908 3.988 11.9478 3.988 9.00781C3.988 6.06781 6.063 4.01581 9.048 4.01581C10.317 3.99869 11.5488 4.44448 12.513 5.26981L13.151 5.81681L15.977 2.99081L15.271 2.32981C13.5613 0.802324 11.3404 -0.0274492 9.048 0.0048129C3.806 0.0048129 0 3.78981 0 8.98481C0 14.1818 3.897 18.0788 9.048 18.0788C11.3619 18.1099 13.6016 17.2631 15.316 15.7088L16 15.0698L13.128 12.2428L12.49 12.8128V12.8138Z"
+                  fill="#1D303A"
+                />
+                <path
+                  d="M8.91186 12.062C9.71573 12.062 10.4867 11.7427 11.0551 11.1742C11.6235 10.6058 11.9429 9.83487 11.9429 9.031C11.9429 8.22713 11.6235 7.45618 11.0551 6.88776C10.4867 6.31934 9.71573 6 8.91186 6C8.10799 6 7.33704 6.31934 6.76862 6.88776C6.2002 7.45618 5.88086 8.22713 5.88086 9.031C5.88086 9.83487 6.2002 10.6058 6.76862 11.1742C7.33704 11.7427 8.10799 12.062 8.91186 12.062Z"
+                  fill="#EB4F3C"
+                />
+              </svg>
+              Show more on Clutch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section? class="py-20 lg:py-32" data-aos="fade-up"
+    data-aos-duration="1000">
+      <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="title text-primary text-center mb-6 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">How is the workflow for CRM automation built</h2>
+        <p class="text-center text-md md:text-lg mb-6 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">
+          The project consists of four key stages. At each of them, you will only need to maintain minimal involvement:
+          you won't have to be distracted from your main body of work, and most importantly, you won't lose any clients.
+          After implementation, you will definitely see an increase in their number.
+        </p>
+        <div id="swiper-workflow" class="swiper" >
+          <div class="swiper-wrapper mb-6 md:mb-12">
+            <div class="swiper-slide h-auto">
+              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col" data-aos="fade-up"
+              data-aos-duration="2000">
+                <h3 class="text-xl md:text-xxl font-medium text-primary">Data collection</h3>
+                <p class="md:text-md">
+                  Business analysts and project managers conduct interviews with representatives from all departments,
+                  defining your company's goals and development requirements.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col" data-aos="fade-up"
+              data-aos-duration="2000">
+                <h3 class="text-xl md:text-xxl font-medium text-primary">Data analysis and project approval</h3>
+                <p class="md:text-md">
+                  Based on the collected information, we develop an understanding of the task, create an efficient work
+                  schedule, and calculate the budget. We approve all documentation with the client.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col" data-aos="fade-up"
+              data-aos-duration="2000">
+                <h3 class="text-xl md:text-xxl font-medium text-primary">Development of new modules</h3>
+                <p class="md:text-md">
+                  We work iteratively, presenting results to stakeholders at each stage. We launch the system and gather
+                  feedback for further improvements.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col" data-aos="fade-up"
+              data-aos-duration="2000">
+                <h3 class="text-xl md:text-xxl font-medium text-primary">Team training and system maintenance</h3>
+                <p class="md:text-md">
+                  We prepare training materials and video tutorials, maintain the system's functionality after the
+                  launch, and if necessary, implement other new features.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 justify-center xl:hidden" data-aos="fade-up"
+          data-aos-duration="2000">
+            <div
+              class="swiper-metrics-button-prev w-12 h-12 p-3 rounded-lg group bg-gray border border-gray flex justify-center items-center hover:bg-primary focus:bg-primary hover:border-primary focus:border-primary"
+            >
+              <svg
+                class="fill-[#A1A7B8] group-hover:fill-white group-focus:fill-white"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.29313 7.29324L1.29328 11.2926C1.2003 11.3855 1.12655 11.4957 1.07622 11.6171C1.0259 11.7385 1 11.8686 1 12C1 12.1314 1.0259 12.2615 1.07622 12.3829C1.12655 12.5043 1.2003 12.6145 1.29328 12.7074L5.29313 16.7068C5.43298 16.8467 5.61123 16.9421 5.80531 16.9807C5.99939 17.0194 6.20057 16.9996 6.38339 16.9238C6.5662 16.8481 6.72243 16.7198 6.8323 16.5553C6.94217 16.3907 7.00073 16.1972 7.00057 15.9994L7.00057 12.9998L22 12.9998C22.2652 12.9998 22.5196 12.8945 22.7071 12.707C22.8946 12.5195 23 12.2652 23 12C23 11.7348 22.8946 11.4805 22.7071 11.293C22.5196 11.1055 22.2652 11.0002 22 11.0002L7.00057 11.0002L7.00057 8.00063C7.00073 7.80277 6.94217 7.6093 6.8323 7.44474C6.72243 7.28017 6.5662 7.15189 6.38338 7.07615C6.20057 7.00041 5.99939 6.98061 5.80531 7.01926C5.61123 7.0579 5.43298 7.15325 5.29313 7.29324Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="swiper-metrics-button-next w-12 h-12 p-3 rounded-lg group bg-gray border border-gray flex justify-center items-center hover:bg-primary focus:bg-primary hover:border-primary focus:border-primary"
+            >
+              <svg
+                class="fill-[#A1A7B8] group-hover:fill-white group-focus:fill-white"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.7069 7.29324L22.7067 11.2926C22.7997 11.3855 22.8735 11.4957 22.9238 11.6171C22.9741 11.7385 23 11.8686 23 12C23 12.1314 22.9741 12.2615 22.9238 12.3829C22.8735 12.5043 22.7997 12.6145 22.7067 12.7074L18.7069 16.7068C18.567 16.8467 18.3888 16.9421 18.1947 16.9807C18.0006 17.0194 17.7994 16.9996 17.6166 16.9238C17.4338 16.8481 17.2776 16.7198 17.1677 16.5553C17.0578 16.3907 16.9993 16.1972 16.9994 15.9994L16.9994 12.9998L1.99996 12.9998C1.73476 12.9998 1.48041 12.8945 1.29288 12.707C1.10535 12.5195 1 12.2652 1 12C1 11.7348 1.10535 11.4805 1.29288 11.293C1.48041 11.1055 1.73476 11.0002 1.99996 11.0002L16.9994 11.0002L16.9994 8.00063C16.9993 7.80277 17.0578 7.6093 17.1677 7.44474C17.2776 7.28017 17.4338 7.15189 17.6166 7.07615C17.7994 7.00041 18.0006 6.98061 18.1947 7.01926C18.3888 7.0579 18.567 7.15325 18.7069 7.29324Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="form-sendler" class="py-20 lg:py-32" data-aos="fade-up"
+    data-aos-duration="1000">
+      <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="title text-primary text-center mb-6 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">Want to boost <br>your CRM system?</h2>
+        <p class="text-center text-md md:text-lg mb-6 md:mb-12" data-aos="fade-up"
+        data-aos-duration="2000">Write to us and we will help you realize all your needs.</p>
+        <div class="max-w-[600px] mx-auto">
+          <form>
+            <label class="mb-6 block" data-aos="fade-up"
+            data-aos-duration="2000">
+              <input class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray" type="text" placeholder="Name" required>
+              <p class="font-normal text-danger hidden">Required field</p>
+            </label>
+            <label class="mb-6 block" data-aos="fade-up"
+            data-aos-duration="2000">
+              <input class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray" type="email" placeholder="E-mail" required>
+              <p class="font-normal text-danger hidden">Required field</p>
+            </label>
+            <label class="mb-6 block" data-aos="fade-up"
+            data-aos-duration="2000">
+              <textarea class="py-4 px-6 rounded-[28px] bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray" placeholder="Message" rows="3"></textarea>
+              <p class="font-normal text-danger hidden">Required field</p>
+            </label>
+            <label for="checkbox-agree" class="peer flex gap-2 items-center text-dark_gray font-normal cursor-pointer mb-10" data-aos="fade-up"
+            data-aos-duration="2000">
+              <input id="checkbox-agree" type="checkbox" class="hidden peer" >
+              <i class="w-6 h-6 rounded-[6px] bg-white peer-checked:bg-primary flex justify-center items-center">
+                <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5306 5.03063L6.5306 13.0306C6.46092 13.1005 6.37813 13.156 6.28696 13.1939C6.1958 13.2317 6.09806 13.2512 5.99935 13.2512C5.90064 13.2512 5.8029 13.2317 5.71173 13.1939C5.62057 13.156 5.53778 13.1005 5.4681 13.0306L1.9681 9.53063C1.89833 9.46086 1.84299 9.37804 1.80524 9.28689C1.76748 9.19573 1.74805 9.09804 1.74805 8.99938C1.74805 8.90071 1.76748 8.80302 1.80524 8.71187C1.84299 8.62071 1.89833 8.53789 1.9681 8.46813C2.03786 8.39836 2.12069 8.34302 2.21184 8.30526C2.30299 8.26751 2.40069 8.24807 2.49935 8.24807C2.59801 8.24807 2.69571 8.26751 2.78686 8.30526C2.87801 8.34302 2.96083 8.39836 3.0306 8.46813L5.99997 11.4375L13.4693 3.96938C13.6102 3.82848 13.8013 3.74932 14.0006 3.74932C14.1999 3.74932 14.391 3.82848 14.5318 3.96938C14.6727 4.11027 14.7519 4.30137 14.7519 4.50063C14.7519 4.69988 14.6727 4.89098 14.5318 5.03188L14.5306 5.03063Z" fill="white" />
+                </svg>
+              </i>
+              I agree with privacy policy and use of requested data
+            </label>
+            <button class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 w-full" data-aos="fade-up"
+            data-aos-duration="2000">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="rounded-t-xl py-24 relative overflow-hidden" data-aos="fade-up"
+    data-aos-duration="1000">
+      <svg class="w-full absolute top-[-40px] left-0 hidden md:block z-[-1] " width="1920" height="312" viewBox="0 0 1920 312" fill="none" xmlns="http://www.w3.org/2000/svg" >
+        <g filter="url(#filter0_f_324_180)">
+          <ellipse cx="960" cy="19.5" rx="1240" ry="112.5" fill="#2253D0" />
+        </g>
+        <defs>
+          <filter id="filter0_f_324_180" x="-460" y="-273" width="2840" height="585" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="90" result="effect1_foregroundBlur_324_180" />
+          </filter>
+        </defs>
+      </svg>
+      <svg class="w-full absolute top-[-20px] left-0 md:hidden z-[-1]" width="320" height="270" viewBox="0 0 320 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_394_748)">
+          <ellipse cx="160" cy="75" rx="440" ry="75" fill="#2253D0" />
+        </g>
+        <defs>
+          <filter id="filter0_f_394_748" x="-400" y="-120" width="1120" height="390" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_394_748" />
+          </filter>
+        </defs>
+      </svg>
+      <svg class="w-full absolute top-0 left-0  z-[-2]" width="1280" height="438" viewBox="0 0 1280 438" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_449_3588)">
+          <ellipse cx="640" cy="66" rx="1240" ry="526" fill="#F2F2F2" />
+        </g>
+        <defs>
+          <filter id="filter0_f_449_3588" x="-790" y="-650" width="2860" height="1432" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="95" result="effect1_foregroundBlur_449_3588" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="flex flex-col gap-10 items-center md:items-start md:flex-row md:justify-between mb-6 md:mb-10">
+          <a href="/" data-aos="fade-up"
+          data-aos-duration="2000">
+            <img
+              src="./assets/images/logo.svg"
+              width="165"
+              height="35"
+              alt="Vasterra Logo"
+            />
+          </a>
+          <div class="flex flex-col md:flex-row gap-6 md:gap-12 text-center md:text-left">
+            <address class="not-italic" data-aos="fade-up"
+            data-aos-duration="2000">
+              <h6 class="text-lg font-semibold mb-6 md:mb-8">USA</h6>
+              <p>11301, West Olympic Boulevard</p>
+              <p class="mb-1">Apt. 100 Los Angeles, CA 90064</p>
+              <a href="tel:+13021234567" class="inline-block hover:text-primary cursor-pointer">+1 302 123-4567</a>
+            </address>
+            <address class="not-italic" data-aos="fade-up"
+            data-aos-duration="2000">
+              <h6 class="text-lg font-semibold mb-6 md:mb-8">USA</h6>
+              <p>6 Pike Close, Folkestone,</p>
+              <p class="mb-1">Kent, CT19 5UT4</p>
+              <a href="tel:+447828529201" class="inline-block hover:text-primary cursor-pointer">+44 78 2852-9201</a>
+            </address>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row-reverse gap-6 pt-6 md:pt-10 border-t border-t-indigo items-center justify-between" data-aos="fade-up"
+        data-aos-duration="2000">
+          <div class="flex gap-4">
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.3182 1.48889C16.1364 1.24444 15.1909 1 14.0091 1C10.4636 1 8.92727 2.83333 8.92727 6.13333L9.04545 9.55556H5.5V13.2222H9.04545V23H13.7727V13.2222H17.3182L18.5 9.55556H13.7727V7.11111C13.7727 6.01111 13.4182 4.91111 14.8364 4.91111C15.3091 4.91111 16.1364 5.03333 16.7273 5.15556L17.3182 1.48889Z" fill="#122045" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.7646 5.47448C1.23883 5.47448 0 4.36265 0 2.98862C0 1.61458 1.23883 0.5 2.7646 0.5C4.29037 0.5 5.5292 1.61454 5.5292 2.98862C5.5292 4.36269 4.29032 5.47448 2.7646 5.47448ZM17.6027 21.4836V12.9975C17.6027 12.9975 17.356 10.7275 15.2001 10.7275C13.0456 10.7275 12.6514 12.8855 12.6514 12.8855V21.4836H8.21094L8.28336 7.4658H12.579L12.5442 9.22778C12.5442 9.22778 13.4398 6.92492 16.8144 6.92492C20.1876 6.92492 21.7161 8.89997 22.0003 12.5932V21.4836H17.6027ZM0.0458984 21.5H5.50534V7.46581L0.0458984 7.50135V21.5Z" fill="#122045" />
+              </svg>
+            </a>
+          </div>
+          <p>© 2009–2024. Vasterra</p>
+        </div>
+      </div>
+    </footer>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </body>
+</html>
