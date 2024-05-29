@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 1,
     spaceBetween: 10,
     navigation: {
-      nextEl: '.swiper-metrics-button-next',
-      prevEl: '.swiper-metrics-button-prev',
+      nextEl: '.swiper-workflow-button-next',
+      prevEl: '.swiper-workflow-button-prev',
     },
     breakpoints: {
       992: {

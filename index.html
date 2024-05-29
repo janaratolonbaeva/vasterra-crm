@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/styles/media.css" />
   </head>
   <body>
-    <div class="relative">
+    <div class="relative max-w-[2500px] mx-auto overflow-hidden">
       <div class="gradient-bg absolute top-0 left-0 w-full h-full z-[-1]">
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -33,10 +33,7 @@
         </svg>
         <div class="gradients-container">
           <div class="g1"></div>
-          <div class="g2"></div>
-          <div class="g3"></div>
           <div class="g4"></div>
-          <div class="g5"></div>
         </div>
       </div>
       <header id="header" class="header py-4 w-full sticky top-0 left-0">
@@ -119,7 +116,7 @@
               warehouses, and residential real estate
             </h1>
           </div>
-          <div class="rounded-lg overflow-hidden mb-12 md:mb-20 pointer-events-none">
+          <div class="rounded-lg overflow-hidden mb-20 pointer-events-none">
             <img
               class="max-w-full"
               src="./assets/images/promo-image.png"
@@ -148,7 +145,7 @@
               </p>
             </div>
           </div>
-          <div class="flex justify-center mt-8 md:mt-0 bottom-[30vh] md:bottom-0 sticky md:static z-[10]">
+          <div class="flex justify-center bottom-[20px] md:bottom-0 sticky md:static z-[10]">
             <button
               class="justify-center items-center rounded-lg bg-primary text-white font-semibold hover:bg-[#0b3bb6] focus:bg-[#17337d] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 w-full max-w-[392px]"
             >
@@ -157,205 +154,218 @@
           </div>
         </div>
       </main>
-      <section id="why" class="pt-20 pb-10 lg:pt-36 lg:pb-14 pointer-events-none">
-        <div class="container mx-auto px-4 lg:px-8">
-          <h2 class="title text-center text-primary font-normal mb-6 md:mb12">
-            Why customize a CRM system if everything works smoothly already?
-          </h2>
-          <div class="text-center text-md md:text-lg max-w-[810px] mx-auto mb-4 md:mb-8">
-            <p class="mb-4">
-              Off-the-shelf <span class="font-semibold">CRM is a universal solution</span> that suits almost any
-              business but does not completely cover the needs of any of them.
-              <span class="font-semibold">This also applies to brokers.</span> As a result, many tasks have to be done
-              manually which requires more time and effort, which ultimately affects the company's overall performance.
+    </div>
+    <section id="why" class="pt-20 pb-10 lg:pt-36 lg:pb-14 pointer-events-none">
+      <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="title text-center text-primary font-normal mb-6 md:mb12">
+          Why customize a CRM system if everything works smoothly already?
+        </h2>
+        <div class="text-center text-md md:text-lg max-w-[810px] mx-auto mb-4 md:mb-8">
+          <p class="mb-4">
+            Off-the-shelf <span class="font-semibold">CRM is a universal solution</span> that suits almost any business
+            but does not completely cover the needs of any of them.
+            <span class="font-semibold">This also applies to brokers.</span> As a result, many tasks have to be done
+            manually which requires more time and effort, which ultimately affects the company's overall performance.
+          </p>
+          <p>Customizing CRM or developing a system from scratchhelps businesses with the following:</p>
+        </div>
+        <div class="flex flex-wrap justify-center md:justify-start">
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="62"
+                height="56"
+                src="./assets/images/graphic-icon.svg"
+                alt="Graphic icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              Strengthening client relationships and increasing profits from each of them
             </p>
-            <p>Customizing CRM or developing a system from scratchhelps businesses with the following:</p>
           </div>
-          <div class="flex flex-wrap justify-center md:justify-start">
-            <div
-              class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
-            >
-              <div class="mb-4 h-[56px]">
-                <img
-                  class="h-full w-auto"
-                  width="62"
-                  height="56"
-                  src="./assets/images/graphic-icon.svg"
-                  alt="Graphic icon"
-                />
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="75"
+                height="56"
+                src="./assets/images/pocket-icon.svg"
+                alt="Pocket icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              Saving hundreds of thousands of dollars on subscription fees for off-the-shelf solutions
+            </p>
+          </div>
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="68"
+                height="59"
+                src="./assets/images/calendar-icon.svg"
+                alt="Calendar icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              More effectively managing a larger number of clients
+            </p>
+          </div>
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="66"
+                height="56"
+                src="./assets/images/dollar-icon.svg"
+                alt="Graphic icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              Boosting revenue in the brokerage sector
+            </p>
+          </div>
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="60"
+                height="56"
+                src="./assets/images/sharing-icon.svg"
+                alt="Pocket icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              Sharing information among departments to enhance collaboration
+            </p>
+          </div>
+          <div
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+          >
+            <div class="mb-4 h-[56px]">
+              <img
+                class="h-full w-auto"
+                width="66"
+                height="56"
+                src="./assets/images/completed-icon.svg"
+                alt="Calendar icon"
+              />
+            </div>
+            <p class="text-center font-medium text-base md:text-md leading-[162%]">
+              Saving brokers' time on tasks they shouldn't do
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl">
+      <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="title text-white text-center mb-6 md:mb-12">
+          How a custom<br />CRM system helps<br />an agency's key staff
+        </h2>
+        <p class="text-center mb-6 md:mb-12">Additional modules automate the work of all departments:</p>
+        <div class="hidden lg:flex gap-6">
+          <div class="basis-1/3 rounded-lg border border-white p-10">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
+            <p class="md:text-md">
+              Spend time on developing customer relationships rather than on routine tasks, thereby closing more deals.
+            </p>
+          </div>
+          <div class="basis-1/3 rounded-lg border border-white p-10">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
+            <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
+          </div>
+          <div class="basis-1/3 rounded-lg border border-white p-10">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
+            <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
+          </div>
+        </div>
+        <div id="swiper-helps" class="swiper lg:hidden">
+          <div class="swiper-wrapper mb-6 items-stretch">
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
+                <p class="md:text-md">
+                  Spend time on developing customer relationships rather than on routine tasks, thereby closing more
+                  deals.
+                </p>
               </div>
-              <p class="text-center font-medium text-base md:text-md leading-[162%]">
-                Strengthening client relationships and increasing profits from each of them
-              </p>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
+                <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
+                <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 justify-center">
+            <div
+              class="swiper-helps-button-prev w-12 h-12 p-3 rounded-lg group border border-white flex justify-center items-center bg-white"
+            >
+              <svg class="fill-primary" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.29313 7.29324L1.29328 11.2926C1.2003 11.3855 1.12655 11.4957 1.07622 11.6171C1.0259 11.7385 1 11.8686 1 12C1 12.1314 1.0259 12.2615 1.07622 12.3829C1.12655 12.5043 1.2003 12.6145 1.29328 12.7074L5.29313 16.7068C5.43298 16.8467 5.61123 16.9421 5.80531 16.9807C5.99939 17.0194 6.20057 16.9996 6.38339 16.9238C6.5662 16.8481 6.72243 16.7198 6.8323 16.5553C6.94217 16.3907 7.00073 16.1972 7.00057 15.9994L7.00057 12.9998L22 12.9998C22.2652 12.9998 22.5196 12.8945 22.7071 12.707C22.8946 12.5195 23 12.2652 23 12C23 11.7348 22.8946 11.4805 22.7071 11.293C22.5196 11.1055 22.2652 11.0002 22 11.0002L7.00057 11.0002L7.00057 8.00063C7.00073 7.80277 6.94217 7.6093 6.8323 7.44474C6.72243 7.28017 6.5662 7.15189 6.38338 7.07615C6.20057 7.00041 5.99939 6.98061 5.80531 7.01926C5.61123 7.0579 5.43298 7.15325 5.29313 7.29324Z"
+                />
+              </svg>
             </div>
             <div
-              class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+              class="swiper-helps-button-next w-12 h-12 p-3 rounded-lg group border border-white flex justify-center items-center bg-white"
             >
-              <div class="mb-4 h-[56px]">
-                <img
-                  class="h-full w-auto"
-                  width="75"
-                  height="56"
-                  src="./assets/images/pocket-icon.svg"
-                  alt="Pocket icon"
+              <svg
+                class="fill-primary"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.7069 7.29324L22.7067 11.2926C22.7997 11.3855 22.8735 11.4957 22.9238 11.6171C22.9741 11.7385 23 11.8686 23 12C23 12.1314 22.9741 12.2615 22.9238 12.3829C22.8735 12.5043 22.7997 12.6145 22.7067 12.7074L18.7069 16.7068C18.567 16.8467 18.3888 16.9421 18.1947 16.9807C18.0006 17.0194 17.7994 16.9996 17.6166 16.9238C17.4338 16.8481 17.2776 16.7198 17.1677 16.5553C17.0578 16.3907 16.9993 16.1972 16.9994 15.9994L16.9994 12.9998L1.99996 12.9998C1.73476 12.9998 1.48041 12.8945 1.29288 12.707C1.10535 12.5195 1 12.2652 1 12C1 11.7348 1.10535 11.4805 1.29288 11.293C1.48041 11.1055 1.73476 11.0002 1.99996 11.0002L16.9994 11.0002L16.9994 8.00063C16.9993 7.80277 17.0578 7.6093 17.1677 7.44474C17.2776 7.28017 17.4338 7.15189 17.6166 7.07615C17.7994 7.00041 18.0006 6.98061 18.1947 7.01926C18.3888 7.0579 18.567 7.15325 18.7069 7.29324Z"
                 />
-              </div>
-              <p class="text-center font-medium text-base md:text-md leading-[162%]">
-                Saving hundreds of thousands of dollars on subscription fees for off-the-shelf solutions
-              </p>
-            </div>
-            <div
-              class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
-            >
-              <div class="mb-4 h-[56px]">
-                <img
-                  class="h-full w-auto"
-                  width="68"
-                  height="59"
-                  src="./assets/images/calendar-icon.svg"
-                  alt="Calendar icon"
-                />
-              </div>
-              <p class="text-center font-medium text-base md:text-md leading-[162%]">
-                More effectively managing a larger number of clients
-              </p>
-            </div>
-            <div
-              class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
-            >
-              <div class="mb-4 h-[56px]">
-                <img
-                  class="h-full w-auto"
-                  width="66"
-                  height="56"
-                  src="./assets/images/dollar-icon.svg"
-                  alt="Graphic icon"
-                />
-              </div>
-              <p class="text-center font-medium text-base md:text-md leading-[162%]">
-                Boosting revenue in the brokerage sector
-              </p>
-            </div>
-            <div
-              class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
-            >
-              <div class="mb-4 h-[56px]">
-                <img
-                  class="h-full w-auto"
-                  width="60"
-                  height="56"
-                  src="./assets/images/sharing-icon.svg"
-                  alt="Pocket icon"
-                />
-              </div>
-              <p class="text-center font-medium text-base md:text-md leading-[162%]">
-                Sharing information among departments to enhance collaboration
-              </p>
-            </div>
-            <div
-              class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
-            >
-              <div class="mb-4 h-[56px]">
-                <img
-                  class="h-full w-auto"
-                  width="66"
-                  height="56"
-                  src="./assets/images/completed-icon.svg"
-                  alt="Calendar icon"
-                />
-              </div>
-              <p class="text-center font-medium text-base md:text-md leading-[162%]">
-                Saving brokers' time on tasks they shouldn't do
-              </p>
+              </svg>
             </div>
           </div>
         </div>
-      </section>
-      <section class="bg-primary py-20 lg:py-32 text-white rounded-xl">
-        <div class="container mx-auto px-4 lg:px-8">
-          <h2 class="title text-white text-center mb-6 md:mb-12">
-            How a custom<br />CRM system helps<br />an agency's key staff
-          </h2>
-          <p class="text-center mb-6 md:mb-12">Additional modules automate the work of all departments:</p>
-          <div class="hidden lg:flex gap-6">
-            <div class="basis-1/3 rounded-lg border border-white p-10">
-              <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
-              <p class="md:text-md">
-                Spend time on developing customer relationships rather than on routine tasks, thereby closing more
-                deals.
-              </p>
-            </div>
-            <div class="basis-1/3 rounded-lg border border-white p-10">
-              <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
-              <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
-            </div>
-            <div class="basis-1/3 rounded-lg border border-white p-10">
-              <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
-              <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
-            </div>
-          </div>
-          <div id="swiper-helps" class="swiper lg:hidden">
-            <div class="swiper-wrapper mb-6 items-stretch">
-              <div class="swiper-slide h-auto">
-                <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
-                  <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
-                  <p class="md:text-md">
-                    Spend time on developing customer relationships rather than on routine tasks, thereby closing more
-                    deals.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide h-auto">
-                <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
-                  <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
-                  <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
-                </div>
-              </div>
-              <div class="swiper-slide h-auto">
-                <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
-                  <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
-                  <p class="md:text-md">
-                    Transparently track key performance indicators of each departmentin real-time.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex gap-4 justify-center">
-              <div
-                class="swiper-helps-button-prev w-12 h-12 p-3 rounded-lg group bg-transparent border border-gray flex justify-center items-center hover:bg-white focus:bg-white"
-              >
-                <svg
-                  class="fill-white group-hover:fill-primary group-focus:fill-primary"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.29313 7.29324L1.29328 11.2926C1.2003 11.3855 1.12655 11.4957 1.07622 11.6171C1.0259 11.7385 1 11.8686 1 12C1 12.1314 1.0259 12.2615 1.07622 12.3829C1.12655 12.5043 1.2003 12.6145 1.29328 12.7074L5.29313 16.7068C5.43298 16.8467 5.61123 16.9421 5.80531 16.9807C5.99939 17.0194 6.20057 16.9996 6.38339 16.9238C6.5662 16.8481 6.72243 16.7198 6.8323 16.5553C6.94217 16.3907 7.00073 16.1972 7.00057 15.9994L7.00057 12.9998L22 12.9998C22.2652 12.9998 22.5196 12.8945 22.7071 12.707C22.8946 12.5195 23 12.2652 23 12C23 11.7348 22.8946 11.4805 22.7071 11.293C22.5196 11.1055 22.2652 11.0002 22 11.0002L7.00057 11.0002L7.00057 8.00063C7.00073 7.80277 6.94217 7.6093 6.8323 7.44474C6.72243 7.28017 6.5662 7.15189 6.38338 7.07615C6.20057 7.00041 5.99939 6.98061 5.80531 7.01926C5.61123 7.0579 5.43298 7.15325 5.29313 7.29324Z"
-                  />
-                </svg>
-              </div>
-              <div
-                class="swiper-helps-button-next w-12 h-12 p-3 rounded-lg group bg-transparent border border-gray flex justify-center items-center hover:bg-white focus:bg-white"
-              >
-                <svg
-                  class="fill-white group-hover:fill-primary group-focus:fill-primary"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18.7069 7.29324L22.7067 11.2926C22.7997 11.3855 22.8735 11.4957 22.9238 11.6171C22.9741 11.7385 23 11.8686 23 12C23 12.1314 22.9741 12.2615 22.9238 12.3829C22.8735 12.5043 22.7997 12.6145 22.7067 12.7074L18.7069 16.7068C18.567 16.8467 18.3888 16.9421 18.1947 16.9807C18.0006 17.0194 17.7994 16.9996 17.6166 16.9238C17.4338 16.8481 17.2776 16.7198 17.1677 16.5553C17.0578 16.3907 16.9993 16.1972 16.9994 15.9994L16.9994 12.9998L1.99996 12.9998C1.73476 12.9998 1.48041 12.8945 1.29288 12.707C1.10535 12.5195 1 12.2652 1 12C1 11.7348 1.10535 11.4805 1.29288 11.293C1.48041 11.1055 1.73476 11.0002 1.99996 11.0002L16.9994 11.0002L16.9994 8.00063C16.9993 7.80277 17.0578 7.6093 17.1677 7.44474C17.2776 7.28017 17.4338 7.15189 17.6166 7.07615C17.7994 7.00041 18.0006 6.98061 18.1947 7.01926C18.3888 7.0579 18.567 7.15325 18.7069 7.29324Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
+      </div>
+    </section>
+    <div class="relative max-w-[2500px] mx-auto overflow-hidden">
+      <div class="gradient-bg absolute top-0 left-0 w-full h-full z-[-1]">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                result="goo"
+              />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gradients-container">
+          <div class="g2"></div>
+          <div class="g4"></div>
         </div>
-      </section>
+      </div>
       <section id="modules" class="pt-20 lg:pt-32">
         <div class="container mx-auto px-4 lg:px-8">
           <h2 class="title text-primary text-center mb-6 md:mb-12">
@@ -928,103 +938,114 @@
           </div>
         </div>
       </section>
-      <section class="bg-primary py-20 lg:py-32 text-white rounded-xl">
-        <div class="container mx-auto px-4 lg:px-8">
-          <h2 class="title text-center mb-10 md:mb-12">
-            How we help <br class="hidden sm:inline" />companies boost key <br class="hidden sm:inline" />business
-            metrics
-          </h2>
-          <p class="text-center mb-8 md:mb-12">
-            Vasterra collaborates with several major players in the market, including Colliers.
-            <br />We customized their CRM system and optimized key processes. <br />This has helped achieve many
-            impressive results:
-          </p>
-          <div class="flex justify-center mb-8 md:mb-12 mt-8 md:mt-0 bottom-[30vh] md:bottom-0 sticky md:static z-[10]">
-            <a
-              href="https://vasterra.com/colliers"
-              class="w-full max-w-[392px] py-3 px-6 text-center bg-white text-primary text-base md:text-md rounded-lg font-semibold focus:bg-[#17337d] focus:text-white disabled:bg-gray disabled:text-dark_gray"
-              >Dive into the case</a
+    </div>
+    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl">
+      <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="title text-center mb-10 md:mb-12">
+          How we help <br class="hidden sm:inline" />companies boost key <br class="hidden sm:inline" />business metrics
+        </h2>
+        <p class="text-center mb-8 md:mb-12">
+          Vasterra collaborates with several major players in the market, including Colliers.
+          <br />We customized their CRM system and optimized key processes. <br />This has helped achieve many
+          impressive results:
+        </p>
+        <div class="flex justify-center mb-8 md:mb-12 bottom-[20px] md:bottom-0 sticky md:static z-[10]">
+          <a
+            href="https://vasterra.com/colliers"
+            class="w-full max-w-[392px] py-3 px-6 text-center bg-white text-primary text-base md:text-md rounded-lg font-semibold focus:bg-[#17337d] focus:text-white disabled:bg-gray disabled:text-dark_gray"
+            >Dive into the case</a
+          >
+        </div>
+        <div class="hidden lg:flex gap-6">
+          <div class="basis-1/3 rounded-lg border border-white p-10">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
+            <p class="md:text-md">
+              Spend time on developing customer relationships rather than on routine tasks, thereby closing more deals.
+            </p>
+          </div>
+          <div class="basis-1/3 rounded-lg border border-white p-10">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
+            <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
+          </div>
+          <div class="basis-1/3 rounded-lg border border-white p-10">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
+            <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
+          </div>
+        </div>
+        <div id="swiper-metrics" class="swiper lg:hidden">
+          <div class="lg:hidden swiper-wrapper mb-6 items-stretch">
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
+                <p class="md:text-md">
+                  Spend time on developing customer relationships rather than on routine tasks, thereby closing more
+                  deals.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
+                <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto">
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
+                <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
+                <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 justify-center">
+            <div
+              class="swiper-metrics-button-prev w-12 h-12 p-3 rounded-lg group flex justify-center items-center bg-white border border-white"
             >
-          </div>
-          <div class="hidden lg:flex gap-6">
-            <div class="basis-1/3 rounded-lg border border-white p-10">
-              <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
-              <p class="md:text-md">
-                Spend time on developing customer relationships rather than on routine tasks, thereby closing more
-                deals.
-              </p>
+              <svg class="fill-primary" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.29313 7.29324L1.29328 11.2926C1.2003 11.3855 1.12655 11.4957 1.07622 11.6171C1.0259 11.7385 1 11.8686 1 12C1 12.1314 1.0259 12.2615 1.07622 12.3829C1.12655 12.5043 1.2003 12.6145 1.29328 12.7074L5.29313 16.7068C5.43298 16.8467 5.61123 16.9421 5.80531 16.9807C5.99939 17.0194 6.20057 16.9996 6.38339 16.9238C6.5662 16.8481 6.72243 16.7198 6.8323 16.5553C6.94217 16.3907 7.00073 16.1972 7.00057 15.9994L7.00057 12.9998L22 12.9998C22.2652 12.9998 22.5196 12.8945 22.7071 12.707C22.8946 12.5195 23 12.2652 23 12C23 11.7348 22.8946 11.4805 22.7071 11.293C22.5196 11.1055 22.2652 11.0002 22 11.0002L7.00057 11.0002L7.00057 8.00063C7.00073 7.80277 6.94217 7.6093 6.8323 7.44474C6.72243 7.28017 6.5662 7.15189 6.38338 7.07615C6.20057 7.00041 5.99939 6.98061 5.80531 7.01926C5.61123 7.0579 5.43298 7.15325 5.29313 7.29324Z"
+                />
+              </svg>
             </div>
-            <div class="basis-1/3 rounded-lg border border-white p-10">
-              <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
-              <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
-            </div>
-            <div class="basis-1/3 rounded-lg border border-white p-10">
-              <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
-              <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
-            </div>
-          </div>
-          <div id="swiper-metrics" class="swiper lg:hidden">
-            <div class="lg:hidden swiper-wrapper mb-6 items-stretch">
-              <div class="swiper-slide h-auto">
-                <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
-                  <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
-                  <p class="md:text-md">
-                    Spend time on developing customer relationships rather than on routine tasks, thereby closing more
-                    deals.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide h-auto">
-                <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
-                  <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
-                  <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
-                </div>
-              </div>
-              <div class="swiper-slide h-auto">
-                <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
-                  <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
-                  <p class="md:text-md">
-                    Transparently track key performance indicators of each departmentin real-time.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex gap-4 justify-center">
-              <div
-                class="swiper-metrics-button-prev w-12 h-12 p-3 rounded-lg group bg-transparent border border-gray flex justify-center items-center hover:bg-white focus:bg-white"
+            <div
+              class="swiper-metrics-button-next w-12 h-12 p-3 rounded-lg group flex justify-center items-center bg-white border border-white"
+            >
+              <svg
+                class="fill-primary"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  class="fill-white group-hover:fill-primary group-focus:fill-primary"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.29313 7.29324L1.29328 11.2926C1.2003 11.3855 1.12655 11.4957 1.07622 11.6171C1.0259 11.7385 1 11.8686 1 12C1 12.1314 1.0259 12.2615 1.07622 12.3829C1.12655 12.5043 1.2003 12.6145 1.29328 12.7074L5.29313 16.7068C5.43298 16.8467 5.61123 16.9421 5.80531 16.9807C5.99939 17.0194 6.20057 16.9996 6.38339 16.9238C6.5662 16.8481 6.72243 16.7198 6.8323 16.5553C6.94217 16.3907 7.00073 16.1972 7.00057 15.9994L7.00057 12.9998L22 12.9998C22.2652 12.9998 22.5196 12.8945 22.7071 12.707C22.8946 12.5195 23 12.2652 23 12C23 11.7348 22.8946 11.4805 22.7071 11.293C22.5196 11.1055 22.2652 11.0002 22 11.0002L7.00057 11.0002L7.00057 8.00063C7.00073 7.80277 6.94217 7.6093 6.8323 7.44474C6.72243 7.28017 6.5662 7.15189 6.38338 7.07615C6.20057 7.00041 5.99939 6.98061 5.80531 7.01926C5.61123 7.0579 5.43298 7.15325 5.29313 7.29324Z"
-                  />
-                </svg>
-              </div>
-              <div
-                class="swiper-metrics-button-next w-12 h-12 p-3 rounded-lg group bg-transparent border border-gray flex justify-center items-center hover:bg-white focus:bg-white"
-              >
-                <svg
-                  class="fill-white group-hover:fill-primary group-focus:fill-primary"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18.7069 7.29324L22.7067 11.2926C22.7997 11.3855 22.8735 11.4957 22.9238 11.6171C22.9741 11.7385 23 11.8686 23 12C23 12.1314 22.9741 12.2615 22.9238 12.3829C22.8735 12.5043 22.7997 12.6145 22.7067 12.7074L18.7069 16.7068C18.567 16.8467 18.3888 16.9421 18.1947 16.9807C18.0006 17.0194 17.7994 16.9996 17.6166 16.9238C17.4338 16.8481 17.2776 16.7198 17.1677 16.5553C17.0578 16.3907 16.9993 16.1972 16.9994 15.9994L16.9994 12.9998L1.99996 12.9998C1.73476 12.9998 1.48041 12.8945 1.29288 12.707C1.10535 12.5195 1 12.2652 1 12C1 11.7348 1.10535 11.4805 1.29288 11.293C1.48041 11.1055 1.73476 11.0002 1.99996 11.0002L16.9994 11.0002L16.9994 8.00063C16.9993 7.80277 17.0578 7.6093 17.1677 7.44474C17.2776 7.28017 17.4338 7.15189 17.6166 7.07615C17.7994 7.00041 18.0006 6.98061 18.1947 7.01926C18.3888 7.0579 18.567 7.15325 18.7069 7.29324Z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M18.7069 7.29324L22.7067 11.2926C22.7997 11.3855 22.8735 11.4957 22.9238 11.6171C22.9741 11.7385 23 11.8686 23 12C23 12.1314 22.9741 12.2615 22.9238 12.3829C22.8735 12.5043 22.7997 12.6145 22.7067 12.7074L18.7069 16.7068C18.567 16.8467 18.3888 16.9421 18.1947 16.9807C18.0006 17.0194 17.7994 16.9996 17.6166 16.9238C17.4338 16.8481 17.2776 16.7198 17.1677 16.5553C17.0578 16.3907 16.9993 16.1972 16.9994 15.9994L16.9994 12.9998L1.99996 12.9998C1.73476 12.9998 1.48041 12.8945 1.29288 12.707C1.10535 12.5195 1 12.2652 1 12C1 11.7348 1.10535 11.4805 1.29288 11.293C1.48041 11.1055 1.73476 11.0002 1.99996 11.0002L16.9994 11.0002L16.9994 8.00063C16.9993 7.80277 17.0578 7.6093 17.1677 7.44474C17.2776 7.28017 17.4338 7.15189 17.6166 7.07615C17.7994 7.00041 18.0006 6.98061 18.1947 7.01926C18.3888 7.0579 18.567 7.15325 18.7069 7.29324Z"
+                />
+              </svg>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <div class="relative max-w-[2500px] mx-auto overflow-hidden">
+      <div class="gradient-bg absolute top-0 left-0 w-full h-full z-[-1]">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                result="goo"
+              />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gradients-container">
+          <div class="g3"></div>
+        </div>
+      </div>
       <section class="py-20 lg:py-32">
         <div class="container mx-auto px-4 lg:px-8">
           <div class="flex items-center flex-col gap-10 text-center">
@@ -1139,25 +1160,19 @@
             </div>
             <div class="flex gap-4 justify-center xl:hidden">
               <div
-                class="swiper-metrics-button-prev w-12 h-12 p-3 rounded-lg group bg-gray border border-gray flex justify-center items-center hover:bg-primary focus:bg-primary hover:border-primary focus:border-primary"
+                class="swiper-workflow-button-prev w-12 h-12 p-3 rounded-lg group flex justify-center items-center bg-primary"
               >
-                <svg
-                  class="fill-[#A1A7B8] group-hover:fill-white group-focus:fill-white"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg class="fill-white" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M5.29313 7.29324L1.29328 11.2926C1.2003 11.3855 1.12655 11.4957 1.07622 11.6171C1.0259 11.7385 1 11.8686 1 12C1 12.1314 1.0259 12.2615 1.07622 12.3829C1.12655 12.5043 1.2003 12.6145 1.29328 12.7074L5.29313 16.7068C5.43298 16.8467 5.61123 16.9421 5.80531 16.9807C5.99939 17.0194 6.20057 16.9996 6.38339 16.9238C6.5662 16.8481 6.72243 16.7198 6.8323 16.5553C6.94217 16.3907 7.00073 16.1972 7.00057 15.9994L7.00057 12.9998L22 12.9998C22.2652 12.9998 22.5196 12.8945 22.7071 12.707C22.8946 12.5195 23 12.2652 23 12C23 11.7348 22.8946 11.4805 22.7071 11.293C22.5196 11.1055 22.2652 11.0002 22 11.0002L7.00057 11.0002L7.00057 8.00063C7.00073 7.80277 6.94217 7.6093 6.8323 7.44474C6.72243 7.28017 6.5662 7.15189 6.38338 7.07615C6.20057 7.00041 5.99939 6.98061 5.80531 7.01926C5.61123 7.0579 5.43298 7.15325 5.29313 7.29324Z"
                   />
                 </svg>
               </div>
               <div
-                class="swiper-metrics-button-next w-12 h-12 p-3 rounded-lg group bg-gray border border-gray flex justify-center items-center hover:bg-primary focus:bg-primary hover:border-primary focus:border-primary"
+                class="swiper-workflow-button-next w-12 h-12 p-3 rounded-lg group flex justify-center items-center bg-primary"
               >
                 <svg
-                  class="fill-[#A1A7B8] group-hover:fill-white group-focus:fill-white"
+                  class="fill-white"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -1173,195 +1188,196 @@
           </div>
         </div>
       </section>
-      <section id="form-sendler" class="py-20 lg:py-32">
-        <div class="container mx-auto px-4 lg:px-8">
-          <h2 class="title text-primary text-center mb-6 md:mb-12">Want to boost <br />your CRM system?</h2>
-          <p class="text-center text-md md:text-lg mb-6 md:mb-12">
-            Write to us and we will help you realize all your needs.
-          </p>
-          <div class="max-w-[600px] mx-auto">
-            <form>
-              <label class="mb-6 block">
-                <input
-                  class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
-                  type="text"
-                  placeholder="Name"
-                  required
-                />
-                <p class="font-normal text-danger hidden">Required field</p>
-              </label>
-              <label class="mb-6 block">
-                <input
-                  class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
-                  type="email"
-                  placeholder="E-mail"
-                  required
-                />
-                <p class="font-normal text-danger hidden">Required field</p>
-              </label>
-              <label class="mb-6 block">
-                <textarea
-                  class="py-4 px-6 rounded-[28px] bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
-                  placeholder="Message"
-                  rows="3"
-                ></textarea>
-                <p class="font-normal text-danger hidden">Required field</p>
-              </label>
-              <label for="checkbox-agree" class="peer group flex gap-2 items-center cursor-pointer mb-10">
-                <input id="checkbox-agree" type="checkbox" class="hidden peer" />
-                <i
-                  class="w-6 h-6 border border-white rounded-[6px] bg-white peer-checked:bg-primary flex justify-center items-center group-hover:border-primary"
-                >
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M14.5306 5.03063L6.5306 13.0306C6.46092 13.1005 6.37813 13.156 6.28696 13.1939C6.1958 13.2317 6.09806 13.2512 5.99935 13.2512C5.90064 13.2512 5.8029 13.2317 5.71173 13.1939C5.62057 13.156 5.53778 13.1005 5.4681 13.0306L1.9681 9.53063C1.89833 9.46086 1.84299 9.37804 1.80524 9.28689C1.76748 9.19573 1.74805 9.09804 1.74805 8.99938C1.74805 8.90071 1.76748 8.80302 1.80524 8.71187C1.84299 8.62071 1.89833 8.53789 1.9681 8.46813C2.03786 8.39836 2.12069 8.34302 2.21184 8.30526C2.30299 8.26751 2.40069 8.24807 2.49935 8.24807C2.59801 8.24807 2.69571 8.26751 2.78686 8.30526C2.87801 8.34302 2.96083 8.39836 3.0306 8.46813L5.99997 11.4375L13.4693 3.96938C13.6102 3.82848 13.8013 3.74932 14.0006 3.74932C14.1999 3.74932 14.391 3.82848 14.5318 3.96938C14.6727 4.11027 14.7519 4.30137 14.7519 4.50063C14.7519 4.69988 14.6727 4.89098 14.5318 5.03188L14.5306 5.03063Z"
-                      fill="white"
-                    />
-                  </svg>
-                </i>
-                <span class="group-hover:text-primary peer-checked:text-primary text-dark_gray font-normal"
-                  >I agree with privacy policy and use of requested data</span
-                >
-              </label>
-              <button
-                class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 w-full mt-8 md:mt-0 bottom-[30vh] md:bottom-0 sticky md:static z-[10]"
-              >
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <footer class="rounded-t-xl py-24 relative overflow-hidden">
-        <svg
-          class="w-full absolute top-[-40px] left-0 hidden md:block z-[-1]"
-          width="1920"
-          height="312"
-          viewBox="0 0 1920 312"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g filter="url(#filter0_f_324_180)">
-            <ellipse cx="960" cy="19.5" rx="1240" ry="112.5" fill="#2253D0" />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_324_180"
-              x="-460"
-              y="-273"
-              width="2840"
-              height="585"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="90" result="effect1_foregroundBlur_324_180" />
-            </filter>
-          </defs>
-        </svg>
-        <svg
-          class="w-full absolute top-[-20px] left-0 md:hidden z-[-1]"
-          width="320"
-          height="270"
-          viewBox="0 0 320 270"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g filter="url(#filter0_f_394_748)">
-            <ellipse cx="160" cy="75" rx="440" ry="75" fill="#2253D0" />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_394_748"
-              x="-400"
-              y="-120"
-              width="1120"
-              height="390"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_394_748" />
-            </filter>
-          </defs>
-        </svg>
-        <svg
-          class="w-full absolute top-0 left-0 z-[-2]"
-          width="1280"
-          height="438"
-          viewBox="0 0 1280 438"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g filter="url(#filter0_f_449_3588)">
-            <ellipse cx="640" cy="66" rx="1240" ry="526" fill="#F2F2F2" />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_449_3588"
-              x="-790"
-              y="-650"
-              width="2860"
-              height="1432"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="95" result="effect1_foregroundBlur_449_3588" />
-            </filter>
-          </defs>
-        </svg>
-        <div class="container mx-auto px-4 lg:px-8">
-          <div class="flex flex-col gap-10 items-center md:items-start md:flex-row md:justify-between mb-6 md:mb-10">
-            <a href="/">
-              <img src="./assets/images/logo.svg" width="165" height="35" alt="Vasterra Logo" />
-            </a>
-            <div class="flex flex-col md:flex-row gap-6 md:gap-12 text-center md:text-left">
-              <address class="not-italic">
-                <h6 class="text-lg font-semibold mb-6 md:mb-8">USA</h6>
-                <p>11301, West Olympic Boulevard</p>
-                <p class="mb-1">Apt. 100 Los Angeles, CA 90064</p>
-                <a href="tel:+13021234567" class="inline-block hover:text-primary cursor-pointer">+1 302 123-4567</a>
-              </address>
-              <address class="not-italic">
-                <h6 class="text-lg font-semibold mb-6 md:mb-8">USA</h6>
-                <p>6 Pike Close, Folkestone,</p>
-                <p class="mb-1">Kent, CT19 5UT4</p>
-                <a href="tel:+447828529201" class="inline-block hover:text-primary cursor-pointer">+44 78 2852-9201</a>
-              </address>
-            </div>
-          </div>
-          <div
-            class="flex flex-col sm:flex-row-reverse gap-6 pt-6 md:pt-10 border-t border-t-indigo items-center justify-between"
-          >
-            <div class="flex gap-4">
-              <a href="#">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.3182 1.48889C16.1364 1.24444 15.1909 1 14.0091 1C10.4636 1 8.92727 2.83333 8.92727 6.13333L9.04545 9.55556H5.5V13.2222H9.04545V23H13.7727V13.2222H17.3182L18.5 9.55556H13.7727V7.11111C13.7727 6.01111 13.4182 4.91111 14.8364 4.91111C15.3091 4.91111 16.1364 5.03333 16.7273 5.15556L17.3182 1.48889Z"
-                    fill="#122045"
-                  />
-                </svg>
-              </a>
-              <a href="#">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M2.7646 5.47448C1.23883 5.47448 0 4.36265 0 2.98862C0 1.61458 1.23883 0.5 2.7646 0.5C4.29037 0.5 5.5292 1.61454 5.5292 2.98862C5.5292 4.36269 4.29032 5.47448 2.7646 5.47448ZM17.6027 21.4836V12.9975C17.6027 12.9975 17.356 10.7275 15.2001 10.7275C13.0456 10.7275 12.6514 12.8855 12.6514 12.8855V21.4836H8.21094L8.28336 7.4658H12.579L12.5442 9.22778C12.5442 9.22778 13.4398 6.92492 16.8144 6.92492C20.1876 6.92492 21.7161 8.89997 22.0003 12.5932V21.4836H17.6027ZM0.0458984 21.5H5.50534V7.46581L0.0458984 7.50135V21.5Z"
-                    fill="#122045"
-                  />
-                </svg>
-              </a>
-            </div>
-            <p>© 2009–2024. Vasterra</p>
-          </div>
-        </div>
-      </footer>
     </div>
+    <section id="form-sendler" class="py-20 lg:py-32">
+      <div class="container mx-auto px-4 lg:px-8">
+        <h2 class="title text-primary text-center mb-6 md:mb-12">Want to boost <br />your CRM system?</h2>
+        <p class="text-center text-md md:text-lg mb-6 md:mb-12">
+          Write to us and we will help you realize all your needs.
+        </p>
+        <div class="max-w-[600px] mx-auto">
+          <form>
+            <label class="mb-6 block">
+              <input
+                class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
+                type="text"
+                placeholder="Name"
+                required
+              />
+              <p class="font-normal text-danger hidden">Required field</p>
+            </label>
+            <label class="mb-6 block">
+              <input
+                class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
+                type="email"
+                placeholder="E-mail"
+                required
+              />
+              <p class="font-normal text-danger hidden">Required field</p>
+            </label>
+            <label class="mb-6 block">
+              <textarea
+                class="py-4 px-6 rounded-[28px] bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
+                placeholder="Message"
+                rows="3"
+              ></textarea>
+              <p class="font-normal text-danger hidden">Required field</p>
+            </label>
+            <label for="checkbox-agree" class="peer group flex gap-2 items-center cursor-pointer mb-10">
+              <input id="checkbox-agree" type="checkbox" class="hidden peer" />
+              <i
+                class="w-6 h-6 border border-white rounded-[6px] bg-white peer-checked:bg-primary flex justify-center items-center group-hover:border-primary"
+              >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.5306 5.03063L6.5306 13.0306C6.46092 13.1005 6.37813 13.156 6.28696 13.1939C6.1958 13.2317 6.09806 13.2512 5.99935 13.2512C5.90064 13.2512 5.8029 13.2317 5.71173 13.1939C5.62057 13.156 5.53778 13.1005 5.4681 13.0306L1.9681 9.53063C1.89833 9.46086 1.84299 9.37804 1.80524 9.28689C1.76748 9.19573 1.74805 9.09804 1.74805 8.99938C1.74805 8.90071 1.76748 8.80302 1.80524 8.71187C1.84299 8.62071 1.89833 8.53789 1.9681 8.46813C2.03786 8.39836 2.12069 8.34302 2.21184 8.30526C2.30299 8.26751 2.40069 8.24807 2.49935 8.24807C2.59801 8.24807 2.69571 8.26751 2.78686 8.30526C2.87801 8.34302 2.96083 8.39836 3.0306 8.46813L5.99997 11.4375L13.4693 3.96938C13.6102 3.82848 13.8013 3.74932 14.0006 3.74932C14.1999 3.74932 14.391 3.82848 14.5318 3.96938C14.6727 4.11027 14.7519 4.30137 14.7519 4.50063C14.7519 4.69988 14.6727 4.89098 14.5318 5.03188L14.5306 5.03063Z"
+                    fill="white"
+                  />
+                </svg>
+              </i>
+              <span class="group-hover:text-primary peer-checked:text-primary text-dark_gray font-normal"
+                >I agree with privacy policy and use of requested data</span
+              >
+            </label>
+            <button
+              class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 w-full"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="rounded-t-xl py-24 relative overflow-hidden">
+      <svg
+        class="w-full absolute top-[-40px] left-0 hidden md:block z-[-1]"
+        width="1920"
+        height="312"
+        viewBox="0 0 1920 312"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_f_324_180)">
+          <ellipse cx="960" cy="19.5" rx="1240" ry="112.5" fill="#2253D0" />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_324_180"
+            x="-460"
+            y="-273"
+            width="2840"
+            height="585"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="90" result="effect1_foregroundBlur_324_180" />
+          </filter>
+        </defs>
+      </svg>
+      <svg
+        class="w-full absolute top-[-20px] left-0 md:hidden z-[-1]"
+        width="320"
+        height="270"
+        viewBox="0 0 320 270"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_f_394_748)">
+          <ellipse cx="160" cy="75" rx="440" ry="75" fill="#2253D0" />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_394_748"
+            x="-400"
+            y="-120"
+            width="1120"
+            height="390"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_394_748" />
+          </filter>
+        </defs>
+      </svg>
+      <svg
+        class="w-full absolute top-0 left-0 z-[-2]"
+        width="1280"
+        height="438"
+        viewBox="0 0 1280 438"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_f_449_3588)">
+          <ellipse cx="640" cy="66" rx="1240" ry="526" fill="#F2F2F2" />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_449_3588"
+            x="-790"
+            y="-650"
+            width="2860"
+            height="1432"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="95" result="effect1_foregroundBlur_449_3588" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="flex flex-col gap-10 items-center md:items-start md:flex-row md:justify-between mb-6 md:mb-10">
+          <a href="/">
+            <img src="./assets/images/logo.svg" width="165" height="35" alt="Vasterra Logo" />
+          </a>
+          <div class="flex flex-col md:flex-row gap-6 md:gap-12 text-center md:text-left">
+            <address class="not-italic">
+              <h6 class="text-lg font-semibold mb-6 md:mb-8">USA</h6>
+              <p>11301, West Olympic Boulevard</p>
+              <p class="mb-1">Apt. 100 Los Angeles, CA 90064</p>
+              <a href="tel:+13021234567" class="inline-block hover:text-primary cursor-pointer">+1 302 123-4567</a>
+            </address>
+            <address class="not-italic">
+              <h6 class="text-lg font-semibold mb-6 md:mb-8">USA</h6>
+              <p>6 Pike Close, Folkestone,</p>
+              <p class="mb-1">Kent, CT19 5UT4</p>
+              <a href="tel:+447828529201" class="inline-block hover:text-primary cursor-pointer">+44 78 2852-9201</a>
+            </address>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row-reverse gap-6 pt-6 md:pt-10 border-t border-t-indigo items-center justify-between"
+        >
+          <div class="flex gap-4">
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.3182 1.48889C16.1364 1.24444 15.1909 1 14.0091 1C10.4636 1 8.92727 2.83333 8.92727 6.13333L9.04545 9.55556H5.5V13.2222H9.04545V23H13.7727V13.2222H17.3182L18.5 9.55556H13.7727V7.11111C13.7727 6.01111 13.4182 4.91111 14.8364 4.91111C15.3091 4.91111 16.1364 5.03333 16.7273 5.15556L17.3182 1.48889Z"
+                  fill="#122045"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.7646 5.47448C1.23883 5.47448 0 4.36265 0 2.98862C0 1.61458 1.23883 0.5 2.7646 0.5C4.29037 0.5 5.5292 1.61454 5.5292 2.98862C5.5292 4.36269 4.29032 5.47448 2.7646 5.47448ZM17.6027 21.4836V12.9975C17.6027 12.9975 17.356 10.7275 15.2001 10.7275C13.0456 10.7275 12.6514 12.8855 12.6514 12.8855V21.4836H8.21094L8.28336 7.4658H12.579L12.5442 9.22778C12.5442 9.22778 13.4398 6.92492 16.8144 6.92492C20.1876 6.92492 21.7161 8.89997 22.0003 12.5932V21.4836H17.6027ZM0.0458984 21.5H5.50534V7.46581L0.0458984 7.50135V21.5Z"
+                  fill="#122045"
+                />
+              </svg>
+            </a>
+          </div>
+          <p>© 2009–2024. Vasterra</p>
+        </div>
+      </div>
+    </footer>
+
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="./assets/js/script.js"></script>

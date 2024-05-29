@@ -14,13 +14,13 @@
   --transition: all 0.35s ease;
   --color-bg1: rgb(108, 0, 162);
   --color-bg2: rgb(0, 17, 82);
-  --color1: 41, 100, 250;
+  --color1: 34, 83, 208;
   --color2: 38, 91, 229;
-  --color3: 41, 100, 250;
+  --color3: 63, 59, 255;
   --color4: 44, 110, 271;
   --color5: 47, 119, 292;
   --color-interactive: 41, 100, 250;
-  --circle-size: 1000px;
+  --circle-size: 50%;
   --blending: hard-light;
 }
 
@@ -84,12 +84,32 @@ body {
   z-index: 50;
 }
 
+.swiper-workflow-button-prev.swiper-button-disabled,
+.swiper-workflow-button-next.swiper-button-disabled {
+  background: var(--secondary-gray);
+  cursor: not-allowed;
+}
+
+.swiper-workflow-button-prev.swiper-button-disabled svg,
+.swiper-workflow-button-next.swiper-button-disabled svg {
+  fill: var(--secondary-dark-gray);
+}
+
 .swiper-helps-button-prev.swiper-button-disabled,
 .swiper-helps-button-next.swiper-button-disabled,
 .swiper-metrics-button-prev.swiper-button-disabled,
-.swiper-metrics-button-next.swiper-button-disabled {
-  opacity: 0.5;
+.swiper-metrics-button-next.swiper-button-disabled
+ {
+  border-color: #fff;
+  background: transparent;
   cursor: not-allowed;
+}
+
+.swiper-helps-button-prev.swiper-button-disabled svg,
+.swiper-helps-button-next.swiper-button-disabled svg,
+.swiper-metrics-button-prev.swiper-button-disabled svg,
+.swiper-metrics-button-next.swiper-button-disabled svg {
+  fill: #fff;
 }
 
 ::-webkit-input-placeholder {
@@ -152,35 +172,33 @@ textarea:focus:-moz-placeholde {
   }
 }
 
-@keyframes moveVertical {
+@keyframes moveVerticalLeft {
   0% {
-    transform: translateY(-50%);
+    transform: translateX(-25%) translateY(-10%);
   }
   50% {
-    transform: translateY(50%);
+    transform: translateX(-15%) translateY(10%);
   }
   100% {
-    transform: translateY(-50%);
+    transform: translateX(-25%) translateY(-10%);
   }
 }
 
-@keyframes moveHorizontal {
+@keyframes moveVerticalRight {
   0% {
-    transform: translateX(-50%) translateY(-10%);
+    transform: translateX(-15%) translateY(-10%);
   }
   50% {
-    transform: translateX(50%) translateY(10%);
+    transform: translateX(15%) translateY(10%);
   }
   100% {
-    transform: translateX(-50%) translateY(-10%);
+    transform: translateX(-15%) translateY(-10%);
   }
 }
 
 .gradient-bg {
   width: 100vw;
   height: 100vh;
-  position: relative;
-  overflow: hidden;
   background: var(--background-bg);
   top: 0;
   left: 0;
@@ -196,34 +214,34 @@ textarea:focus:-moz-placeholde {
 
 .g1 {
   position: absolute;
-  background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+  background: radial-gradient(circle at center, rgba(var(--color1), 1) 0, rgba(var(--color1), 0) 50%) no-repeat;
   mix-blend-mode: var(--blending);
 
   width: var(--circle-size);
   height: var(--circle-size);
   top: calc(10% - var(--circle-size) / 2);
-  left: calc(10% - var(--circle-size) / 2);
+  left: calc(20% - var(--circle-size) / 2);
 
   transform-origin: center center;
-  animation: moveVertical 30s ease infinite;
+  animation: moveVerticalLeft 30s ease infinite;
 
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .g2 {
   position: absolute;
-  background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+  background: radial-gradient(circle at center, rgba(var(--color4), 1) 0, rgba(var(--color5), 0) 50%) no-repeat;
   mix-blend-mode: var(--blending);
 
   width: var(--circle-size);
   height: var(--circle-size);
   top: calc(30% - var(--circle-size) / 2);
-  left: calc(30% - var(--circle-size) / 2);
+  left: calc(0% - var(--circle-size) / 2);
 
   transform-origin: calc(50% - 400px);
-  animation: moveInCircle 20s reverse infinite;
+  animation: moveVerticalLeft 20s reverse infinite;
 
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .g3 {
@@ -233,29 +251,29 @@ textarea:focus:-moz-placeholde {
 
   width: var(--circle-size);
   height: var(--circle-size);
-  top: calc(50% - var(--circle-size) / 2 + 200px);
-  left: calc(50% - var(--circle-size) / 2 - 500px);
+  top: calc(50% - var(--circle-size) / 2);
+  right: calc(0% - var(--circle-size) / 2);
 
-  transform-origin: calc(50% + 400px);
-  animation: moveInCircle 40s linear infinite;
+  transform-origin: calc(50%);
+  animation: moveVerticalRight 40s linear infinite;
 
   opacity: 1;
 }
 
 .g4 {
   position: absolute;
-  background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+  background: radial-gradient(circle at center, rgba(var(--color1), 1) 0, rgba(var(--color1), 0) 50%) no-repeat;
   mix-blend-mode: var(--blending);
 
   width: var(--circle-size);
   height: var(--circle-size);
   top: calc(70% - var(--circle-size) / 2);
-  left: calc(70% - var(--circle-size) / 2);
+  right: calc(-15% - var(--circle-size) / 2);
 
   transform-origin: calc(50% - 200px);
-  animation: moveHorizontal 40s ease infinite;
+  animation: moveVerticalRight 40s ease infinite;
 
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .g5 {
@@ -272,6 +290,13 @@ textarea:focus:-moz-placeholde {
   animation: moveInCircle 20s ease infinite;
 
   opacity: 1;
+}
+
+@media screen (min-width: 768px) {
+
+  .g4 {
+  right: calc(10% - var(--circle-size) / 2);
+  }
 }
 
 .interactive {
