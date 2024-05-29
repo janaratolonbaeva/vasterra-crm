@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // mobile menu
   const btnBurger = document.querySelector('.btn-burger');
   const menu = document.querySelector('.menu');
+  const menuItem = document.querySelectorAll('.menu li a');
   const header = document.querySelector('#header');
   const body = document.querySelector('body');
 
@@ -9,6 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
     this.classList.toggle('active');
     menu.classList.toggle('active');
     body.classList.toggle('overflow-hidden');
+  });
+
+  menuItem.forEach((item) => {
+    item.addEventListener('click', () => {
+      if (menu.classList.contains('active')) {
+        btnBurger.classList.remove('active');
+        menu.classList.remove('active');
+        body.classList.remove('overflow-hidden');
+      }
+    });
   });
 
   // header scroll
@@ -61,30 +72,24 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  const tabs = document.querySelectorAll('.tabs button');
-  const contents = document.querySelectorAll('.tab-content');
+  const tabsOfModules = document.querySelectorAll('#modules .tabs button');
+  const contentsOfModules = document.querySelectorAll('#modules .tab-content');
+  const tabsOfAdvantages = document.querySelectorAll('#advantages .tabs button');
+  const contentsOfAdvantages = document.querySelectorAll('#advantages .tab-content');
 
-  tabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      const target = document.querySelector(tab.dataset.tabTarget);
-
-      tabs.forEach((t) => t.classList.remove('text-white', 'bg-primary'));
-      tabs.forEach((t) => t.classList.add('text-indigo', 'bg-gray'));
-      contents.forEach((c) => c.classList.remove('flex'));
-      contents.forEach((c) => c.classList.add('hidden'));
-
-      tab.classList.remove('text-indigo', 'bg-gray');
-      tab.classList.add('text-white', 'bg-primary');
-      target.classList.add('flex');
-      target.classList.remove('hidden');
-    });
-  });
+  tabHandler(tabsOfModules, contentsOfModules);
+  tabHandler(tabsOfAdvantages, contentsOfAdvantages);
 
   AOS.init();
 
   matchHeightCard();
-  window.addEventListener('resize', matchHeightCard);
+  window.addEventListener('resize', () => {
+    clearTimeout(window.resizeTimeout);
+    window.resizeTimeout = setTimeout(matchHeightCard, 100);
+  });
 });
+
+matchHeightCard();
 
 function matchHeightCard() {
   const cardTitles = document.querySelectorAll('#swiper-workflow .swiper-slide h3');
@@ -106,4 +111,22 @@ function matchHeightCard() {
       title.style.height = `${maxHeight}px`;
     });
   }
+}
+
+function tabHandler(tabs, contents) {
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const target = document.querySelector(tab.dataset.tabTarget);
+
+      tabs.forEach((t) => t.classList.remove('text-white', 'bg-primary'));
+      tabs.forEach((t) => t.classList.add('text-indigo', 'bg-gray'));
+      contents.forEach((c) => c.classList.remove('flex'));
+      contents.forEach((c) => c.classList.add('hidden'));
+
+      tab.classList.remove('text-indigo', 'bg-gray');
+      tab.classList.add('text-white', 'bg-primary');
+      target.classList.remove('hidden');
+      target.classList.add('flex');
+    });
+  });
 }

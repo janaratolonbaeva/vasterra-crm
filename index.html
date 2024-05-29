@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/styles/media.css" />
   </head>
   <body>
-    <header id="header" class="header py-4 md:py-8 w-full sticky top-0 left-0">
+    <header id="header" class="header py-4 w-full sticky top-0 left-0">
       <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center">
         <a href="/">
           <img
@@ -31,28 +31,35 @@
           class="menu flex-col md:flex-row flex gap-10 md:gap-6 lg:gap-10 pt-20 md:pt-0 items-center md:justify-center"
         >
           <li class="w-full text-lg md:text-md">
-            <a href="#" class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+            <a href="#why" class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
               >Why?</a
             >
           </li>
           <li class="w-full text-lg md:text-md">
-            <a href="#" class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+            <a
+              href="#modules"
+              class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
               >Modules</a
             >
           </li>
           <li class="w-full text-lg md:text-md">
-            <a href="#" class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+            <a
+              href="#advantages"
+              class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
               >Our advantages</a
             >
           </li>
           <li class="w-full text-lg md:text-md">
-            <a href="#" class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+            <a
+              href="#workflow"
+              class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
               >Workflow</a
             >
           </li>
         </ul>
         <div class="flex gap-4 items-center">
-          <a href="#form-sendler"
+          <a
+            href="#form-sendler"
             class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] p-2 lg:py-3 lg:px-6"
           >
             <span class="hidden lg:inline">Write a message</span>
@@ -78,21 +85,24 @@
         </div>
       </div>
     </header>
-    <main id="hero" class="py-10 lg:py-14">
+    <main id="hero" class="pt-10 lg:pt-14">
       <div class="container mx-auto px-4 lg:px-8">
-        <div class="mb-14" data-aos="fade-up"
-        data-aos-duration="1000">
+        <div class="mb-14">
           <h1 class="title text-center font-normal">
             <span class="font-bold">We automate CRM</span> systems for brokerage agencies that lease and sell offices,
             warehouses, and residential real estate
           </h1>
         </div>
-        <div class="rounded-lg overflow-hidden mb-12 md:mb-20" data-aos="fade-up"
-        data-aos-duration="1500">
-          <img class="max-w-full" src="./assets/images/promo-image.png" alt="The main image of Vasterra CRM" />
+        <div class="rounded-lg overflow-hidden mb-12 md:mb-20">
+          <img
+            class="max-w-full"
+            src="./assets/images/promo-image.png"
+            alt="The main image of Vasterra CRM"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          />
         </div>
-        <div class="flex flex-wrap md:flex-nowrap gap-8 xl:gap-14 mb-8 md:mb-14" data-aos="fade-up"
-        data-aos-duration="2000">
+        <div class="flex flex-wrap md:flex-nowrap gap-8 xl:gap-14 mb-8 md:mb-14">
           <div>
             <p class="text-md lg:text-md text-center">
               <span class="font-semibold">We can develop modules</span> for Salesforce and create a customized system
@@ -112,8 +122,7 @@
             </p>
           </div>
         </div>
-        <div class="flex justify-center" data-aos="fade-up"
-        data-aos-duration="2000">
+        <div class="flex justify-center mt-8 md:mt-0 bottom-[30vh] md:bottom-0 sticky md:static z-[10]">
           <button
             class="justify-center items-center rounded-lg bg-primary text-white font-semibold hover:bg-[#0b3bb6] focus:bg-[#17337d] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 w-full max-w-[392px]"
           >
@@ -122,14 +131,12 @@
         </div>
       </div>
     </main>
-    <section class="py-10 lg:py-14">
+    <section id="why" class="pt-20 pb-10 lg:pt-36 lg:pb-14">
       <div class="container mx-auto px-4 lg:px-8">
-        <h2 class="title text-center text-primary font-normal mb-6 md:mb12" data-aos="fade-up"
-        data-aos-duration="2000">
+        <h2 class="title text-center text-primary font-normal mb-6 md:mb12">
           Why customize a CRM system if everything works smoothly already?
         </h2>
-        <div class="text-center text-md md:text-lg max-w-[810px] mx-auto mb-4 md:mb-8" data-aos="fade-up"
-        data-aos-duration="2000">
+        <div class="text-center text-md md:text-lg max-w-[810px] mx-auto mb-4 md:mb-8">
           <p class="mb-4">
             Off-the-shelf <span class="font-semibold">CRM is a universal solution</span> that suits almost any business
             but does not completely cover the needs of any of them.
@@ -140,8 +147,7 @@
         </div>
         <div class="flex flex-wrap justify-center md:justify-start">
           <div
-            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
-            data-aos-duration="2000"
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -157,8 +163,7 @@
             </p>
           </div>
           <div
-            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
-            data-aos-duration="2000"
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -174,8 +179,7 @@
             </p>
           </div>
           <div
-            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
-            data-aos-duration="2000"
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -191,8 +195,7 @@
             </p>
           </div>
           <div
-            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
-            data-aos-duration="2000"
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -208,8 +211,7 @@
             </p>
           </div>
           <div
-            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
-            data-aos-duration="2000"
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -225,8 +227,7 @@
             </p>
           </div>
           <div
-            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14" data-aos="fade-up"
-            data-aos-duration="2000"
+            class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -244,17 +245,13 @@
         </div>
       </div>
     </section>
-    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl" data-aos="fade-up"
-    data-aos-duration="1000">
+    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl">
       <div class="container mx-auto px-4 lg:px-8">
-        <h2 class="title text-white text-center mb-6 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">
+        <h2 class="title text-white text-center mb-6 md:mb-12">
           How a custom<br />CRM system helps<br />an agency's key staff
         </h2>
-        <p class="text-center mb-6 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">Additional modules automate the work of all departments:</p>
-        <div class="hidden lg:flex gap-6" data-aos="fade-up"
-        data-aos-duration="2000">
+        <p class="text-center mb-6 md:mb-12">Additional modules automate the work of all departments:</p>
+        <div class="hidden lg:flex gap-6">
           <div class="basis-1/3 rounded-lg border border-white p-10">
             <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
             <p class="md:text-md">
@@ -270,8 +267,7 @@
             <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
           </div>
         </div>
-        <div id="swiper-helps" class="swiper lg:hidden" data-aos="fade-up"
-        data-aos-duration="2000">
+        <div id="swiper-helps" class="swiper lg:hidden">
           <div class="swiper-wrapper mb-6 items-stretch">
             <div class="swiper-slide h-auto">
               <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
@@ -331,96 +327,95 @@
         </div>
       </div>
     </section>
-    <section class="py-20 lg:py-32" data-aos="fade-up"
-    data-aos-duration="1000">
+    <section id="modules" class="pt-20 lg:pt-32">
       <div class="container mx-auto px-4 lg:px-8">
-        <h2 class="title text-primary text-center mb-6 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">
+        <h2 class="title text-primary text-center mb-6 md:mb-12">
           Which modules <br class="hidden sm:inline" />could be useful for you
         </h2>
+      </div>
+      <div class="container max-w-full md:max-w-[769px] lg:max-w-[992px] xl:max-w-[1300px] mx-auto pl-4 lg:px-8">
         <div
-          class="tabs flex flex-nowrap overflow-x-scroll md:flex-wrap gap-2 md:gap-4 md:justify-center max-w-[1100px] mx-auto mb-4 pb-4 md:mb-16" data-aos="fade-up"
-          data-aos-duration="2000"
+          class="tabs flex flex-nowrap overflow-x-scroll md:flex-wrap gap-2 md:gap-4 md:justify-center max-w-[1100px] mx-auto mb-4 pb-4 md:mb-16"
         >
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-white font-normal ttext-sm md:ext-md bg-primary inline-block whitespace-nowrap"
-            data-tab-target="#mobile-version" 
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-white font-normal text-sm md:text-md bg-primary hover:bg-primary hover:text-white inline-block whitespace-nowrap"
+            data-tab-target="#mobile-version"
           >
             Mobile version
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#updating-premises"
           >
             Updating of premises
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#sectorial-analytics"
           >
             Sectorial analytics
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#listing"
           >
             Listing management
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#property-search"
           >
             Property search
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#analytics-marketing"
           >
             Analytics for the marketing department
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#dashboards-market"
           >
             Dashboards with key market indicators
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#management-dashboards"
           >
             Management dashboards
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#competitive-analysis"
           >
             Competitive analysis
           </button>
         </div>
+      </div>
+      <div class="container mx-auto px-4 lg:px-8">
         <div id="mobile-version" class="tab-content gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap lg:items-center">
           <div class="basis-full lg:basis-1/2">
             <div class="mb-5 md:mb-10">
-              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5" data-aos="fade-up"
-              data-aos-duration="2000">What it can do</h4>
-              <p data-aos="fade-up"
-              data-aos-duration="2000">
-                It can create floor plans for each property, making it easier to maintain the offices and keep them
-                up-to-date. A special dashboard shows which properties require the relevant updates.
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
+              <p>
+                Customization changes the logic of how the base modules operate. Mobile adaptation is necessary for the
+                system to function correctly on any device, allowing brokers to work in the CRM even on smartphones.
               </p>
             </div>
             <div class="mb-5 md:mb-10">
-              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5" data-aos="fade-up"
-              data-aos-duration="2000">When it can be useful</h4>
-              <p data-aos="fade-up"
-              data-aos-duration="2000">
-                When you need to view historical data about a property, understand the speed of its updates, and assess
-                demand for specific areas. By examining who occupies the business center and when their contracts
-                expire, you can re-engage clients in a timely manner.
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
+              <p>
+                If you need to create a presentation for a client directly from your smartphone, on the go and from
+                anywhere.
               </p>
             </div>
           </div>
-          <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch" data-aos="fade-up"
-          data-aos-duration="2000">
+          <div
+            class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img
               class="lg:h-[inherit] w-full max-w-full lg:object-cover"
               src="./assets/images/tab-image-1.png"
@@ -433,7 +428,6 @@
         <div id="updating-premises" class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center">
           <div class="basis-full lg:basis-1/2">
             <div class="mb-5 md:mb-10">
-              TAB "Updating of premises"
               <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
               <p>
                 It can create floor plans for each property, making it easier to maintain the offices and keep them
@@ -449,7 +443,11 @@
               </p>
             </div>
           </div>
-          <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
+          <div
+            class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img
               class="lg:h-[inherit] w-full max-w-full lg:object-cover"
               src="./assets/images/tab-image-1.png"
@@ -463,88 +461,403 @@
           id="sectorial-analytics"
           class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center"
         >
-          TAB "Sectorial analytics"
+          <div class="basis-full lg:basis-1/2">
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
+              <p>
+                It shows the clients’ dynamics from different sectors. For example, it may indicate that in the
+                agricultural sector, both employee numbers and revenue are increasing.
+              </p>
+            </div>
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
+              <p>If you need to analyze market trends to make strategic decisions based on the data obtained.</p>
+            </div>
+          </div>
+          <div
+            class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              class="lg:h-[inherit] w-full max-w-full lg:object-cover"
+              src="./assets/images/tab-image-1.png"
+              width="592"
+              height="360"
+              alt=""
+            />
+          </div>
         </div>
         <div id="listing" class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center">
-          TAB "Listing management"
+          <div class="basis-full lg:basis-1/2">
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
+              <p>
+                If suitable options matching the client's request appear within the CRM, the system immediately notifies
+                the broker. With just a few clicks, they can then create a presentation or online page and then share
+                the link with the client.
+              </p>
+            </div>
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
+              <p>
+                If there's a need to quickly provide the client with up-to-date information about a property— including
+                photos of offices, floor plans, and rate analysis.
+              </p>
+            </div>
+          </div>
+          <div
+            class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              class="lg:h-[inherit] w-full max-w-full lg:object-cover"
+              src="./assets/images/tab-image-1.png"
+              width="592"
+              height="360"
+              alt=""
+            />
+          </div>
         </div>
         <div id="property-search" class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center">
-          TAB "Property search"
+          <div class="basis-full lg:basis-1/2">
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
+              <p>
+                It can sort properties based on the precise requirements of the client. You can highlight a specific
+                area on the map and receive a list of properties located there.
+              </p>
+            </div>
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
+              <p>
+                If you need to find premises with specific parameters, such as those not on the ground floor or only
+                with an open layout.
+              </p>
+            </div>
+          </div>
+          <div
+            class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              class="lg:h-[inherit] w-full max-w-full lg:object-cover"
+              src="./assets/images/tab-image-1.png"
+              width="592"
+              height="360"
+              alt=""
+            />
+          </div>
         </div>
         <div
           id="analytics-marketing"
           class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center"
         >
-          TAB "Analytics for the marketing department"
+          <div class="basis-full lg:basis-1/2">
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
+              <p>
+                It shows which properties received the most inquiries, and which ones had the highest conversion rates
+                from inquiry to viewing, and from viewing to contract.
+              </p>
+            </div>
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
+              <p>
+                If you need to assess which customer acquisition channel has been more effective and how to further
+                allocate the advertising budget.
+              </p>
+            </div>
+          </div>
+          <div
+            class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              class="lg:h-[inherit] w-full max-w-full lg:object-cover"
+              src="./assets/images/tab-image-1.png"
+              width="592"
+              height="360"
+              alt=""
+            />
+          </div>
         </div>
         <div id="dashboards-market" class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center">
-          TAB "Dashboards with key market indicators"
+          <div class="basis-full lg:basis-1/2">
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
+              <p>
+                It can display various segments and help build reports. For example, on the dashboards, you can see the
+                percentage of a premises` vacancy depending on the area, dynamics of demand for different spaces, trends
+                in rental rate changes, distribution of demand by districts, etc.
+              </p>
+            </div>
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
+              <p>
+                If you need to create a custom report for the brokerage department and save time on manual data
+                collection and updates.
+              </p>
+            </div>
+          </div>
+          <div
+            class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              class="lg:h-[inherit] w-full max-w-full lg:object-cover"
+              src="./assets/images/tab-image-1.png"
+              width="592"
+              height="360"
+              alt=""
+            />
+          </div>
         </div>
         <div
           id="management-dashboards"
           class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center"
         >
-          TAB "Management dashboards"
+          <div class="basis-full lg:basis-1/2">
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
+              <p>
+                Automatically collects and updates EBID data from departments in real-time, as well as sales funnels,
+                showing the stage of all deals.
+              </p>
+            </div>
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
+              <p>
+                If you need to review forecasts for deal closures and projected revenue to understand how current
+                metrics compare with planned ones across departments and with specific individuals.
+              </p>
+            </div>
+          </div>
+          <div
+            class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              class="lg:h-[inherit] w-full max-w-full lg:object-cover"
+              src="./assets/images/tab-image-1.png"
+              width="592"
+              height="360"
+              alt=""
+            />
+          </div>
         </div>
         <div
           id="competitive-analysis"
           class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center"
         >
-          TAB "Competitive analysis"
+          <div class="basis-full lg:basis-1/2">
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
+              <p>
+                Shows the percentage of the market occupied by the broker compared to other players and identifies which
+                specific deals and marketing activities contributed to this difference.
+              </p>
+            </div>
+            <div class="mb-5 md:mb-10">
+              <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
+              <p>
+                If it's necessary to understand how market conditions are impacting company metrics: why revenue is
+                declining, which sectors of the economy are growing, etc.
+              </p>
+            </div>
+          </div>
+          <div
+            class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              class="lg:h-[inherit] w-full max-w-full lg:object-cover"
+              src="./assets/images/tab-image-1.png"
+              width="592"
+              height="360"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </section>
-    <section class="pb-20 lg:pb-32" data-aos="fade-up"
-    data-aos-duration="1000">
+    <section id="advantages" class="py-20 lg:py-32">
       <div class="container mx-auto px-4 lg:px-8">
-        <h2 class="title text-primary text-center mb-6 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">
+        <h2 class="title text-primary text-center mb-6 md:mb-12">
           If you don't find <br class="hidden sm:inline" />the required module, <br class="hidden sm:inline" />we will
           create it <br class="hidden sm:inline" />specifically for you
         </h2>
-        <p class="text-center text-md md:text-lg mb-6 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">
+        <p class="text-center text-md md:text-lg mb-6 md:mb-12">
           Here's the functionality we've already developed for our clients:
         </p>
+      </div>
+      <div class="container max-w-full md:max-w-[769px] lg:max-w-[992px] xl:max-w-[1300px] mx-auto pl-4 lg:px-8">
         <div
-          class="tabs flex flex-nowrap overflow-x-scroll md:flex-wrap gap-2 md:gap-4 md:justify-center mb-4 pb-4 md:mb-16" data-aos="fade-up"
-          data-aos-duration="2000"
+          class="tabs flex flex-nowrap overflow-x-scroll md:flex-wrap gap-2 md:gap-4 md:justify-center mb-4 pb-4 md:mb-16"
         >
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-white font-normal ttext-sm md:ext-md bg-primary inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-white font-normal text-sm md:text-md bg-primary hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#property-database"
           >
             Property database
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#analytics"
           >
             Analytics
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#management"
           >
             Management
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#teamwork"
           >
             Teamwork
           </button>
           <button
-            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray inline-block whitespace-nowrap"
+            class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
             data-tab-target="#client-management"
           >
             Client management
           </button>
         </div>
+      </div>
+      <div class="container mx-auto px-4 lg:px-8">
         <div
           id="property-database"
-          class="tab-content gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center" data-aos="fade-up"
-          data-aos-duration="2000"
+          class="tab-content gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center"
+        >
+          <div class="basis-full lg:basis-1/2">
+            <ul class="list-disc ml-3">
+              <li class="md:text-lg pb-4">Selection of ESG-focused or ESG-integrated buildings;</li>
+              <li class="md:text-lg pb-4">
+                Combining areas: if there are two neighboring spaces of 100 and 60 square meters, you will see them when
+                searching for a space of 160 square meters;
+              </li>
+              <li class="md:text-lg pb-4">Ability to divide large spaces for searching in the database;</li>
+              <li class="md:text-lg pb-4">Selection of specific properties for export;</li>
+              <li class="md:text-lg pb-4">Special module for the residential department;</li>
+              <li class="md:text-lg pb-4">Automatic attachment of photos to floor plans;</li>
+            </ul>
+          </div>
+          <div
+            class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              class="lg:h-[inherit] w-full lg:object-cover max-w-full"
+              src="./assets/images/tab-image-2.png"
+              width="600"
+              height="460"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          id="analytics"
+          class="tab-content hidden gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center"
+        >
+          <div class="basis-full lg:basis-1/2">
+            <ul class="list-disc ml-3">
+              <li class="md:text-lg pb-4">Required segment of clean data in just a few clicks;</li>
+              <li class="md:text-lg pb-4">Automatic reports based on custom AI;</li>
+              <li class="md:text-lg pb-4">Dynamic dashboard;</li>
+              <li class="md:text-lg pb-4">External data loading: property databases, reports, etc.;</li>
+              <li class="md:text-lg pb-4">Market analytics;</li>
+              <li class="md:text-lg pb-4">Financial analytics;</li>
+            </ul>
+          </div>
+          <div
+            class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              class="lg:h-[inherit] w-full lg:object-cover max-w-full"
+              src="./assets/images/tab-image-2.png"
+              width="600"
+              height="460"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          id="management"
+          class="tab-content hidden gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center"
+        >
+          <div class="basis-full lg:basis-1/2">
+            <ul class="list-disc ml-3">
+              <li class="md:text-lg pb-4">Client analytics;</li>
+              <li class="md:text-lg pb-4">Comparison of market share with other brokers;</li>
+              <li class="md:text-lg pb-4">Regular updating of properties in the current database;</li>
+              <li class="md:text-lg pb-4">Integration with email services;</li>
+              <li class="md:text-lg pb-4">Working with big data without volume limitations;</li>
+              <li class="md:text-lg pb-4">
+                End-to-end analytics of the entire sales funnel — from advertising to contract;
+              </li>
+            </ul>
+          </div>
+          <div
+            class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              class="lg:h-[inherit] w-full lg:object-cover max-w-full"
+              src="./assets/images/tab-image-2.png"
+              width="600"
+              height="460"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          id="teamwork"
+          class="tab-content hidden gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center"
+        >
+          <div class="basis-full lg:basis-1/2">
+            <ul class="list-disc ml-3">
+              <li class="md:text-lg pb-4">
+                Setting up company structure, creating a control and approval task pyramid;
+              </li>
+              <li class="md:text-lg pb-4">Access control to data among departments;</li>
+              <li class="md:text-lg pb-4">
+                Flexible privacy settings with access limited to the broker and their direct executive;
+              </li>
+              <li class="md:text-lg pb-4">Rights differentiation - for viewing, editing, deleting data;</li>
+              <li class="md:text-lg pb-4">Tracking changes in the system, maintaining a log;</li>
+              <li class="md:text-lg pb-4">Tracking who and when logged into the system;</li>
+            </ul>
+          </div>
+          <div
+            class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              class="lg:h-[inherit] w-full lg:object-cover max-w-full"
+              src="./assets/images/tab-image-2.png"
+              width="600"
+              height="460"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          id="client-management"
+          class="tab-content hidden gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center"
         >
           <div class="basis-full lg:basis-1/2">
             <ul class="list-disc ml-3">
@@ -559,7 +872,11 @@
               <li class="md:text-lg">Saving selections, tied to specific managers.</li>
             </ul>
           </div>
-          <div class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch">
+          <div
+            class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img
               class="lg:h-[inherit] w-full lg:object-cover max-w-full"
               src="./assets/images/tab-image-2.png"
@@ -569,65 +886,45 @@
             />
           </div>
         </div>
-        <div id="analytics" class="tab-content hidden">
-          Analytics
-        </div>
-        <div id="management" class="tab-content hidden">
-          Management
-        </div>
-        <div id="teamwork" class="tab-content hidden">
-          Teamwork
-        </div>
-        <div id="client-management" class="tab-content hidden">
-          Client management
-        </div>
       </div>
     </section>
-    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl" data-aos="fade-up"
-    data-aos-duration="1000">
+    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl">
       <div class="container mx-auto px-4 lg:px-8">
-        <h2 class="title text-center mb-10 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">
+        <h2 class="title text-center mb-10 md:mb-12">
           How we help <br class="hidden sm:inline" />companies boost key <br class="hidden sm:inline" />business metrics
         </h2>
-        <p class="text-center mb-8 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">
+        <p class="text-center mb-8 md:mb-12">
           Vasterra collaborates with several major players in the market, including Colliers.
           <br />We customized their CRM system and optimized key processes. <br />This has helped achieve many
           impressive results:
         </p>
-        <div class="flex justify-center mb-8 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">
+        <div class="flex justify-center mb-8 md:mb-12 mt-8 md:mt-0 bottom-[30vh] md:bottom-0 sticky md:static z-[10]">
           <a
-            href="#"
+            href="https://vasterra.com/colliers"
             class="w-full max-w-[392px] py-3 px-6 text-center bg-white text-primary text-base md:text-md rounded-lg font-semibold focus:bg-[#17337d] focus:text-white disabled:bg-gray disabled:text-dark_gray"
             >Dive into the case</a
           >
         </div>
-        <div class="hidden lg:flex gap-6" >
-          <div class="basis-1/3 rounded-lg border border-white p-10" data-aos="fade-up"
-          data-aos-duration="2000">
-            <h3 class="text-md md:text-xxl mb-8 font-medium" >Brokers</h3>
+        <div class="hidden lg:flex gap-6">
+          <div class="basis-1/3 rounded-lg border border-white p-10">
+            <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
             <p class="md:text-md">
               Spend time on developing customer relationships rather than on routine tasks, thereby closing more deals.
             </p>
           </div>
-          <div class="basis-1/3 rounded-lg border border-white p-10" data-aos="fade-up"
-          data-aos-duration="2000">
+          <div class="basis-1/3 rounded-lg border border-white p-10">
             <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
             <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
           </div>
-          <div class="basis-1/3 rounded-lg border border-white p-10" data-aos="fade-up"
-          data-aos-duration="2000">
+          <div class="basis-1/3 rounded-lg border border-white p-10">
             <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
             <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
           </div>
         </div>
-        <div id="swiper-metrics" class="swiper lg:hidden" data-aos="fade-up"
-        data-aos-duration="2000">
+        <div id="swiper-metrics" class="swiper lg:hidden">
           <div class="lg:hidden swiper-wrapper mb-6 items-stretch">
             <div class="swiper-slide h-auto">
-              <div class="basis-1/3 rounded-lg border border-white p-10 h-full" >
+              <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
                 <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
                 <p class="md:text-md">
                   Spend time on developing customer relationships rather than on routine tasks, thereby closing more
@@ -684,8 +981,7 @@
         </div>
       </div>
     </section>
-    <section class="py-20 lg:py-32" data-aos="fade-up"
-    data-aos-duration="1000">
+    <section class="py-20 lg:py-32">
       <div class="container mx-auto px-4 lg:px-8">
         <div class="flex items-center flex-col gap-10 text-center">
           <svg
@@ -695,8 +991,6 @@
             viewBox="0 0 58 54"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            data-aos="fade-up"
-        data-aos-duration="2000"
           >
             <path
               d="M11.8249 28.4704C12.0715 24.3235 13.7207 19.7935 15.7793 15.6954C17.9063 11.4611 20.4536 7.72092 22.2834 5.3919C22.6896 4.87486 22.6107 4.13084 22.0824 3.71228L19.209 1.43598C18.7061 1.03756 17.9718 1.08711 17.5312 1.54631C7.02946 12.4931 2.50919 24.335 1.55029 28.8002C0.584002 32.4967 0.00738231 38.5377 1.47205 43.6354C2.20618 46.1906 3.46147 48.5373 5.46875 50.2242C7.48473 51.9185 10.2246 52.9178 13.8592 52.8278C22.3351 52.6179 26.6691 46.1966 26.4055 40.0363C26.2736 36.9529 24.9936 33.9069 22.4888 31.7085C20.0582 29.5751 16.508 28.2692 11.8249 28.4704Z"
@@ -711,26 +1005,23 @@
               stroke-linejoin="round"
             />
           </svg>
-          <p class="[font-size:_clamp(18px,3vw,32px)]" data-aos="fade-up"
-          data-aos-duration="2000">
+          <p class="[font-size:_clamp(18px,3vw,32px)]">
             The Vasterra team will respect your ideas and needs and never push you to change your core beliefs.
             Demonstrating an exceptional understanding of the client`s goals, Vasterra has performed well throughout the
             engagement. They`ve facilitated a smooth process, going above and beyond to deliver top-tier results.
             Customers can expect a collaborative and reliable partner.
           </p>
-          <div class="flex flex-col gap-6 items-center" data-aos="fade-up"
-          data-aos-duration="2000">
-            <div class="rounded-full w-[72px] h-72px">
+          <div class="flex flex-col gap-6 items-center">
+            <div class="rounded-full w-[72px] h-72px overflow-hidden">
               <img
                 class="w-full h-full object-cover"
-                src="./assets/images/crm-manager-avatar.png"
+                src="./assets/images/crm-manager-avatar.jpg"
                 width="72"
                 height="72"
                 alt="CRM Vasterra"
               />
             </div>
-            <div data-aos="fade-up"
-            data-aos-duration="2000">
+            <div>
               <h6 class="text-base md:text-lg mb-1 font-semibold">Olga Repryntseva</h6>
               <span class="text-base md:text-lg block">CRM Manager, Colliers International</span>
             </div>
@@ -738,8 +1029,6 @@
               href="https://clutch.co/profile/vasterra-0#review-1883692"
               class="gap-1 text-[15px] font-medium rounded-lg border-warning border-[2px] py-[15px] px-7 flex items-center"
               target="_blank"
-              data-aos="fade-up"
-        data-aos-duration="2000"
             >
               <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -757,22 +1046,18 @@
         </div>
       </div>
     </section>
-    <section? class="py-20 lg:py-32" data-aos="fade-up"
-    data-aos-duration="1000">
+    <section id="workflow" class="py-20 lg:py-32">
       <div class="container mx-auto px-4 lg:px-8">
-        <h2 class="title text-primary text-center mb-6 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">How is the workflow for CRM automation built</h2>
-        <p class="text-center text-md md:text-lg mb-6 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">
+        <h2 class="title text-primary text-center mb-6 md:mb-12">How is the workflow for CRM automation built</h2>
+        <p class="text-center text-md md:text-lg mb-6 md:mb-12">
           The project consists of four key stages. At each of them, you will only need to maintain minimal involvement:
           you won't have to be distracted from your main body of work, and most importantly, you won't lose any clients.
           After implementation, you will definitely see an increase in their number.
         </p>
-        <div id="swiper-workflow" class="swiper" >
+        <div id="swiper-workflow" class="swiper">
           <div class="swiper-wrapper mb-6 md:mb-12">
             <div class="swiper-slide h-auto">
-              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col" data-aos="fade-up"
-              data-aos-duration="2000">
+              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col">
                 <h3 class="text-xl md:text-xxl font-medium text-primary">Data collection</h3>
                 <p class="md:text-md">
                   Business analysts and project managers conduct interviews with representatives from all departments,
@@ -781,8 +1066,7 @@
               </div>
             </div>
             <div class="swiper-slide h-auto">
-              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col" data-aos="fade-up"
-              data-aos-duration="2000">
+              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col">
                 <h3 class="text-xl md:text-xxl font-medium text-primary">Data analysis and project approval</h3>
                 <p class="md:text-md">
                   Based on the collected information, we develop an understanding of the task, create an efficient work
@@ -791,8 +1075,7 @@
               </div>
             </div>
             <div class="swiper-slide h-auto">
-              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col" data-aos="fade-up"
-              data-aos-duration="2000">
+              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col">
                 <h3 class="text-xl md:text-xxl font-medium text-primary">Development of new modules</h3>
                 <p class="md:text-md">
                   We work iteratively, presenting results to stakeholders at each stage. We launch the system and gather
@@ -801,8 +1084,7 @@
               </div>
             </div>
             <div class="swiper-slide h-auto">
-              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col" data-aos="fade-up"
-              data-aos-duration="2000">
+              <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col">
                 <h3 class="text-xl md:text-xxl font-medium text-primary">Team training and system maintenance</h3>
                 <p class="md:text-md">
                   We prepare training materials and video tutorials, maintain the system's functionality after the
@@ -811,8 +1093,7 @@
               </div>
             </div>
           </div>
-          <div class="flex gap-4 justify-center xl:hidden" data-aos="fade-up"
-          data-aos-duration="2000">
+          <div class="flex gap-4 justify-center xl:hidden">
             <div
               class="swiper-metrics-button-prev w-12 h-12 p-3 rounded-lg group bg-gray border border-gray flex justify-center items-center hover:bg-primary focus:bg-primary hover:border-primary focus:border-primary"
             >
@@ -848,78 +1129,141 @@
         </div>
       </div>
     </section>
-    <section id="form-sendler" class="py-20 lg:py-32" data-aos="fade-up"
-    data-aos-duration="1000">
+    <section id="form-sendler" class="py-20 lg:py-32">
       <div class="container mx-auto px-4 lg:px-8">
-        <h2 class="title text-primary text-center mb-6 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">Want to boost <br>your CRM system?</h2>
-        <p class="text-center text-md md:text-lg mb-6 md:mb-12" data-aos="fade-up"
-        data-aos-duration="2000">Write to us and we will help you realize all your needs.</p>
+        <h2 class="title text-primary text-center mb-6 md:mb-12">Want to boost <br />your CRM system?</h2>
+        <p class="text-center text-md md:text-lg mb-6 md:mb-12">
+          Write to us and we will help you realize all your needs.
+        </p>
         <div class="max-w-[600px] mx-auto">
           <form>
-            <label class="mb-6 block" data-aos="fade-up"
-            data-aos-duration="2000">
-              <input class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray" type="text" placeholder="Name" required>
+            <label class="mb-6 block">
+              <input
+                class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
+                type="text"
+                placeholder="Name"
+                required
+              />
               <p class="font-normal text-danger hidden">Required field</p>
             </label>
-            <label class="mb-6 block" data-aos="fade-up"
-            data-aos-duration="2000">
-              <input class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray" type="email" placeholder="E-mail" required>
+            <label class="mb-6 block">
+              <input
+                class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
+                type="email"
+                placeholder="E-mail"
+                required
+              />
               <p class="font-normal text-danger hidden">Required field</p>
             </label>
-            <label class="mb-6 block" data-aos="fade-up"
-            data-aos-duration="2000">
-              <textarea class="py-4 px-6 rounded-[28px] bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray" placeholder="Message" rows="3"></textarea>
+            <label class="mb-6 block">
+              <textarea
+                class="py-4 px-6 rounded-[28px] bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
+                placeholder="Message"
+                rows="3"
+              ></textarea>
               <p class="font-normal text-danger hidden">Required field</p>
             </label>
-            <label for="checkbox-agree" class="peer flex gap-2 items-center text-dark_gray font-normal cursor-pointer mb-10" data-aos="fade-up"
-            data-aos-duration="2000">
-              <input id="checkbox-agree" type="checkbox" class="hidden peer" >
-              <i class="w-6 h-6 rounded-[6px] bg-white peer-checked:bg-primary flex justify-center items-center">
-                <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.5306 5.03063L6.5306 13.0306C6.46092 13.1005 6.37813 13.156 6.28696 13.1939C6.1958 13.2317 6.09806 13.2512 5.99935 13.2512C5.90064 13.2512 5.8029 13.2317 5.71173 13.1939C5.62057 13.156 5.53778 13.1005 5.4681 13.0306L1.9681 9.53063C1.89833 9.46086 1.84299 9.37804 1.80524 9.28689C1.76748 9.19573 1.74805 9.09804 1.74805 8.99938C1.74805 8.90071 1.76748 8.80302 1.80524 8.71187C1.84299 8.62071 1.89833 8.53789 1.9681 8.46813C2.03786 8.39836 2.12069 8.34302 2.21184 8.30526C2.30299 8.26751 2.40069 8.24807 2.49935 8.24807C2.59801 8.24807 2.69571 8.26751 2.78686 8.30526C2.87801 8.34302 2.96083 8.39836 3.0306 8.46813L5.99997 11.4375L13.4693 3.96938C13.6102 3.82848 13.8013 3.74932 14.0006 3.74932C14.1999 3.74932 14.391 3.82848 14.5318 3.96938C14.6727 4.11027 14.7519 4.30137 14.7519 4.50063C14.7519 4.69988 14.6727 4.89098 14.5318 5.03188L14.5306 5.03063Z" fill="white" />
+            <label for="checkbox-agree" class="peer group flex gap-2 items-center cursor-pointer mb-10">
+              <input id="checkbox-agree" type="checkbox" class="hidden peer" />
+              <i
+                class="w-6 h-6 border border-white rounded-[6px] bg-white peer-checked:bg-primary flex justify-center items-center group-hover:border-primary"
+              >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.5306 5.03063L6.5306 13.0306C6.46092 13.1005 6.37813 13.156 6.28696 13.1939C6.1958 13.2317 6.09806 13.2512 5.99935 13.2512C5.90064 13.2512 5.8029 13.2317 5.71173 13.1939C5.62057 13.156 5.53778 13.1005 5.4681 13.0306L1.9681 9.53063C1.89833 9.46086 1.84299 9.37804 1.80524 9.28689C1.76748 9.19573 1.74805 9.09804 1.74805 8.99938C1.74805 8.90071 1.76748 8.80302 1.80524 8.71187C1.84299 8.62071 1.89833 8.53789 1.9681 8.46813C2.03786 8.39836 2.12069 8.34302 2.21184 8.30526C2.30299 8.26751 2.40069 8.24807 2.49935 8.24807C2.59801 8.24807 2.69571 8.26751 2.78686 8.30526C2.87801 8.34302 2.96083 8.39836 3.0306 8.46813L5.99997 11.4375L13.4693 3.96938C13.6102 3.82848 13.8013 3.74932 14.0006 3.74932C14.1999 3.74932 14.391 3.82848 14.5318 3.96938C14.6727 4.11027 14.7519 4.30137 14.7519 4.50063C14.7519 4.69988 14.6727 4.89098 14.5318 5.03188L14.5306 5.03063Z"
+                    fill="white"
+                  />
                 </svg>
               </i>
-              I agree with privacy policy and use of requested data
+              <span class="group-hover:text-primary peer-checked:text-primary text-dark_gray font-normal"
+                >I agree with privacy policy and use of requested data</span
+              >
             </label>
-            <button class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 w-full" data-aos="fade-up"
-            data-aos-duration="2000">Send</button>
+            <button
+              class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 w-full mt-8 md:mt-0 bottom-[30vh] md:bottom-0 sticky md:static z-[10]"
+            >
+              Send
+            </button>
           </form>
         </div>
       </div>
     </section>
-    <footer class="rounded-t-xl py-24 relative overflow-hidden" data-aos="fade-up"
-    data-aos-duration="1000">
-      <svg class="w-full absolute top-[-40px] left-0 hidden md:block z-[-1] " width="1920" height="312" viewBox="0 0 1920 312" fill="none" xmlns="http://www.w3.org/2000/svg" >
+    <footer class="rounded-t-xl py-24 relative overflow-hidden">
+      <svg
+        class="w-full absolute top-[-40px] left-0 hidden md:block z-[-1]"
+        width="1920"
+        height="312"
+        viewBox="0 0 1920 312"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g filter="url(#filter0_f_324_180)">
           <ellipse cx="960" cy="19.5" rx="1240" ry="112.5" fill="#2253D0" />
         </g>
         <defs>
-          <filter id="filter0_f_324_180" x="-460" y="-273" width="2840" height="585" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <filter
+            id="filter0_f_324_180"
+            x="-460"
+            y="-273"
+            width="2840"
+            height="585"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="90" result="effect1_foregroundBlur_324_180" />
           </filter>
         </defs>
       </svg>
-      <svg class="w-full absolute top-[-20px] left-0 md:hidden z-[-1]" width="320" height="270" viewBox="0 0 320 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        class="w-full absolute top-[-20px] left-0 md:hidden z-[-1]"
+        width="320"
+        height="270"
+        viewBox="0 0 320 270"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g filter="url(#filter0_f_394_748)">
           <ellipse cx="160" cy="75" rx="440" ry="75" fill="#2253D0" />
         </g>
         <defs>
-          <filter id="filter0_f_394_748" x="-400" y="-120" width="1120" height="390" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <filter
+            id="filter0_f_394_748"
+            x="-400"
+            y="-120"
+            width="1120"
+            height="390"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_394_748" />
           </filter>
         </defs>
       </svg>
-      <svg class="w-full absolute top-0 left-0  z-[-2]" width="1280" height="438" viewBox="0 0 1280 438" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        class="w-full absolute top-0 left-0 z-[-2]"
+        width="1280"
+        height="438"
+        viewBox="0 0 1280 438"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g filter="url(#filter0_f_449_3588)">
           <ellipse cx="640" cy="66" rx="1240" ry="526" fill="#F2F2F2" />
         </g>
         <defs>
-          <filter id="filter0_f_449_3588" x="-790" y="-650" width="2860" height="1432" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <filter
+            id="filter0_f_449_3588"
+            x="-790"
+            y="-650"
+            width="2860"
+            height="1432"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="95" result="effect1_foregroundBlur_449_3588" />
@@ -928,25 +1272,17 @@
       </svg>
       <div class="container mx-auto px-4 lg:px-8">
         <div class="flex flex-col gap-10 items-center md:items-start md:flex-row md:justify-between mb-6 md:mb-10">
-          <a href="/" data-aos="fade-up"
-          data-aos-duration="2000">
-            <img
-              src="./assets/images/logo.svg"
-              width="165"
-              height="35"
-              alt="Vasterra Logo"
-            />
+          <a href="/">
+            <img src="./assets/images/logo.svg" width="165" height="35" alt="Vasterra Logo" />
           </a>
           <div class="flex flex-col md:flex-row gap-6 md:gap-12 text-center md:text-left">
-            <address class="not-italic" data-aos="fade-up"
-            data-aos-duration="2000">
+            <address class="not-italic">
               <h6 class="text-lg font-semibold mb-6 md:mb-8">USA</h6>
               <p>11301, West Olympic Boulevard</p>
               <p class="mb-1">Apt. 100 Los Angeles, CA 90064</p>
               <a href="tel:+13021234567" class="inline-block hover:text-primary cursor-pointer">+1 302 123-4567</a>
             </address>
-            <address class="not-italic" data-aos="fade-up"
-            data-aos-duration="2000">
+            <address class="not-italic">
               <h6 class="text-lg font-semibold mb-6 md:mb-8">USA</h6>
               <p>6 Pike Close, Folkestone,</p>
               <p class="mb-1">Kent, CT19 5UT4</p>
@@ -954,17 +1290,26 @@
             </address>
           </div>
         </div>
-        <div class="flex flex-col sm:flex-row-reverse gap-6 pt-6 md:pt-10 border-t border-t-indigo items-center justify-between" data-aos="fade-up"
-        data-aos-duration="2000">
+        <div
+          class="flex flex-col sm:flex-row-reverse gap-6 pt-6 md:pt-10 border-t border-t-indigo items-center justify-between"
+        >
           <div class="flex gap-4">
             <a href="#">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.3182 1.48889C16.1364 1.24444 15.1909 1 14.0091 1C10.4636 1 8.92727 2.83333 8.92727 6.13333L9.04545 9.55556H5.5V13.2222H9.04545V23H13.7727V13.2222H17.3182L18.5 9.55556H13.7727V7.11111C13.7727 6.01111 13.4182 4.91111 14.8364 4.91111C15.3091 4.91111 16.1364 5.03333 16.7273 5.15556L17.3182 1.48889Z" fill="#122045" />
+                <path
+                  d="M17.3182 1.48889C16.1364 1.24444 15.1909 1 14.0091 1C10.4636 1 8.92727 2.83333 8.92727 6.13333L9.04545 9.55556H5.5V13.2222H9.04545V23H13.7727V13.2222H17.3182L18.5 9.55556H13.7727V7.11111C13.7727 6.01111 13.4182 4.91111 14.8364 4.91111C15.3091 4.91111 16.1364 5.03333 16.7273 5.15556L17.3182 1.48889Z"
+                  fill="#122045"
+                />
               </svg>
             </a>
             <a href="#">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.7646 5.47448C1.23883 5.47448 0 4.36265 0 2.98862C0 1.61458 1.23883 0.5 2.7646 0.5C4.29037 0.5 5.5292 1.61454 5.5292 2.98862C5.5292 4.36269 4.29032 5.47448 2.7646 5.47448ZM17.6027 21.4836V12.9975C17.6027 12.9975 17.356 10.7275 15.2001 10.7275C13.0456 10.7275 12.6514 12.8855 12.6514 12.8855V21.4836H8.21094L8.28336 7.4658H12.579L12.5442 9.22778C12.5442 9.22778 13.4398 6.92492 16.8144 6.92492C20.1876 6.92492 21.7161 8.89997 22.0003 12.5932V21.4836H17.6027ZM0.0458984 21.5H5.50534V7.46581L0.0458984 7.50135V21.5Z" fill="#122045" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.7646 5.47448C1.23883 5.47448 0 4.36265 0 2.98862C0 1.61458 1.23883 0.5 2.7646 0.5C4.29037 0.5 5.5292 1.61454 5.5292 2.98862C5.5292 4.36269 4.29032 5.47448 2.7646 5.47448ZM17.6027 21.4836V12.9975C17.6027 12.9975 17.356 10.7275 15.2001 10.7275C13.0456 10.7275 12.6514 12.8855 12.6514 12.8855V21.4836H8.21094L8.28336 7.4658H12.579L12.5442 9.22778C12.5442 9.22778 13.4398 6.92492 16.8144 6.92492C20.1876 6.92492 21.7161 8.89997 22.0003 12.5932V21.4836H17.6027ZM0.0458984 21.5H5.50534V7.46581L0.0458984 7.50135V21.5Z"
+                  fill="#122045"
+                />
               </svg>
             </a>
           </div>
