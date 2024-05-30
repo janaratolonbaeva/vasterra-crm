@@ -14,42 +14,21 @@
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/media.css" />
   </head>
-  <body>
-    <div class="relative max-w-[2500px] mx-auto overflow-hidden">
-      <div class="gradient-bg absolute top-0 left-0 w-full h-full z-[-1]">
-        <svg xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <filter id="goo">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-              <feColorMatrix
-                in="blur"
-                mode="matrix"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                result="goo"
-              />
-              <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-          </defs>
-        </svg>
-        <div class="gradients-container">
-          <div class="g1"></div>
-          <div class="g4"></div>
-        </div>
-      </div>
-      <header id="header" class="header py-4 w-full sticky top-0 left-0">
-        <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center">
-          <a href="/">
-            <img
-              class="w-[129px] h-[24px] md:w-[165px] md:h-[35px]"
-              src="./assets/images/logo.svg"
-              width="165"
-              height="35"
-              alt="Vasterra Logo"
-            />
-          </a>
+  <body class="overflow-x-hidden">
+    <header id="header" class="header py-3.5 md:py-8 w-full sticky top-0 left-0 z-[50]">
+      <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center">
+        <a href="/">
+          <img
+            class="w-[129px] h-[24px] lg:w-[165px] lg:h-[35px]"
+            src="./assets/images/logo.svg"
+            width="165"
+            height="35"
+            alt="Vasterra Logo"
+          />
+        </a>
+        <div id="menu" class="menu flex flex-col">
           <ul
-            id="menu"
-            class="menu flex-col md:flex-row flex gap-10 md:gap-6 lg:gap-10 pt-20 md:pt-0 items-center md:justify-center"
+            class="flex-col md:flex-row flex gap-10 md:gap-6 xl:gap-10 pt-20 md:pt-0 items-center md:justify-center grow md:grow-0"
           >
             <li class="w-full text-lg md:text-md">
               <a
@@ -79,53 +58,106 @@
                 >Workflow</a
               >
             </li>
-          </ul>
-          <div class="flex gap-4 items-center">
-            <a
-              href="#form-sendler"
-              class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] p-2 lg:py-3 lg:px-6"
-            >
-              <span class="hidden lg:inline">Write a message</span>
-              <svg
-                class="lg:hidden"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <li class="w-full text-lg md:hidden relative">
+              <button
+                class="w-full xs:w-fit py-2 px-4 block font-semibold whitespace-nowrap flex justify-between items-center gap-10 dropdown-btn"
               >
-                <path
-                  d="M14.4624 2.77145C14.4624 2.77145 14.4624 2.7777 14.4624 2.78083L10.8249 14.7771C10.7699 14.9719 10.6566 15.1453 10.5002 15.2739C10.3438 15.4024 10.1518 15.4801 9.94995 15.4965C9.9212 15.499 9.89245 15.5002 9.8637 15.5002C9.67457 15.5008 9.48922 15.4473 9.32953 15.3459C9.16983 15.2446 9.04246 15.0997 8.96245 14.9283L6.68745 10.2596C6.66468 10.2128 6.65709 10.1601 6.66571 10.1088C6.67434 10.0574 6.69876 10.0101 6.73557 9.97333L10.3556 6.35333C10.4454 6.2588 10.4947 6.13292 10.493 6.00254C10.4914 5.87216 10.4388 5.74759 10.3466 5.65539C10.2544 5.56319 10.1299 5.51065 9.99948 5.50898C9.8691 5.50731 9.74323 5.55664 9.6487 5.64645L6.02682 9.26645C5.99005 9.30327 5.94271 9.32769 5.8914 9.33632C5.84009 9.34494 5.78736 9.33734 5.74057 9.31458L1.06745 7.0402C0.884711 6.95253 0.732927 6.81141 0.632209 6.63552C0.531492 6.45964 0.486597 6.2573 0.503473 6.05533C0.52035 5.85335 0.598201 5.66127 0.726711 5.50454C0.85522 5.34781 1.02832 5.23383 1.22307 5.1777L13.2193 1.5402H13.2287C13.3995 1.49222 13.58 1.49053 13.7517 1.53533C13.9233 1.58012 14.08 1.66978 14.2056 1.79511C14.3311 1.92043 14.4211 2.07691 14.4663 2.24848C14.5114 2.42006 14.5101 2.60055 14.4624 2.77145Z"
-                  fill="white"
-                />
-              </svg>
-            </a>
-            <button class="btn-burger flex md:hidden gap-1.5 flex-col items-end w-10 h-10 justify-center">
-              <span class="bg-dark_blue h-[3px] w-6 rounded block"></span>
-              <span class="bg-dark_blue h-[3px] w-8 rounded block"></span>
-              <span class="bg-dark_blue h-[3px] w-4 rounded block"></span>
-            </button>
-          </div>
+                English
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-dark_blue"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.2959 9.79586L12.7959 17.2959C12.6914 17.4007 12.5672 17.484 12.4304 17.5407C12.2937 17.5975 12.1471 17.6267 11.999 17.6267C11.851 17.6267 11.7043 17.5975 11.5676 17.5407C11.4309 17.484 11.3067 17.4007 11.2021 17.2959L3.70215 9.79586C3.4908 9.58451 3.37207 9.29787 3.37207 8.99898C3.37207 8.7001 3.4908 8.41345 3.70215 8.20211C3.91349 7.99076 4.20014 7.87203 4.49902 7.87203C4.79791 7.87203 5.08455 7.99076 5.2959 8.20211L12 14.9062L18.704 8.20117C18.9154 7.98983 19.202 7.87109 19.5009 7.87109C19.7998 7.87109 20.0864 7.98983 20.2978 8.20117C20.5091 8.41252 20.6278 8.69916 20.6278 8.99805C20.6278 9.29693 20.5091 9.58358 20.2978 9.79492L20.2959 9.79586Z"
+                  />
+                </svg>
+              </button>
+              <ul class="dropdown-content py-4">
+                <li>
+                  <a href="#" class="w-full py-2 px-4 block font-semibold whitespace-nowrap">Deutch</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a
+            href="#form-sendler"
+            class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 md:hidden flex-none m-4 xs:w-fit"
+          >
+            Write a message
+          </a>
         </div>
-      </header>
+        <div class="flex gap-4 items-center">
+          <div class="py-3 px-6 border rounded-lg border border-primary hidden sm:flex items-center">
+            <span class="text-primary font-semibold">En</span> <span class="text-primary px-1 font-semibold">|</span>
+            <a href="#" class="text-indigo">De</a>
+          </div>
+          <a
+            href="#form-sendler"
+            class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] p-2 lg:py-3 lg:px-6"
+          >
+            <span class="hidden lg:inline">Write a message</span>
+            <svg
+              class="lg:hidden"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.4624 2.77145C14.4624 2.77145 14.4624 2.7777 14.4624 2.78083L10.8249 14.7771C10.7699 14.9719 10.6566 15.1453 10.5002 15.2739C10.3438 15.4024 10.1518 15.4801 9.94995 15.4965C9.9212 15.499 9.89245 15.5002 9.8637 15.5002C9.67457 15.5008 9.48922 15.4473 9.32953 15.3459C9.16983 15.2446 9.04246 15.0997 8.96245 14.9283L6.68745 10.2596C6.66468 10.2128 6.65709 10.1601 6.66571 10.1088C6.67434 10.0574 6.69876 10.0101 6.73557 9.97333L10.3556 6.35333C10.4454 6.2588 10.4947 6.13292 10.493 6.00254C10.4914 5.87216 10.4388 5.74759 10.3466 5.65539C10.2544 5.56319 10.1299 5.51065 9.99948 5.50898C9.8691 5.50731 9.74323 5.55664 9.6487 5.64645L6.02682 9.26645C5.99005 9.30327 5.94271 9.32769 5.8914 9.33632C5.84009 9.34494 5.78736 9.33734 5.74057 9.31458L1.06745 7.0402C0.884711 6.95253 0.732927 6.81141 0.632209 6.63552C0.531492 6.45964 0.486597 6.2573 0.503473 6.05533C0.52035 5.85335 0.598201 5.66127 0.726711 5.50454C0.85522 5.34781 1.02832 5.23383 1.22307 5.1777L13.2193 1.5402H13.2287C13.3995 1.49222 13.58 1.49053 13.7517 1.53533C13.9233 1.58012 14.08 1.66978 14.2056 1.79511C14.3311 1.92043 14.4211 2.07691 14.4663 2.24848C14.5114 2.42006 14.5101 2.60055 14.4624 2.77145Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <button class="btn-burger flex md:hidden gap-1.5 flex-col items-end w-10 h-10 justify-center">
+            <span class="bg-dark_blue h-[3px] w-6 rounded block"></span>
+            <span class="bg-dark_blue h-[3px] w-8 rounded block"></span>
+            <span class="bg-dark_blue h-[3px] w-4 rounded block"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="relative max-w-[2500px] mx-auto">
+      <div class="gradient-bg absolute top-0 left-0 w-full h-full z-[-1]">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                result="goo"
+              />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gradients-container">
+          <div class="g1"></div>
+          <div class="g4"></div>
+        </div>
+      </div>
       <main id="hero" class="pt-10 lg:pt-14">
         <div class="container mx-auto px-4 lg:px-8">
-          <div class="mb-14 pointer-events-none">
+          <div class="mb-7 md:mb-20 pointer-events-none max-w-[1224px]" data-aos="fade-up" data-aos-duration="1000">
             <h1 class="title text-center font-normal">
               <span class="font-bold">We automate CRM</span> systems for brokerage agencies that lease and sell offices,
               warehouses, and residential real estate
             </h1>
           </div>
-          <div class="rounded-lg overflow-hidden mb-20 pointer-events-none">
-            <img
-              class="max-w-full"
-              src="./assets/images/promo-image.png"
-              alt="The main image of Vasterra CRM"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            />
+          <div class="rounded-lg overflow-hidden mb-20 pointer-events-none" data-aos="fade-up" data-aos-duration="1500">
+            <img class="max-w-full" src="./assets/images/promo-image.png" alt="The main image of Vasterra CRM" />
           </div>
-          <div class="flex flex-wrap md:flex-nowrap gap-8 xl:gap-14 mb-8 md:mb-14 pointer-events-none">
+          <div
+            class="flex flex-wrap md:flex-nowrap gap-8 xl:gap-14 mb-8 md:mb-14 pointer-events-none"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
             <div>
               <p class="text-md lg:text-md text-center">
                 <span class="font-semibold">We can develop modules</span> for Salesforce and create a customized system
@@ -157,10 +189,18 @@
     </div>
     <section id="why" class="pt-20 pb-10 lg:pt-36 lg:pb-14 pointer-events-none">
       <div class="container mx-auto px-4 lg:px-8">
-        <h2 class="title text-center text-primary font-normal mb-6 md:mb12">
+        <h2
+          class="title text-center text-primary font-normal mb-7 md:mb-20"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
           Why customize a CRM system if everything works smoothly already?
         </h2>
-        <div class="text-center text-md md:text-lg max-w-[810px] mx-auto mb-4 md:mb-8">
+        <div
+          class="text-center text-md md:text-lg max-w-[810px] mx-auto mb-7 md:mb-16"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
           <p class="mb-4">
             Off-the-shelf <span class="font-semibold">CRM is a universal solution</span> that suits almost any business
             but does not completely cover the needs of any of them.
@@ -172,6 +212,8 @@
         <div class="flex flex-wrap justify-center md:justify-start">
           <div
             class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -188,6 +230,8 @@
           </div>
           <div
             class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -204,6 +248,8 @@
           </div>
           <div
             class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -220,6 +266,8 @@
           </div>
           <div
             class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -236,6 +284,8 @@
           </div>
           <div
             class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -252,6 +302,8 @@
           </div>
           <div
             class="max-w-[400px] basis-full md:basis-1/3 py-4 px-4 xl:px-16 flex flex-col items-center mb-8 md:mb-14"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             <div class="mb-4 h-[56px]">
               <img
@@ -269,13 +321,15 @@
         </div>
       </div>
     </section>
-    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl">
+    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl" data-aos="fade-up" data-aos-duration="1000">
       <div class="container mx-auto px-4 lg:px-8">
-        <h2 class="title text-white text-center mb-6 md:mb-12">
+        <h2 class="title text-white text-center mb-7 md:mb-20" data-aos="fade-up" data-aos-duration="1200">
           How a custom<br />CRM system helps<br />an agency's key staff
         </h2>
-        <p class="text-center mb-6 md:mb-12">Additional modules automate the work of all departments:</p>
-        <div class="hidden lg:flex gap-6">
+        <p class="text-center mb-7 md:mb-16" data-aos="fade-up" data-aos-duration="1200">
+          Additional modules automate the work of all departments:
+        </p>
+        <div class="hidden lg:flex gap-6" data-aos="fade-up" data-aos-duration="1200">
           <div class="basis-1/3 rounded-lg border border-white p-10">
             <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
             <p class="md:text-md">
@@ -291,7 +345,7 @@
             <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
           </div>
         </div>
-        <div id="swiper-helps" class="swiper lg:hidden">
+        <div id="swiper-helps" class="swiper lg:hidden" data-aos="fade-up" data-aos-duration="1200">
           <div class="swiper-wrapper mb-6 items-stretch">
             <div class="swiper-slide h-auto">
               <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
@@ -345,7 +399,7 @@
         </div>
       </div>
     </section>
-    <div class="relative max-w-[2500px] mx-auto overflow-hidden">
+    <div class="relative max-w-[2500px] mx-auto">
       <div class="gradient-bg absolute top-0 left-0 w-full h-full z-[-1]">
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -363,18 +417,20 @@
         </svg>
         <div class="gradients-container">
           <div class="g2"></div>
-          <div class="g4"></div>
+          <div class="g5"></div>
         </div>
       </div>
-      <section id="modules" class="pt-20 lg:pt-32">
+      <section id="modules" class="pt-20 lg:pt-32" data-aos="fade-up" data-aos-duration="1000">
         <div class="container mx-auto px-4 lg:px-8">
-          <h2 class="title text-primary text-center mb-6 md:mb-12">
+          <h2 class="title text-primary text-center mb-7 md:mb-20" data-aos="fade-up" data-aos-duration="1200">
             Which modules <br class="hidden sm:inline" />could be useful for you
           </h2>
         </div>
-        <div class="container max-w-full md:max-w-[769px] lg:max-w-[992px] xl:max-w-[1300px] mx-auto pl-4 lg:px-8">
+        <div class="container mx-auto pl-4 lg:px-8">
           <div
-            class="tabs flex flex-nowrap overflow-x-scroll md:flex-wrap gap-2 md:gap-4 md:justify-center max-w-[1100px] mx-auto mb-4 pb-4 md:mb-16"
+            class="tabs flex flex-nowrap overflow-x-scroll md:flex-wrap gap-2 md:gap-4 md:justify-center max-w-[1100px] mx-auto mb-7 pb-4 md:mb-16"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             <button
               class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-white font-normal text-sm md:text-md bg-primary hover:bg-primary hover:text-white inline-block whitespace-nowrap"
@@ -436,16 +492,28 @@
           <div id="mobile-version" class="tab-content gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap lg:items-center">
             <div class="basis-full lg:basis-1/2">
               <div class="mb-5 md:mb-10">
-                <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
-                <p>
+                <h4
+                  class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  What it can do
+                </h4>
+                <p data-aos="fade-up" data-aos-duration="1200">
                   Customization changes the logic of how the base modules operate. Mobile adaptation is necessary for
                   the system to function correctly on any device, allowing brokers to work in the CRM even on
                   smartphones.
                 </p>
               </div>
               <div class="mb-5 md:mb-10">
-                <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
-                <p>
+                <h4
+                  class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  When it can be useful
+                </h4>
+                <p data-aos="fade-up" data-aos-duration="1200">
                   If you need to create a presentation for a client directly from your smartphone, on the go and from
                   anywhere.
                 </p>
@@ -733,19 +801,21 @@
           </div>
         </div>
       </section>
-      <section id="advantages" class="py-20 lg:py-32">
+      <section id="advantages" class="py-20 lg:py-32" data-aos="fade-up" data-aos-duration="1000">
         <div class="container mx-auto px-4 lg:px-8">
-          <h2 class="title text-primary text-center mb-6 md:mb-12">
+          <h2 class="title text-primary text-center mb-7 md:mb-20" data-aos="fade-up" data-aos-duration="1200">
             If you don't find <br class="hidden sm:inline" />the required module, <br class="hidden sm:inline" />we will
             create it <br class="hidden sm:inline" />specifically for you
           </h2>
-          <p class="text-center text-md md:text-lg mb-6 md:mb-12">
+          <p class="text-center text-md md:text-lg mb-7 md:mb-16" data-aos="fade-up" data-aos-duration="1200">
             Here's the functionality we've already developed for our clients:
           </p>
         </div>
         <div class="container max-w-full md:max-w-[769px] lg:max-w-[992px] xl:max-w-[1300px] mx-auto pl-4 lg:px-8">
           <div
-            class="tabs flex flex-nowrap overflow-x-scroll md:flex-wrap gap-2 md:gap-4 md:justify-center mb-4 pb-4 md:mb-16"
+            class="tabs flex flex-nowrap overflow-x-scroll md:flex-wrap gap-2 md:gap-4 md:justify-center mb-6 pb-4 md:mb-12"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             <button
               class="rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-white font-normal text-sm md:text-md bg-primary hover:bg-primary hover:text-white inline-block whitespace-nowrap"
@@ -783,6 +853,8 @@
           <div
             id="property-database"
             class="tab-content gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             <div class="basis-full lg:basis-1/2">
               <ul class="list-disc ml-3">
@@ -797,11 +869,7 @@
                 <li class="md:text-lg pb-4">Automatic attachment of photos to floor plans;</li>
               </ul>
             </div>
-            <div
-              class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch">
               <img
                 class="lg:h-[inherit] w-full lg:object-cover max-w-full"
                 src="./assets/images/tab-image-2.png"
@@ -939,17 +1007,17 @@
         </div>
       </section>
     </div>
-    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl">
+    <section class="bg-primary py-20 lg:py-32 text-white rounded-xl" data-aos="fade-up" data-aos-duration="1000">
       <div class="container mx-auto px-4 lg:px-8">
-        <h2 class="title text-center mb-10 md:mb-12">
+        <h2 class="title text-center mb-7 md:mb-20" data-aos="fade-up" data-aos-duration="1200">
           How we help <br class="hidden sm:inline" />companies boost key <br class="hidden sm:inline" />business metrics
         </h2>
-        <p class="text-center mb-8 md:mb-12">
+        <p class="text-center mb-6 md:mb-12" data-aos="fade-up" data-aos-duration="1200">
           Vasterra collaborates with several major players in the market, including Colliers.
           <br />We customized their CRM system and optimized key processes. <br />This has helped achieve many
           impressive results:
         </p>
-        <div class="flex justify-center mb-8 md:mb-12 bottom-[20px] md:bottom-0 sticky md:static z-[10]">
+        <div class="flex justify-center mb-7 md:mb-16 bottom-[20px] md:bottom-0 sticky md:static z-[10]">
           <a
             href="https://vasterra.com/colliers"
             class="w-full max-w-[392px] py-3 px-6 text-center bg-white text-primary text-base md:text-md rounded-lg font-semibold focus:bg-[#17337d] focus:text-white disabled:bg-gray disabled:text-dark_gray"
@@ -957,22 +1025,22 @@
           >
         </div>
         <div class="hidden lg:flex gap-6">
-          <div class="basis-1/3 rounded-lg border border-white p-10">
+          <div class="basis-1/3 rounded-lg border border-white p-10" data-aos="fade-up" data-aos-duration="1200">
             <h3 class="text-md md:text-xxl mb-8 font-medium">Brokers</h3>
             <p class="md:text-md">
               Spend time on developing customer relationships rather than on routine tasks, thereby closing more deals.
             </p>
           </div>
-          <div class="basis-1/3 rounded-lg border border-white p-10">
+          <div class="basis-1/3 rounded-lg border border-white p-10" data-aos="fade-up" data-aos-duration="1200">
             <h3 class="text-md md:text-xxl mb-8 font-medium">Analysts</h3>
             <p class="md:text-md">Delegate data collection to the system and focus on interpreting.</p>
           </div>
-          <div class="basis-1/3 rounded-lg border border-white p-10">
+          <div class="basis-1/3 rounded-lg border border-white p-10" data-aos="fade-up" data-aos-duration="1200">
             <h3 class="text-md md:text-xxl mb-8 font-medium">Executives</h3>
             <p class="md:text-md">Transparently track key performance indicators of each departmentin real-time.</p>
           </div>
         </div>
-        <div id="swiper-metrics" class="swiper lg:hidden">
+        <div id="swiper-metrics" class="swiper lg:hidden" data-aos="fade-up" data-aos-duration="1200">
           <div class="lg:hidden swiper-wrapper mb-6 items-stretch">
             <div class="swiper-slide h-auto">
               <div class="basis-1/3 rounded-lg border border-white p-10 h-full">
@@ -1026,7 +1094,7 @@
         </div>
       </div>
     </section>
-    <div class="relative max-w-[2500px] mx-auto overflow-hidden">
+    <div class="relative max-w-[2500px] mx-auto" data-aos="fade-up" data-aos-duration="1000">
       <div class="gradient-bg absolute top-0 left-0 w-full h-full z-[-1]">
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -1046,7 +1114,7 @@
           <div class="g3"></div>
         </div>
       </div>
-      <section class="py-20 lg:py-32">
+      <section class="pt-20 lg:pt-48">
         <div class="container mx-auto px-4 lg:px-8">
           <div class="flex items-center flex-col gap-10 text-center">
             <svg
@@ -1056,6 +1124,8 @@
               viewBox="0 0 58 54"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              data-aos="fade-up"
+              data-aos-duration="1200"
             >
               <path
                 d="M11.8249 28.4704C12.0715 24.3235 13.7207 19.7935 15.7793 15.6954C17.9063 11.4611 20.4536 7.72092 22.2834 5.3919C22.6896 4.87486 22.6107 4.13084 22.0824 3.71228L19.209 1.43598C18.7061 1.03756 17.9718 1.08711 17.5312 1.54631C7.02946 12.4931 2.50919 24.335 1.55029 28.8002C0.584002 32.4967 0.00738231 38.5377 1.47205 43.6354C2.20618 46.1906 3.46147 48.5373 5.46875 50.2242C7.48473 51.9185 10.2246 52.9178 13.8592 52.8278C22.3351 52.6179 26.6691 46.1966 26.4055 40.0363C26.2736 36.9529 24.9936 33.9069 22.4888 31.7085C20.0582 29.5751 16.508 28.2692 11.8249 28.4704Z"
@@ -1070,13 +1140,13 @@
                 stroke-linejoin="round"
               />
             </svg>
-            <p class="[font-size:_clamp(18px,3vw,32px)]">
+            <p class="[font-size:_clamp(18px,3vw,32px)]" data-aos="fade-up" data-aos-duration="1200">
               The Vasterra team will respect your ideas and needs and never push you to change your core beliefs.
               Demonstrating an exceptional understanding of the client`s goals, Vasterra has performed well throughout
               the engagement. They`ve facilitated a smooth process, going above and beyond to deliver top-tier results.
               Customers can expect a collaborative and reliable partner.
             </p>
-            <div class="flex flex-col gap-6 items-center">
+            <div class="flex flex-col gap-6 items-center" data-aos="fade-up" data-aos-duration="1200">
               <div class="rounded-full w-[72px] h-72px overflow-hidden">
                 <img
                   class="w-full h-full object-cover"
@@ -1086,7 +1156,7 @@
                   alt="CRM Vasterra"
                 />
               </div>
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1200">
                 <h6 class="text-base md:text-lg mb-1 font-semibold">Olga Repryntseva</h6>
                 <span class="text-base md:text-lg block">CRM Manager, Colliers International</span>
               </div>
@@ -1094,6 +1164,8 @@
                 href="https://clutch.co/profile/vasterra-0#review-1883692"
                 class="gap-1 text-[15px] font-medium rounded-lg border-warning border-[2px] py-[15px] px-7 flex items-center"
                 target="_blank"
+                data-aos="fade-up"
+                data-aos-duration="1200"
               >
                 <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1111,10 +1183,12 @@
           </div>
         </div>
       </section>
-      <section id="workflow" class="py-20 lg:py-32">
+      <section id="workflow" class="pt-20 lg:pt-48" data-aos="fade-up" data-aos-duration="1000">
         <div class="container mx-auto px-4 lg:px-8">
-          <h2 class="title text-primary text-center mb-6 md:mb-12">How is the workflow for CRM automation built</h2>
-          <p class="text-center text-md md:text-lg mb-6 md:mb-12">
+          <h2 class="title text-primary text-center mb-6 md:mb-12" data-aos="fade-up" data-aos-duration="1200">
+            How is the workflow for CRM automation built
+          </h2>
+          <p class="text-center text-md md:text-lg mb-6 md:mb-12" data-aos="fade-up" data-aos-duration="1200">
             The project consists of four key stages. At each of them, you will only need to maintain minimal
             involvement: you won't have to be distracted from your main body of work, and most importantly, you won't
             lose any clients. After implementation, you will definitely see an increase in their number.
@@ -1122,7 +1196,11 @@
           <div id="swiper-workflow" class="swiper">
             <div class="swiper-wrapper mb-6 md:mb-12">
               <div class="swiper-slide h-auto">
-                <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col">
+                <div
+                  class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
                   <h3 class="text-xl md:text-xxl font-medium text-primary">Data collection</h3>
                   <p class="md:text-md">
                     Business analysts and project managers conduct interviews with representatives from all departments,
@@ -1131,7 +1209,11 @@
                 </div>
               </div>
               <div class="swiper-slide h-auto">
-                <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col">
+                <div
+                  class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
                   <h3 class="text-xl md:text-xxl font-medium text-primary">Data analysis and project approval</h3>
                   <p class="md:text-md">
                     Based on the collected information, we develop an understanding of the task, create an efficient
@@ -1140,7 +1222,11 @@
                 </div>
               </div>
               <div class="swiper-slide h-auto">
-                <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col">
+                <div
+                  class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
                   <h3 class="text-xl md:text-xxl font-medium text-primary">Development of new modules</h3>
                   <p class="md:text-md">
                     We work iteratively, presenting results to stakeholders at each stage. We launch the system and
@@ -1149,7 +1235,11 @@
                 </div>
               </div>
               <div class="swiper-slide h-auto">
-                <div class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col">
+                <div
+                  class="rounded-lg border border-primary gap-8 p-10 h-full flex flex-col"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
                   <h3 class="text-xl md:text-xxl font-medium text-primary">Team training and system maintenance</h3>
                   <p class="md:text-md">
                     We prepare training materials and video tutorials, maintain the system's functionality after the
@@ -1158,7 +1248,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex gap-4 justify-center xl:hidden">
+            <div class="flex gap-4 justify-center xl:hidden" data-aos="fade-up" data-aos-duration="1200">
               <div
                 class="swiper-workflow-button-prev w-12 h-12 p-3 rounded-lg group flex justify-center items-center bg-primary"
               >
@@ -1189,15 +1279,17 @@
         </div>
       </section>
     </div>
-    <section id="form-sendler" class="py-20 lg:py-32">
+    <section id="form-sendler" class="py-20 lg:py-32" data-aos="fade-up" data-aos-duration="1000">
       <div class="container mx-auto px-4 lg:px-8">
-        <h2 class="title text-primary text-center mb-6 md:mb-12">Want to boost <br />your CRM system?</h2>
-        <p class="text-center text-md md:text-lg mb-6 md:mb-12">
+        <h2 class="title text-primary text-center mb-6 md:mb-12" data-aos="fade-up" data-aos-duration="1200">
+          Want to boost <br />your CRM system?
+        </h2>
+        <p class="text-center text-md md:text-lg mb-6 md:mb-12" data-aos="fade-up" data-aos-duration="1200">
           Write to us and we will help you realize all your needs.
         </p>
         <div class="max-w-[600px] mx-auto">
           <form>
-            <label class="mb-6 block">
+            <label class="mb-6 block" data-aos="fade-up" data-aos-duration="1200">
               <input
                 class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
                 type="text"
@@ -1206,7 +1298,7 @@
               />
               <p class="font-normal text-danger hidden">Required field</p>
             </label>
-            <label class="mb-6 block">
+            <label class="mb-6 block" data-aos="fade-up" data-aos-duration="1200">
               <input
                 class="py-4 px-6 rounded-lg bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
                 type="email"
@@ -1215,7 +1307,7 @@
               />
               <p class="font-normal text-danger hidden">Required field</p>
             </label>
-            <label class="mb-6 block">
+            <label class="mb-6 block" data-aos="fade-up" data-aos-duration="1200">
               <textarea
                 class="py-4 px-6 rounded-[28px] bg-white w-full border border-white hover:border-primary focus:border-primary font-normal disabled:bg-gray disabled:border-gray"
                 placeholder="Message"
@@ -1223,7 +1315,12 @@
               ></textarea>
               <p class="font-normal text-danger hidden">Required field</p>
             </label>
-            <label for="checkbox-agree" class="peer group flex gap-2 items-center cursor-pointer mb-10">
+            <label
+              for="checkbox-agree"
+              class="peer group flex gap-2 items-center cursor-pointer mb-10"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <input id="checkbox-agree" type="checkbox" class="hidden peer" />
               <i
                 class="w-6 h-6 border border-white rounded-[6px] bg-white peer-checked:bg-primary flex justify-center items-center group-hover:border-primary"
@@ -1241,6 +1338,8 @@
             </label>
             <button
               class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 w-full"
+              data-aos="fade-up"
+              data-aos-duration="1200"
             >
               Send
             </button>
@@ -1248,7 +1347,7 @@
         </div>
       </div>
     </section>
-    <footer class="rounded-t-xl py-24 relative overflow-hidden">
+    <footer class="rounded-t-xl py-24 relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
       <svg
         class="w-full absolute top-[-40px] left-0 hidden md:block z-[-1]"
         width="1920"
@@ -1332,17 +1431,17 @@
       </svg>
       <div class="container mx-auto px-4 lg:px-8">
         <div class="flex flex-col gap-10 items-center md:items-start md:flex-row md:justify-between mb-6 md:mb-10">
-          <a href="/">
+          <a href="/" data-aos="fade-up" data-aos-duration="1000">
             <img src="./assets/images/logo.svg" width="165" height="35" alt="Vasterra Logo" />
           </a>
           <div class="flex flex-col md:flex-row gap-6 md:gap-12 text-center md:text-left">
-            <address class="not-italic">
+            <address class="not-italic" data-aos="fade-up" data-aos-duration="1000">
               <h6 class="text-lg font-semibold mb-6 md:mb-8">USA</h6>
               <p>11301, West Olympic Boulevard</p>
               <p class="mb-1">Apt. 100 Los Angeles, CA 90064</p>
               <a href="tel:+13021234567" class="inline-block hover:text-primary cursor-pointer">+1 302 123-4567</a>
             </address>
-            <address class="not-italic">
+            <address class="not-italic" data-aos="fade-up" data-aos-duration="1000">
               <h6 class="text-lg font-semibold mb-6 md:mb-8">USA</h6>
               <p>6 Pike Close, Folkestone,</p>
               <p class="mb-1">Kent, CT19 5UT4</p>

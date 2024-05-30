@@ -15,7 +15,7 @@
   --color-bg1: rgb(108, 0, 162);
   --color-bg2: rgb(0, 17, 82);
   --color1: 34, 83, 208;
-  --color2: 38, 91, 229;
+  --color2: 37, 34, 208;
   --color3: 63, 59, 255;
   --color4: 44, 110, 271;
   --color5: 47, 119, 292;
@@ -46,6 +46,11 @@ body {
   font-variation-settings: 'slnt' 0;
   color: var(--primary-colors-dark-blue);
   background: var(--background-bg);
+}
+
+.container {
+  width: 100%;
+  max-width: 100% !important;
 }
 
 .title {
@@ -81,7 +86,19 @@ body {
   border-bottom: 1px solid var(--secondary-dark-gray);
   backdrop-filter: blur(34px);
   background: rgba(242, 242, 242, 0.44);
-  z-index: 50;
+  padding: 8px 0;
+}
+
+.dropdown-content {
+  height: 0;
+  opacity: 0;
+  transition: height 0.25s ease;
+  transition: opacity 0.35s ease;
+}
+
+.dropdown-content.show {
+  height: auto;
+  opacity: 1;
 }
 
 .swiper-workflow-button-prev.swiper-button-disabled,
@@ -98,8 +115,7 @@ body {
 .swiper-helps-button-prev.swiper-button-disabled,
 .swiper-helps-button-next.swiper-button-disabled,
 .swiper-metrics-button-prev.swiper-button-disabled,
-.swiper-metrics-button-next.swiper-button-disabled
- {
+.swiper-metrics-button-next.swiper-button-disabled {
   border-color: #fff;
   background: transparent;
   cursor: not-allowed;
@@ -196,6 +212,20 @@ textarea:focus:-moz-placeholde {
   }
 }
 
+@media screen and (min-width: 992px) {
+  @keyframes moveVerticalLeft {
+    0% {
+      transform: translateX(-15%) translateY(-10%);
+    }
+    50% {
+      transform: translateX(-5%) translateY(10%);
+    }
+    100% {
+      transform: translateX(-15%) translateY(-10%);
+    }
+  }
+}
+
 .gradient-bg {
   width: 100vw;
   height: 100vh;
@@ -214,13 +244,19 @@ textarea:focus:-moz-placeholde {
 
 .g1 {
   position: absolute;
-  background: radial-gradient(circle at center, rgba(var(--color1), 1) 0, rgba(var(--color1), 0) 50%) no-repeat;
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color1), 1) 0,
+      rgba(var(--color1), 0.8) 30%,
+      rgba(var(--color1), 0) 50%
+    )
+    no-repeat;
   mix-blend-mode: var(--blending);
 
   width: var(--circle-size);
   height: var(--circle-size);
-  top: calc(10% - var(--circle-size) / 2);
-  left: calc(20% - var(--circle-size) / 2);
+  top: calc(5% - var(--circle-size) / 2);
+  left: calc(10% - var(--circle-size) / 2);
 
   transform-origin: center center;
   animation: moveVerticalLeft 30s ease infinite;
@@ -252,7 +288,7 @@ textarea:focus:-moz-placeholde {
   width: var(--circle-size);
   height: var(--circle-size);
   top: calc(50% - var(--circle-size) / 2);
-  right: calc(0% - var(--circle-size) / 2);
+  right: -35%;
 
   transform-origin: calc(50%);
   animation: moveVerticalRight 40s linear infinite;
@@ -262,12 +298,18 @@ textarea:focus:-moz-placeholde {
 
 .g4 {
   position: absolute;
-  background: radial-gradient(circle at center, rgba(var(--color1), 1) 0, rgba(var(--color1), 0) 50%) no-repeat;
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color1), 1) 0,
+      rgba(var(--color1), 0.8) 30%,
+      rgba(var(--color1), 0) 50%
+    )
+    no-repeat;
   mix-blend-mode: var(--blending);
 
   width: var(--circle-size);
   height: var(--circle-size);
-  top: calc(70% - var(--circle-size) / 2);
+  top: calc(40% - var(--circle-size) / 2);
   right: calc(-15% - var(--circle-size) / 2);
 
   transform-origin: calc(50% - 200px);
@@ -278,25 +320,23 @@ textarea:focus:-moz-placeholde {
 
 .g5 {
   position: absolute;
-  background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color1), 1) 0,
+      rgba(var(--color1), 0.8) 30%,
+      rgba(var(--color1), 0) 50%
+    )
+    no-repeat;
   mix-blend-mode: var(--blending);
 
-  width: calc(var(--circle-size) * 2);
-  height: calc(var(--circle-size) * 2);
-  top: calc(100% - var(--circle-size));
-  left: calc(100% - var(--circle-size));
+  width: 30%;
+  height: 30%;
+  top: 50%;
+  right: -10%;
 
-  transform-origin: calc(50% - 800px) calc(50% + 200px);
-  animation: moveInCircle 20s ease infinite;
-
+  transform-origin: calc(50% - 200px);
+  animation: moveVerticalRight 40s ease infinite;
   opacity: 1;
-}
-
-@media screen (min-width: 768px) {
-
-  .g4 {
-  right: calc(10% - var(--circle-size) / 2);
-  }
 }
 
 .interactive {

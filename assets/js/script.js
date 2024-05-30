@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   btnBurger.addEventListener('click', function () {
     this.classList.toggle('active');
     menu.classList.toggle('active');
-    body.classList.toggle('overflow-hidden');
+    body.classList.toggle('overflow-y-hidden');
   });
 
   menuItem.forEach((item) => {
@@ -20,6 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.remove('overflow-hidden');
       }
     });
+  });
+
+  document.querySelector('.dropdown-btn').addEventListener('click', (e) => {
+    document.querySelector('.dropdown-content').classList.toggle('show');
+    e.currentTarget.classList.toggle('text-primary');
+    e.currentTarget.querySelector('svg').classList.toggle('fill-primary');
   });
 
   // header scroll
