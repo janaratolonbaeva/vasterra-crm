@@ -30,16 +30,16 @@
 
   .g1 {
     top: 0px;
-    left: -250px;
+    left: -300px;
   }
 
   .g2 {
-    top: 30%;
+    top: 27%;
     left: -150px;
   }
 
   .g4 {
-    right: -400px;
+    right: -250px;
     top: calc(60% - var(--circle-size) / 2);
   }
 
@@ -125,5 +125,32 @@
     transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
     transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96),
       -webkit-transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .g1 {
+    transform-origin: center center;
+    animation: moveVerticalLeft 30s ease infinite;
+  }
+
+  .g2 {
+    transform-origin: calc(50% - 400px);
+    animation: moveVerticalLeft 20s reverse infinite;
+  }
+
+  .g3 {
+    transform-origin: calc(50%);
+    animation: moveVerticalRight 40s linear infinite;
+  }
+
+  .g4 {
+    transform-origin: calc(50% - 200px);
+    animation: moveVerticalRight 40s ease infinite;
+  }
+
+  .g5 {
+    transform-origin: calc(50% - 200px);
+    animation: moveVerticalRight 40s ease infinite;
   }
 }
