@@ -15,12 +15,42 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .gradient-bg {
-    overflow-x: hidden;
+  .g4 {
+    right: calc(10% - var(--circle-size) / 2);
+  }
+
+  .g1,
+  .g2,
+  .g3,
+  .g4,
+  .g5 {
+    width: 500px;
+    height: 500px;
+  }
+
+  .g1 {
+    top: 0px;
+    left: -250px;
+  }
+
+  .g2 {
+    top: 30%;
+    left: -150px;
   }
 
   .g4 {
-    right: calc(10% - var(--circle-size) / 2);
+    right: -400px;
+    top: calc(60% - var(--circle-size) / 2);
+  }
+
+  .g5 {
+    top: auto;
+    bottom: -50px;
+    right: -250px;
+  }
+
+  .g3 {
+    right: -100%;
   }
 
   .menu {
@@ -90,10 +120,10 @@
   }
 
   .menu.active li:nth-child(5) {
-    -webkit-transition: -webkit-transform 1s 0.40s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-    transition: -webkit-transform 1s 0.40s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-    transition: transform 1s 0.40s cubic-bezier(0.29, 1.4, 0.44, 0.96);
-    transition: transform 1s 0.40s cubic-bezier(0.29, 1.4, 0.44, 0.96),
-      -webkit-transform 1s 0.40s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+    -webkit-transition: -webkit-transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+    transition: -webkit-transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+    transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+    transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96),
+      -webkit-transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
   }
 }
