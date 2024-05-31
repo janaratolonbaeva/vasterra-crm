@@ -36,6 +36,7 @@ tailwind.config = {
       sm: '640px',
       md: '769px',
       lg: '992px',
+      '2lg': '1150px',
       xl: '1300px',
     },
   },

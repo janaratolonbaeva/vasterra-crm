@@ -14,114 +14,116 @@
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/media.css" />
   </head>
-  <body class="overflow-x-hidden">
-    <header id="header" class="header py-3.5 md:py-8 w-full sticky top-0 left-0 z-[50]">
-      <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center">
-        <a href="/">
-          <img
-            class="w-[129px] h-[24px] lg:w-[165px] lg:h-[35px]"
-            src="./assets/images/logo.svg"
-            width="165"
-            height="35"
-            alt="Vasterra Logo"
-          />
-        </a>
-        <div id="menu" class="menu flex flex-col">
-          <ul
-            class="flex-col md:flex-row flex gap-10 md:gap-6 xl:gap-10 pt-20 md:pt-0 items-center md:justify-center grow md:grow-0"
-          >
-            <li class="w-full text-lg md:text-md">
-              <a
-                href="#why"
-                class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
-                >Why?</a
+  <body>
+    <div class="relative max-w-[2500px] mx-auto pt-16 md:pt-28">
+      <header id="header" class="header py-3.5 md:py-8 w-full fixed top-0 left-0 z-[50]">
+        <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center">
+          <div class="md:flex md:gap-5 lg:gap-10 2lg:gap-16 items-center">
+            <a href="/">
+              <img
+                class="w-[129px] h-[24px] lg:w-[165px] lg:h-[30px]"
+                src="./assets/images/logo.svg"
+                width="165"
+                height="35"
+                alt="Vasterra Logo"
+              />
+            </a>
+            <div id="menu" class="menu flex flex-col">
+              <ul
+                class="flex-col md:flex-row flex gap-10 md:gap-6 xl:gap-10 pt-20 md:pt-0 items-center md:justify-center grow md:grow-0"
               >
-            </li>
-            <li class="w-full text-lg md:text-md">
-              <a
-                href="#modules"
-                class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
-                >Modules</a
-              >
-            </li>
-            <li class="w-full text-lg md:text-md">
-              <a
-                href="#advantages"
-                class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
-                >Our advantages</a
-              >
-            </li>
-            <li class="w-full text-lg md:text-md">
-              <a
-                href="#workflow"
-                class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
-                >Workflow</a
-              >
-            </li>
-            <li class="w-full text-lg md:hidden relative">
-              <button
-                class="w-full xs:w-fit py-2 px-4 block font-semibold whitespace-nowrap flex justify-between items-center gap-10 dropdown-btn"
-              >
-                English
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="fill-dark_blue"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M20.2959 9.79586L12.7959 17.2959C12.6914 17.4007 12.5672 17.484 12.4304 17.5407C12.2937 17.5975 12.1471 17.6267 11.999 17.6267C11.851 17.6267 11.7043 17.5975 11.5676 17.5407C11.4309 17.484 11.3067 17.4007 11.2021 17.2959L3.70215 9.79586C3.4908 9.58451 3.37207 9.29787 3.37207 8.99898C3.37207 8.7001 3.4908 8.41345 3.70215 8.20211C3.91349 7.99076 4.20014 7.87203 4.49902 7.87203C4.79791 7.87203 5.08455 7.99076 5.2959 8.20211L12 14.9062L18.704 8.20117C18.9154 7.98983 19.202 7.87109 19.5009 7.87109C19.7998 7.87109 20.0864 7.98983 20.2978 8.20117C20.5091 8.41252 20.6278 8.69916 20.6278 8.99805C20.6278 9.29693 20.5091 9.58358 20.2978 9.79492L20.2959 9.79586Z"
-                  />
-                </svg>
-              </button>
-              <ul class="dropdown-content py-4">
-                <li>
-                  <a href="#" class="w-full py-2 px-4 block font-semibold whitespace-nowrap">Deutch</a>
+                <li class="w-full text-lg md:text-md">
+                  <a
+                    href="#why"
+                    class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+                    >Why?</a
+                  >
+                </li>
+                <li class="w-full text-lg md:text-md">
+                  <a
+                    href="#modules"
+                    class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+                    >Modules</a
+                  >
+                </li>
+                <li class="w-full text-lg md:text-md">
+                  <a
+                    href="#advantages"
+                    class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+                    >Our advantages</a
+                  >
+                </li>
+                <li class="w-full text-lg md:text-md">
+                  <a
+                    href="#workflow"
+                    class="w-full py-2 px-4 md:px-0 md:py-0 block font-semibold md:font-normal whitespace-nowrap"
+                    >Workflow</a
+                  >
+                </li>
+                <li class="w-full text-lg md:hidden relative">
+                  <button
+                    class="w-full xs:w-fit py-2 px-4 block font-semibold whitespace-nowrap flex justify-between items-center gap-10 dropdown-btn"
+                  >
+                    English
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="fill-dark_blue"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.2959 9.79586L12.7959 17.2959C12.6914 17.4007 12.5672 17.484 12.4304 17.5407C12.2937 17.5975 12.1471 17.6267 11.999 17.6267C11.851 17.6267 11.7043 17.5975 11.5676 17.5407C11.4309 17.484 11.3067 17.4007 11.2021 17.2959L3.70215 9.79586C3.4908 9.58451 3.37207 9.29787 3.37207 8.99898C3.37207 8.7001 3.4908 8.41345 3.70215 8.20211C3.91349 7.99076 4.20014 7.87203 4.49902 7.87203C4.79791 7.87203 5.08455 7.99076 5.2959 8.20211L12 14.9062L18.704 8.20117C18.9154 7.98983 19.202 7.87109 19.5009 7.87109C19.7998 7.87109 20.0864 7.98983 20.2978 8.20117C20.5091 8.41252 20.6278 8.69916 20.6278 8.99805C20.6278 9.29693 20.5091 9.58358 20.2978 9.79492L20.2959 9.79586Z"
+                      />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-content py-4">
+                    <li>
+                      <a href="#" class="w-full py-2 px-4 block font-semibold whitespace-nowrap">Deutch</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
-            </li>
-          </ul>
-          <a
-            href="#form-sendler"
-            class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 md:hidden flex-none m-4 xs:w-fit"
-          >
-            Write a message
-          </a>
-        </div>
-        <div class="flex gap-4 items-center">
-          <div class="py-3 px-6 border rounded-lg border border-primary hidden sm:flex items-center">
-            <span class="text-primary font-semibold">En</span> <span class="text-primary px-1 font-semibold">|</span>
-            <a href="#" class="text-indigo">De</a>
+              <a
+                href="#form-sendler"
+                class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 md:hidden flex-none m-4 xs:w-fit"
+              >
+                Write a message
+              </a>
+            </div>
           </div>
-          <a
-            href="#form-sendler"
-            class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] p-2 lg:py-3 lg:px-6"
-          >
-            <span class="hidden lg:inline">Write a message</span>
-            <svg
-              class="lg:hidden"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+          <div class="flex gap-4 items-center">
+            <div class="py-3 px-6 border rounded-lg border border-primary hidden sm:flex items-center">
+              <span class="text-primary font-semibold">En</span> <span class="text-primary px-1 font-semibold">|</span>
+              <a href="#" class="text-indigo">De</a>
+            </div>
+            <a
+              href="#form-sendler"
+              class="flex justify-center items-center cursor-pointer rounded-lg bg-primary text-white font-semibold focus:bg-[#17337d] hover:bg-[#0b3bb6] disabled:bg-gray disabled:text-dark_gray leading-[156%] p-2 lg:py-3 lg:px-6"
             >
-              <path
-                d="M14.4624 2.77145C14.4624 2.77145 14.4624 2.7777 14.4624 2.78083L10.8249 14.7771C10.7699 14.9719 10.6566 15.1453 10.5002 15.2739C10.3438 15.4024 10.1518 15.4801 9.94995 15.4965C9.9212 15.499 9.89245 15.5002 9.8637 15.5002C9.67457 15.5008 9.48922 15.4473 9.32953 15.3459C9.16983 15.2446 9.04246 15.0997 8.96245 14.9283L6.68745 10.2596C6.66468 10.2128 6.65709 10.1601 6.66571 10.1088C6.67434 10.0574 6.69876 10.0101 6.73557 9.97333L10.3556 6.35333C10.4454 6.2588 10.4947 6.13292 10.493 6.00254C10.4914 5.87216 10.4388 5.74759 10.3466 5.65539C10.2544 5.56319 10.1299 5.51065 9.99948 5.50898C9.8691 5.50731 9.74323 5.55664 9.6487 5.64645L6.02682 9.26645C5.99005 9.30327 5.94271 9.32769 5.8914 9.33632C5.84009 9.34494 5.78736 9.33734 5.74057 9.31458L1.06745 7.0402C0.884711 6.95253 0.732927 6.81141 0.632209 6.63552C0.531492 6.45964 0.486597 6.2573 0.503473 6.05533C0.52035 5.85335 0.598201 5.66127 0.726711 5.50454C0.85522 5.34781 1.02832 5.23383 1.22307 5.1777L13.2193 1.5402H13.2287C13.3995 1.49222 13.58 1.49053 13.7517 1.53533C13.9233 1.58012 14.08 1.66978 14.2056 1.79511C14.3311 1.92043 14.4211 2.07691 14.4663 2.24848C14.5114 2.42006 14.5101 2.60055 14.4624 2.77145Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-          <button class="btn-burger flex md:hidden gap-1.5 flex-col items-end w-10 h-10 justify-center">
-            <span class="bg-dark_blue h-[3px] w-6 rounded block"></span>
-            <span class="bg-dark_blue h-[3px] w-8 rounded block"></span>
-            <span class="bg-dark_blue h-[3px] w-4 rounded block"></span>
-          </button>
+              <span class="hidden lg:inline">Write a message</span>
+              <svg
+                class="lg:hidden"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.4624 2.77145C14.4624 2.77145 14.4624 2.7777 14.4624 2.78083L10.8249 14.7771C10.7699 14.9719 10.6566 15.1453 10.5002 15.2739C10.3438 15.4024 10.1518 15.4801 9.94995 15.4965C9.9212 15.499 9.89245 15.5002 9.8637 15.5002C9.67457 15.5008 9.48922 15.4473 9.32953 15.3459C9.16983 15.2446 9.04246 15.0997 8.96245 14.9283L6.68745 10.2596C6.66468 10.2128 6.65709 10.1601 6.66571 10.1088C6.67434 10.0574 6.69876 10.0101 6.73557 9.97333L10.3556 6.35333C10.4454 6.2588 10.4947 6.13292 10.493 6.00254C10.4914 5.87216 10.4388 5.74759 10.3466 5.65539C10.2544 5.56319 10.1299 5.51065 9.99948 5.50898C9.8691 5.50731 9.74323 5.55664 9.6487 5.64645L6.02682 9.26645C5.99005 9.30327 5.94271 9.32769 5.8914 9.33632C5.84009 9.34494 5.78736 9.33734 5.74057 9.31458L1.06745 7.0402C0.884711 6.95253 0.732927 6.81141 0.632209 6.63552C0.531492 6.45964 0.486597 6.2573 0.503473 6.05533C0.52035 5.85335 0.598201 5.66127 0.726711 5.50454C0.85522 5.34781 1.02832 5.23383 1.22307 5.1777L13.2193 1.5402H13.2287C13.3995 1.49222 13.58 1.49053 13.7517 1.53533C13.9233 1.58012 14.08 1.66978 14.2056 1.79511C14.3311 1.92043 14.4211 2.07691 14.4663 2.24848C14.5114 2.42006 14.5101 2.60055 14.4624 2.77145Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <button class="btn-burger flex md:hidden gap-1.5 flex-col items-end w-10 h-10 justify-center">
+              <span class="bg-dark_blue h-[3px] w-6 rounded block"></span>
+              <span class="bg-dark_blue h-[3px] w-8 rounded block"></span>
+              <span class="bg-dark_blue h-[3px] w-4 rounded block"></span>
+            </button>
+          </div>
         </div>
-      </div>
-    </header>
-    <div class="relative max-w-[2500px] mx-auto">
+      </header>
       <div class="gradient-bg absolute top-0 left-0 w-full h-full z-[-1]">
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -399,7 +401,7 @@
         </div>
       </div>
     </section>
-    <div class="relative max-w-[2500px] mx-auto">
+    <div class="relative max-w-[2500px] mx-auto overflow-hidden md:overflow-auto">
       <div class="gradient-bg absolute top-0 left-0 w-full h-full z-[-1]">
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -488,42 +490,26 @@
             </button>
           </div>
         </div>
-        <div class="container mx-auto px-4 lg:px-8">
+        <div class="container mx-auto px-4 lg:px-8" data-aos="fade-up" data-aos-duration="1500">
           <div id="mobile-version" class="tab-content gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap lg:items-center">
             <div class="basis-full lg:basis-1/2">
               <div class="mb-5 md:mb-10">
-                <h4
-                  class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                >
-                  What it can do
-                </h4>
-                <p data-aos="fade-up" data-aos-duration="1200">
+                <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
+                <p>
                   Customization changes the logic of how the base modules operate. Mobile adaptation is necessary for
                   the system to function correctly on any device, allowing brokers to work in the CRM even on
                   smartphones.
                 </p>
               </div>
               <div class="mb-5 md:mb-10">
-                <h4
-                  class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                >
-                  When it can be useful
-                </h4>
-                <p data-aos="fade-up" data-aos-duration="1200">
+                <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
+                <p>
                   If you need to create a presentation for a client directly from your smartphone, on the go and from
                   anywhere.
                 </p>
               </div>
             </div>
-            <div
-              class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
               <img
                 class="lg:h-[inherit] w-full max-w-full lg:object-cover"
                 src="./assets/images/tab-image-1.png"
@@ -554,11 +540,7 @@
                 </p>
               </div>
             </div>
-            <div
-              class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
               <img
                 class="lg:h-[inherit] w-full max-w-full lg:object-cover"
                 src="./assets/images/tab-image-1.png"
@@ -585,11 +567,7 @@
                 <p>If you need to analyze market trends to make strategic decisions based on the data obtained.</p>
               </div>
             </div>
-            <div
-              class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
               <img
                 class="lg:h-[inherit] w-full max-w-full lg:object-cover"
                 src="./assets/images/tab-image-1.png"
@@ -617,11 +595,7 @@
                 </p>
               </div>
             </div>
-            <div
-              class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
               <img
                 class="lg:h-[inherit] w-full max-w-full lg:object-cover"
                 src="./assets/images/tab-image-1.png"
@@ -648,11 +622,7 @@
                 </p>
               </div>
             </div>
-            <div
-              class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
               <img
                 class="lg:h-[inherit] w-full max-w-full lg:object-cover"
                 src="./assets/images/tab-image-1.png"
@@ -682,11 +652,7 @@
                 </p>
               </div>
             </div>
-            <div
-              class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
               <img
                 class="lg:h-[inherit] w-full max-w-full lg:object-cover"
                 src="./assets/images/tab-image-1.png"
@@ -717,11 +683,7 @@
                 </p>
               </div>
             </div>
-            <div
-              class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
               <img
                 class="lg:h-[inherit] w-full max-w-full lg:object-cover"
                 src="./assets/images/tab-image-1.png"
@@ -751,11 +713,7 @@
                 </p>
               </div>
             </div>
-            <div
-              class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
               <img
                 class="lg:h-[inherit] w-full max-w-full lg:object-cover"
                 src="./assets/images/tab-image-1.png"
@@ -785,11 +743,7 @@
                 </p>
               </div>
             </div>
-            <div
-              class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
               <img
                 class="lg:h-[inherit] w-full max-w-full lg:object-cover"
                 src="./assets/images/tab-image-1.png"
@@ -1188,7 +1142,11 @@
           <h2 class="title text-primary text-center mb-6 md:mb-12" data-aos="fade-up" data-aos-duration="1200">
             How is the workflow for CRM automation built
           </h2>
-          <p class="text-center text-md md:text-lg mb-6 md:mb-12" data-aos="fade-up" data-aos-duration="1200">
+          <p
+            class="text-center text-md md:text-lg mb-6 md:mb-12 max-w-[820px] mx-auto"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
             The project consists of four key stages. At each of them, you will only need to maintain minimal
             involvement: you won't have to be distracted from your main body of work, and most importantly, you won't
             lose any clients. After implementation, you will definitely see an increase in their number.
@@ -1347,8 +1305,13 @@
         </div>
       </div>
     </section>
-    <footer class="rounded-t-xl py-24 relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
-      <svg
+    <footer
+      class="rounded-t-xl py-24 relative overflow-hidden bg-no-repeat bg-cover bg-center"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      style="background-image: url('./assets/images/footer-bg.png')"
+    >
+      <!-- <svg
         class="w-full absolute top-[-40px] left-0 hidden md:block z-[-1]"
         width="1920"
         height="312"
@@ -1401,7 +1364,7 @@
             <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_394_748" />
           </filter>
         </defs>
-      </svg>
+      </svg> -->
       <svg
         class="w-full absolute top-0 left-0 z-[-2]"
         width="1280"

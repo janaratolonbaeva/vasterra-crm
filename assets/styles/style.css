@@ -82,10 +82,14 @@ body {
   width: 22px;
 }
 
+.header {
+  transition: all 0.35s ease;
+}
+
 .header.scroll {
-  border-bottom: 1px solid var(--secondary-dark-gray);
   backdrop-filter: blur(34px);
   background: rgba(242, 242, 242, 0.44);
+  border-bottom: 1px solid var(--secondary-dark-gray);
   padding: 8px 0;
 }
 
@@ -233,9 +237,11 @@ textarea:focus:-moz-placeholde {
   top: 0;
   left: 0;
 }
+
 .gradient-bg svg {
   display: none;
 }
+
 .gradients-container {
   filter: url(#goo) blur(40px);
   width: 100%;

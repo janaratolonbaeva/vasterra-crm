@@ -15,6 +15,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .gradient-bg {
+    overflow-x: hidden;
+  }
+
   .g4 {
     right: calc(10% - var(--circle-size) / 2);
   }
