@@ -310,3 +310,13 @@ footer {
   background-size: cover;
   background-position: center 0;
 }
+
+::-webkit-scrollbar-track {
+  background: var(--background-bg); 
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px; 
+}
+
+
