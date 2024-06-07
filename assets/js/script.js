@@ -123,9 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function initSwiperModule() {
     if (!swiperModule) {
       swiperModule = new Swiper('.swiper-module', {
-        loop: true,
         slidesPerView: 'auto',
-        spaceBetween: 12,
+        spaceBetween: 8,
       });
     }
   }
@@ -153,9 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function initSwiperAdv() {
     if (!swiperAdvantages) {
       swiperAdvantages = new Swiper('.swiper-advantages', {
-        loop: true,
         slidesPerView: 'auto',
-        spaceBetween: 12,
+        spaceBetween: 8,
       });
     }
   }
