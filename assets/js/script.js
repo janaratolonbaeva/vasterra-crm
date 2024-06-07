@@ -118,6 +118,66 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  let swiperModule;
+
+  function initSwiperModule() {
+    if (!swiperModule) {
+      swiperModule = new Swiper('.swiper-module', {
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 12,
+      });
+    }
+  }
+
+  function destroySwiperModule() {
+    if (swiperModule) {
+      swiperModule.destroy(true, true);
+      swiperModule = undefined;
+    }
+  }
+
+  function toggleSwiperModule() {
+    if (window.innerWidth <= 768) {
+      initSwiperModule();
+    } else {
+      destroySwiperModule();
+    }
+  }
+
+  toggleSwiperModule();
+  window.addEventListener('resize', toggleSwiperModule);
+
+  let swiperAdvantages;
+
+  function initSwiperAdv() {
+    if (!swiperAdvantages) {
+      swiperAdvantages = new Swiper('.swiper-advantages', {
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 12,
+      });
+    }
+  }
+
+  function destroySwiperAdv() {
+    if (swiperAdvantages) {
+      swiperAdvantages.destroy(true, true);
+      swiperAdvantages = undefined;
+    }
+  }
+
+  function toggleSwiperAdv() {
+    if (window.innerWidth <= 768) {
+      initSwiperAdv();
+    } else {
+      destroySwiperAdv();
+    }
+  }
+
+  toggleSwiperAdv();
+  window.addEventListener('resize', toggleSwiperAdv);
+
   const tabsOfModules = document.querySelectorAll('#modules .tabs button');
   const contentsOfModules = document.querySelectorAll('#modules .tab-content');
   const tabsOfAdvantages = document.querySelectorAll('#advantages .tabs button');
