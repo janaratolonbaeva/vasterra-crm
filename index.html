@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vasterra CRM</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
@@ -440,9 +441,9 @@
             >
               <button
                 class="w-fit rounded-lg swiper-slide py-1.5 px-5 md:py-3 md:px-8 text-white font-normal text-sm md:text-md bg-primary hover:bg-primary hover:text-white inline-block whitespace-nowrap"
-                data-tab-target="#mobile-version"
+                data-tab-target="#property-search"
               >
-                Mobile version
+                Property search
               </button>
               <button
                 class="w-fit rounded-lg swiper-slide py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
@@ -464,9 +465,9 @@
               </button>
               <button
                 class="w-fit rounded-lg swiper-slide py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
-                data-tab-target="#property-search"
+                data-tab-target="#mobile-version"
               >
-                Property search
+                Mobile version
               </button>
               <button
                 class="w-fit rounded-lg swiper-slide py-1.5 px-5 md:py-3 md:px-8 text-indigo font-normal text-sm md:text-md bg-gray hover:bg-primary hover:text-white inline-block whitespace-nowrap"
@@ -496,31 +497,30 @@
           </div>
         </div>
         <div class="container mx-auto px-4 lg:px-8" data-aos="fade-up" data-aos-duration="1500">
-          <div id="mobile-version" class="tab-content gap-6 md:gap-10 flex flex-wrap md:flex-nowrap md:items-center">
-            <div class="basis-full md:basis-1/2">
+          <div id="property-search" class="tab-content gap-6 lg:gap-10 flex-wrap lg:flex-nowrap lg:items-center">
+            <div class="basis-full lg:basis-1/2">
               <div class="mb-5 md:mb-10">
                 <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
                 <p>
-                  Customization changes the logic of how the base modules operate. Mobile adaptation is necessary for
-                  the system to function correctly on any device, allowing brokers to work in the CRM even on
-                  smartphones.
+                  It can sort properties based on the precise requirements of the client. You can highlight a specific
+                  area on the map and receive a list of properties located there.
                 </p>
               </div>
               <div class="mb-5 md:mb-10">
                 <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
                 <p>
-                  If you need to create a presentation for a client directly from your smartphone, on the go and from
-                  anywhere.
+                  If you need to find premises with specific parameters, such as those not on the ground floor or only
+                  with an open layout.
                 </p>
               </div>
             </div>
-            <div class="basis-full md:basis-1/2 flex justify-center">
+            <div class="basis-full lg:basis-1/2 rounded-md overflow-hidden">
               <img
-                class="h-full w-auto max-h-[380px] rounded-md block"
-                src="assets/images/1-mobile-version.jpg"
+                class="w-full max-w-full"
+                src="assets/images/5-property-search.jpg"
                 width="592"
                 height="360"
-                alt="Mobile version"
+                alt="Property search"
               />
             </div>
           </div>
@@ -610,30 +610,34 @@
               />
             </div>
           </div>
-          <div id="property-search" class="tab-content gap-6 lg:gap-10 hidden flex-wrap lg:flex-nowrap lg:items-center">
-            <div class="basis-full lg:basis-1/2">
+          <div
+            id="mobile-version"
+            class="tab-content gap-6 md:gap-10 hidden flex flex-wrap md:flex-nowrap md:items-center"
+          >
+            <div class="basis-full md:basis-1/2">
               <div class="mb-5 md:mb-10">
                 <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
                 <p>
-                  It can sort properties based on the precise requirements of the client. You can highlight a specific
-                  area on the map and receive a list of properties located there.
+                  Customization changes the logic of how the base modules operate. Mobile adaptation is necessary for
+                  the system to function correctly on any device, allowing brokers to work in the CRM even on
+                  smartphones.
                 </p>
               </div>
               <div class="mb-5 md:mb-10">
                 <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">When it can be useful</h4>
                 <p>
-                  If you need to find premises with specific parameters, such as those not on the ground floor or only
-                  with an open layout.
+                  If you need to create a presentation for a client directly from your smartphone, on the go and from
+                  anywhere.
                 </p>
               </div>
             </div>
-            <div class="basis-full lg:basis-1/2 rounded-md overflow-hidden">
+            <div class="basis-full md:basis-1/2 flex justify-center">
               <img
-                class="w-full max-w-full"
-                src="assets/images/5-property-search.jpg"
+                class="h-full w-auto max-h-[380px] rounded-md block"
+                src="assets/images/1-mobile-version.jpg"
                 width="592"
                 height="360"
-                alt="Property search"
+                alt="Mobile version"
               />
             </div>
           </div>
@@ -811,11 +815,11 @@
         <div class="container mx-auto px-4 lg:px-8">
           <div
             id="property-database"
-            class="tab-content gap-7 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center"
+            class="tab-content gap-7 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse"
             data-aos="fade-up"
             data-aos-duration="1200"
           >
-            <div class="basis-full lg:basis-1/2">
+            <div class="basis-full lg:basis-1/2 flex lg:items-center">
               <ul class="list-disc ml-4">
                 <li class="md:text-lg pb-4">Selection of ESG-focused or ESG-integrated buildings;</li>
                 <li class="md:text-lg pb-4">
@@ -828,7 +832,7 @@
                 <li class="md:text-lg">Automatic attachment of photos to floor plans;</li>
               </ul>
             </div>
-            <div class="basis-full lg:basis-1/2 overflow-hidden rounded-md">
+            <div class="basis-full lg:basis-1/2 overflow-hidden rounded-md flex lg:items-stretch">
               <img
                 class="max-w-full w-full"
                 src="assets/images/1-property-database.jpg"
@@ -840,9 +844,9 @@
           </div>
           <div
             id="analytics"
-            class="tab-content hidden gap-7 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center"
+            class="tab-content hidden gap-7 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse"
           >
-            <div class="basis-full lg:basis-1/2">
+            <div class="basis-full lg:basis-1/2 flex lg:items-center">
               <ul class="list-disc ml-4">
                 <li class="md:text-lg pb-4">Required segment of clean data in just a few clicks;</li>
                 <li class="md:text-lg pb-4">Automatic reports based on custom AI;</li>
@@ -852,7 +856,11 @@
                 <li class="md:text-lg">Financial analytics;</li>
               </ul>
             </div>
-            <div class="basis-full lg:basis-1/2 overflow-hidden rounded-md" data-aos="fade-up" data-aos-duration="1500">
+            <div
+              class="basis-full lg:basis-1/2 overflow-hidden rounded-md flex lg:items-stretch"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <img class="max-w-full w-full" src="assets/images/2-analytics.jpg" width="600" height="460" alt="" />
             </div>
           </div>
@@ -860,7 +868,7 @@
             id="management"
             class="tab-content hidden gap-7 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center"
           >
-            <div class="basis-full lg:basis-1/2">
+            <div class="basis-full lg:basis-1/2 flex lg:items-center">
               <ul class="list-disc ml-4">
                 <li class="md:text-lg pb-4">Client analytics;</li>
                 <li class="md:text-lg pb-4">Comparison of market share with other brokers;</li>
@@ -872,7 +880,11 @@
                 </li>
               </ul>
             </div>
-            <div class="basis-full lg:basis-1/2 overflow-hidden rounded-md" data-aos="fade-up" data-aos-duration="1500">
+            <div
+              class="basis-full lg:basis-1/2 overflow-hidden rounded-md flex lg:items-stretch"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <img class="max-w-full w-full" src="assets/images/3-management.jpg" width="600" height="460" alt="" />
             </div>
           </div>
@@ -880,7 +892,7 @@
             id="teamwork"
             class="tab-content hidden gap-7 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center"
           >
-            <div class="basis-full lg:basis-1/2">
+            <div class="basis-full lg:basis-1/2 flex lg:items-center">
               <ul class="list-disc ml-4">
                 <li class="md:text-lg pb-4">
                   Setting up company structure, creating a control and approval task pyramid;
@@ -894,15 +906,19 @@
                 <li class="md:text-lg">Tracking who and when logged into the system;</li>
               </ul>
             </div>
-            <div class="basis-full lg:basis-1/2 overflow-hidden rounded-md" data-aos="fade-up" data-aos-duration="1500">
+            <div
+              class="basis-full lg:basis-1/2 overflow-hidden rounded-md flex lg:items-stretch"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <img class="max-w-full w-full" src="assets/images/4-teamwork.jpg" width="600" height="460" alt="" />
             </div>
           </div>
           <div
             id="client-management"
-            class="tab-content hidden gap-7 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse lg:items-center"
+            class="tab-content hidden gap-7 lg:gap-10 flex flex-wrap lg:flex-nowrap flex-row lg:flex-row-reverse"
           >
-            <div class="basis-full lg:basis-1/2">
+            <div class="basis-full lg:basis-1/2 flex lg:items-center">
               <ul class="list-disc ml-4">
                 <li class="md:text-lg pb-4">
                   Lead database with sorting by contract date, square footage, and business center class;
@@ -919,9 +935,9 @@
                 <li class="md:text-lg">Saving selections, tied to specific managers.</li>
               </ul>
             </div>
-            <div class="basis-full lg:basis-1/2 overflow-hidden rounded-md" data-aos="fade-up" data-aos-duration="1500">
+            <div class="basis-full lg:basis-1/2" data-aos="fade-up" data-aos-duration="1500">
               <img
-                class="max-w-full w-full"
+                class="max-w-full w-full rounded-md"
                 src="assets/images/5-client-management.jpg"
                 width="600"
                 height="460"

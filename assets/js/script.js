@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
   tabHandler(tabsOfModules, contentsOfModules);
   tabHandler(tabsOfAdvantages, contentsOfAdvantages);
 
-  AOS.init();
+  AOS.init({ once: true });
 
   matchHeightCard();
   window.addEventListener('resize', () => {
