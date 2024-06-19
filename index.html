@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./assets/js/tailwind.config.js"></script>
-    <link rel="stylesheet" href="./assets/styles/style.css" />
-    <link rel="stylesheet" href="./assets/styles/media.css" />
+    <script src="assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/media.css" />
   </head>
   <body>
     <div class="relative mx-auto pt-16 md:pt-28">
@@ -22,7 +22,7 @@
             <a href="/">
               <img
                 class="w-[129px] h-[24px] lg:w-[165px] lg:h-[30px]"
-                src="./assets/images/logo.svg"
+                src="assets/images/logo.svg"
                 width="165"
                 height="35"
                 alt="Vasterra Logo"
@@ -79,7 +79,7 @@
                   </button>
                   <ul class="dropdown-content py-4">
                     <li>
-                      <a href="#" class="w-full py-2 px-4 block font-semibold whitespace-nowrap">Deutch</a>
+                      <a href="/de" class="w-full py-2 px-4 block font-semibold whitespace-nowrap">Deutch</a>
                     </li>
                   </ul>
                 </li>
@@ -95,7 +95,7 @@
           <div class="flex gap-4 items-center">
             <div class="py-3 px-6 border rounded-lg border border-primary hidden sm:flex items-center">
               <span class="text-primary font-semibold">En</span> <span class="text-primary px-1 font-semibold">|</span>
-              <a href="#" class="text-indigo">De</a>
+              <a href="/de" class="text-indigo">De</a>
             </div>
             <a
               href="#form-sendler"
@@ -157,7 +157,7 @@
             data-aos="fade-up"
             data-aos-duration="1500"
           >
-            <img class="max-w-full" src="./assets/images/promo-image.png" alt="The main image of Vasterra CRM" />
+            <img class="max-w-full" src="assets/images/promo-animation.gif" alt="The main image of Vasterra CRM" />
           </div>
           <div
             class="flex flex-wrap md:flex-nowrap gap-6 md:gap-8 xl:gap-14 mb-7 md:mb-16 pointer-events-none"
@@ -184,11 +184,13 @@
             </div>
           </div>
           <div class="flex justify-center bottom-[20px] md:bottom-0 sticky md:static z-[10]">
-            <button
-              class="justify-center items-center rounded-lg bg-primary text-white font-semibold hover:bg-[#0b3bb6] focus:bg-[#17337d] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 w-full max-w-[392px]"
+            <a
+              href="https://vasterra.com/colliers"
+              class="flex justify-center items-center rounded-lg bg-primary text-white font-semibold hover:bg-[#0b3bb6] focus:bg-[#17337d] disabled:bg-gray disabled:text-dark_gray leading-[156%] py-3 px-6 w-full max-w-[392px]"
+              target="_blank"
             >
               Learn more
-            </button>
+            </a>
           </div>
         </section>
       </main>
@@ -226,7 +228,7 @@
                 class="h-full w-auto"
                 width="62"
                 height="56"
-                src="./assets/images/graphic-icon.svg"
+                src="assets/images/graphic-icon.svg"
                 alt="Graphic icon"
               />
             </div>
@@ -240,13 +242,7 @@
             data-aos-duration="1200"
           >
             <div class="mb-3.5 h-[56px]">
-              <img
-                class="h-full w-auto"
-                width="75"
-                height="56"
-                src="./assets/images/pocket-icon.svg"
-                alt="Pocket icon"
-              />
+              <img class="h-full w-auto" width="75" height="56" src="assets/images/pocket-icon.svg" alt="Pocket icon" />
             </div>
             <p class="text-center font-medium text-base md:text-md leading-[162%]">
               Saving hundreds of thousands of dollars on subscription fees for off-the-shelf solutions
@@ -262,7 +258,7 @@
                 class="h-full w-auto"
                 width="68"
                 height="59"
-                src="./assets/images/calendar-icon.svg"
+                src="assets/images/calendar-icon.svg"
                 alt="Calendar icon"
               />
             </div>
@@ -280,7 +276,7 @@
                 class="h-full w-auto"
                 width="66"
                 height="56"
-                src="./assets/images/dollar-icon.svg"
+                src="assets/images/dollar-icon.svg"
                 alt="Graphic icon"
               />
             </div>
@@ -298,7 +294,7 @@
                 class="h-full w-auto"
                 width="60"
                 height="56"
-                src="./assets/images/sharing-icon.svg"
+                src="assets/images/sharing-icon.svg"
                 alt="Pocket icon"
               />
             </div>
@@ -316,7 +312,7 @@
                 class="h-full w-auto"
                 width="66"
                 height="56"
-                src="./assets/images/completed-icon.svg"
+                src="assets/images/completed-icon.svg"
                 alt="Calendar icon"
               />
             </div>
@@ -500,8 +496,8 @@
           </div>
         </div>
         <div class="container mx-auto px-4 lg:px-8" data-aos="fade-up" data-aos-duration="1500">
-          <div id="mobile-version" class="tab-content gap-6 lg:gap-10 flex flex-wrap lg:flex-nowrap lg:items-center">
-            <div class="basis-full lg:basis-1/2">
+          <div id="mobile-version" class="tab-content gap-6 md:gap-10 flex flex-wrap md:flex-nowrap md:items-center">
+            <div class="basis-full md:basis-1/2">
               <div class="mb-5 md:mb-10">
                 <h4 class="text-primary font-semibold text-md md:text-lg mb-3.5 md:mb-5">What it can do</h4>
                 <p>
@@ -518,13 +514,13 @@
                 </p>
               </div>
             </div>
-            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
+            <div class="basis-full md:basis-1/2 flex justify-center">
               <img
-                class="lg:h-[inherit] w-full max-w-full lg:object-cover"
-                src="./assets/images/tab-image-1.png"
+                class="h-full w-auto max-h-[380px] rounded-md block"
+                src="assets/images/1-mobile-version.jpg"
                 width="592"
                 height="360"
-                alt=""
+                alt="Mobile version"
               />
             </div>
           </div>
@@ -549,13 +545,13 @@
                 </p>
               </div>
             </div>
-            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
+            <div class="basis-full lg:basis-1/2 rounded-md overflow-hidden">
               <img
-                class="lg:h-[inherit] w-full max-w-full lg:object-cover"
-                src="./assets/images/tab-image-1.png"
+                class="w-full max-w-full"
+                src="assets/images/2-updating-of-premises.jpg"
                 width="592"
                 height="360"
-                alt=""
+                alt="Updating of premises"
               />
             </div>
           </div>
@@ -576,13 +572,13 @@
                 <p>If you need to analyze market trends to make strategic decisions based on the data obtained.</p>
               </div>
             </div>
-            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
+            <div class="basis-full lg:basis-1/2 rounded-md overflow-hidden">
               <img
-                class="lg:h-[inherit] w-full max-w-full lg:object-cover"
-                src="./assets/images/tab-image-1.png"
+                class="w-full max-w-full"
+                src="assets/images/3-sectorial-analytics.jpg"
                 width="592"
                 height="360"
-                alt=""
+                alt="Sectorial analytics"
               />
             </div>
           </div>
@@ -604,13 +600,13 @@
                 </p>
               </div>
             </div>
-            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
+            <div class="basis-full lg:basis-1/2 rounded-md overflow-hidden">
               <img
-                class="lg:h-[inherit] w-full max-w-full lg:object-cover"
-                src="./assets/images/tab-image-1.png"
+                class="w-full max-w-full"
+                src="assets/images/4-listing-management.jpg"
                 width="592"
                 height="360"
-                alt=""
+                alt="Listing management"
               />
             </div>
           </div>
@@ -631,13 +627,13 @@
                 </p>
               </div>
             </div>
-            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
+            <div class="basis-full lg:basis-1/2 rounded-md overflow-hidden">
               <img
-                class="lg:h-[inherit] w-full max-w-full lg:object-cover"
-                src="./assets/images/tab-image-1.png"
+                class="w-full max-w-full"
+                src="assets/images/5-property-search.jpg"
                 width="592"
                 height="360"
-                alt=""
+                alt="Property search"
               />
             </div>
           </div>
@@ -661,13 +657,13 @@
                 </p>
               </div>
             </div>
-            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
+            <div class="basis-full lg:basis-1/2 rounded-md overflow-hidden">
               <img
-                class="lg:h-[inherit] w-full max-w-full lg:object-cover"
-                src="./assets/images/tab-image-1.png"
+                class="w-full max-w-full"
+                src="assets/images/6-analytics-for-the-marketing-department.jpg"
                 width="592"
                 height="360"
-                alt=""
+                alt="Analytics for the marketing department"
               />
             </div>
           </div>
@@ -692,13 +688,13 @@
                 </p>
               </div>
             </div>
-            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
+            <div class="basis-full lg:basis-1/2 rounded-md overflow-hidden">
               <img
-                class="lg:h-[inherit] w-full max-w-full lg:object-cover"
-                src="./assets/images/tab-image-1.png"
+                class="w-full max-w-full"
+                src="assets/images/7-dashboards-with-key-market-indicators.jpg"
                 width="592"
                 height="360"
-                alt=""
+                alt="Dashboards with key market indicators"
               />
             </div>
           </div>
@@ -722,13 +718,13 @@
                 </p>
               </div>
             </div>
-            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
+            <div class="basis-full lg:basis-1/2 rounded-md overflow-hidden">
               <img
-                class="lg:h-[inherit] w-full max-w-full lg:object-cover"
-                src="./assets/images/tab-image-1.png"
+                class="w-full max-w-full"
+                src="assets/images/8-management-dashboards.jpg"
                 width="592"
                 height="360"
-                alt=""
+                alt="Management dashboards"
               />
             </div>
           </div>
@@ -752,13 +748,13 @@
                 </p>
               </div>
             </div>
-            <div class="lg:min-h-[360px] basis-full lg:basis-1/2 rounded-md overflow-hidden lg:flex lg:items-stretch">
+            <div class="basis-full lg:basis-1/2 rounded-md overflow-hidden">
               <img
-                class="lg:h-[inherit] w-full max-w-full lg:object-cover"
-                src="./assets/images/tab-image-1.png"
+                class="w-full max-w-full"
+                src="assets/images/9-competitive-analysis.jpg"
                 width="592"
                 height="360"
-                alt=""
+                alt="Competitive analysis"
               />
             </div>
           </div>
@@ -777,7 +773,7 @@
         <div class="container max-w-full md:max-w-[769px] lg:max-w-[992px] xl:max-w-[1300px] mx-auto md:px-4 lg:px-8">
           <div class="swiper swiper-advantages" data-aos="fade-up" data-aos-duration="1200">
             <div
-              class="tabs flex md:flex-wrap md:gap-4 md:justify-center mb-6 pb-4 md:mb-12 swiper-wrapper pl-4 md:pl-0"
+              class="tabs flex md:flex-wrap md:gap-4 md:justify-center mx-auto mb-6 pb-4 md:mb-12 swiper-wrapper pl-4 md:pl-0 pr-10 md:pr-0"
             >
               <button
                 class="w-fit swiper-slide rounded-lg py-1.5 px-5 md:py-3 md:px-8 text-white font-normal text-sm md:text-md bg-primary hover:bg-primary hover:text-white inline-block whitespace-nowrap"
@@ -832,10 +828,10 @@
                 <li class="md:text-lg">Automatic attachment of photos to floor plans;</li>
               </ul>
             </div>
-            <div class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch">
+            <div class="basis-full lg:basis-1/2 overflow-hidden rounded-md">
               <img
-                class="lg:h-[inherit] w-full lg:object-cover max-w-full"
-                src="./assets/images/tab-image-2.png"
+                class="max-w-full w-full"
+                src="assets/images/1-property-database.jpg"
                 width="600"
                 height="460"
                 alt=""
@@ -856,18 +852,8 @@
                 <li class="md:text-lg">Financial analytics;</li>
               </ul>
             </div>
-            <div
-              class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <img
-                class="lg:h-[inherit] w-full lg:object-cover max-w-full"
-                src="./assets/images/tab-image-2.png"
-                width="600"
-                height="460"
-                alt=""
-              />
+            <div class="basis-full lg:basis-1/2 overflow-hidden rounded-md" data-aos="fade-up" data-aos-duration="1500">
+              <img class="max-w-full w-full" src="assets/images/2-analytics.jpg" width="600" height="460" alt="" />
             </div>
           </div>
           <div
@@ -886,18 +872,8 @@
                 </li>
               </ul>
             </div>
-            <div
-              class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <img
-                class="lg:h-[inherit] w-full lg:object-cover max-w-full"
-                src="./assets/images/tab-image-2.png"
-                width="600"
-                height="460"
-                alt=""
-              />
+            <div class="basis-full lg:basis-1/2 overflow-hidden rounded-md" data-aos="fade-up" data-aos-duration="1500">
+              <img class="max-w-full w-full" src="assets/images/3-management.jpg" width="600" height="460" alt="" />
             </div>
           </div>
           <div
@@ -918,18 +894,8 @@
                 <li class="md:text-lg">Tracking who and when logged into the system;</li>
               </ul>
             </div>
-            <div
-              class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <img
-                class="lg:h-[inherit] w-full lg:object-cover max-w-full"
-                src="./assets/images/tab-image-2.png"
-                width="600"
-                height="460"
-                alt=""
-              />
+            <div class="basis-full lg:basis-1/2 overflow-hidden rounded-md" data-aos="fade-up" data-aos-duration="1500">
+              <img class="max-w-full w-full" src="assets/images/4-teamwork.jpg" width="600" height="460" alt="" />
             </div>
           </div>
           <div
@@ -953,14 +919,10 @@
                 <li class="md:text-lg">Saving selections, tied to specific managers.</li>
               </ul>
             </div>
-            <div
-              class="basis-full lg:basis-1/2 lg:min-h-[460px] lg:flex lg:items-stretch"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div class="basis-full lg:basis-1/2 overflow-hidden rounded-md" data-aos="fade-up" data-aos-duration="1500">
               <img
-                class="lg:h-[inherit] w-full lg:object-cover max-w-full"
-                src="./assets/images/tab-image-2.png"
+                class="max-w-full w-full"
+                src="assets/images/5-client-management.jpg"
                 width="600"
                 height="460"
                 alt=""
@@ -989,6 +951,7 @@
           <a
             href="https://vasterra.com/colliers"
             class="w-full max-w-[392px] py-3 px-6 text-center bg-white text-primary text-base md:text-md rounded-lg font-semibold focus:bg-[#17337d] focus:text-white disabled:bg-gray disabled:text-dark_gray"
+            target="_blank"
             >Dive into the case</a
           >
         </div>
@@ -1126,7 +1089,7 @@
               <div class="rounded-full w-[72px] h-72px overflow-hidden mb-[18px]">
                 <img
                   class="w-full h-full object-cover"
-                  src="./assets/images/crm-manager-avatar.jpg"
+                  src="assets/images/crm-manager-avatar.jpg"
                   width="72"
                   height="72"
                   alt="CRM Vasterra"
@@ -1331,7 +1294,7 @@
       <div class="container mx-auto px-4 lg:px-8">
         <div class="flex flex-col gap-10 items-center md:items-start md:flex-row md:justify-between mb-6 md:mb-10">
           <a href="/" data-aos="fade-up" data-aos-duration="1000">
-            <img src="./assets/images/logo.svg" width="165" height="35" alt="Vasterra Logo" />
+            <img src="assets/images/logo.svg" width="165" height="35" alt="Vasterra Logo" />
           </a>
           <div class="flex flex-col md:flex-row gap-6 md:gap-12 text-center md:text-left">
             <address class="not-italic" data-aos="fade-up" data-aos-duration="1000">
@@ -1378,6 +1341,6 @@
 
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script defer src="./assets/js/script.js"></script>
+    <script defer src="assets/js/script.js"></script>
   </body>
 </html>

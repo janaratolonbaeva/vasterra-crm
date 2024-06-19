@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // mobile menu
   const btnBurger = document.querySelector('.btn-burger');
   const menu = document.querySelector('#menu');
-  const navLinks = document.querySelectorAll('#menu a');
+  const navLinks = document.querySelectorAll('#menu .menu-item');
   const header = document.querySelector('#header');
   const body = document.querySelector('body');
   const sections = document.querySelectorAll('section');
